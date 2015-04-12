@@ -1,8 +1,8 @@
 {
-  "name": "CSSToolkits",
+  "name": "csstoolkits",
   "version": "0.0.1",
   "description": "CSSToolkits is a CSS utility set.No conflicts with other CSS.",
-  "main": "css/ct.css",
+  "main": "css/ct.min.css",
   "keywords": [
     "CSSToolkits"
   ],
@@ -11,8 +11,5 @@
   ],
   "ignore": [
     "**/*.js"
-  ],
-  "dependencies": {
-    "normalize.css": "~3.0.3"
-  }
+  ]
 }
