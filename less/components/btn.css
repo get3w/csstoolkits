@@ -1,0 +1,106 @@
+﻿.gx-btn {
+  display: inline-block;
+  padding: 0 50px;
+  height: 37px;
+  line-height: 37px;
+  background-color: #f1f1f1;
+  color: #757575;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 3px 4px #CCC;
+  border: 0 none;
+  text-decoration: none;
+  font-family: "Microsoft YaHei";
+  height: 40px;
+  line-height: 40px;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.gx-btn i {
+  font-size: 14px;
+  margin-right: 5px;
+}
+.gx-btn:hover,
+.gx-btn:focus,
+.gx-btn.focus {
+  text-decoration: none;
+  background: #e0e0e0;
+}
+.gx-btn:active,
+.gx-btn.active {
+  outline: 0;
+  background-image: none;
+}
+.gx-btn.disabled,
+.gx-btn[disabled],
+fieldset[disabled] .gx-btn {
+  cursor: crosshair;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+}
+.gx-btn.green {
+  background: #3bbf38;
+  color: #fff;
+}
+.gx-btn.green:hover {
+  background: #2aae27;
+}
+.gx-btn.red {
+  background: #f36c60;
+  color: #fff;
+}
+.gx-btn.red:hover {
+  background: #e25b4f;
+}
+.gx-btn.blue {
+  background: #29b6f6;
+  color: #fff;
+}
+.gx-btn.blue:hover {
+  background: #18a5e5;
+}
+.gx-btn.large {
+  height: 40px;
+  line-height: 40px;
+  width: 180px;
+}
+.gx-btn.small {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  padding: 0 15px;
+}
+.gx-btn.mini {
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  height: 25px;
+  line-height: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  padding: 0;
+}
+.gx-btn.mini i {
+  margin-right: 0;
+}
+.gx-btn.block {
+  display: block;
+  width: 100%;
+}
+.gx-btn.radius {
+  border-radius: 30px;
+}
+.gx-btn + .gx-btn {
+  margin-left: 7px;
+}
+.gx-btn.block + .gx-btn.block {
+  margin-top: 5px;
+  margin-left: 0;
+}
+/*# sourceMappingURL=btn.css.map */
