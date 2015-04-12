@@ -1,0 +1,67 @@
+@import "../var/variables.less";
+@import "../var/functions.less";
+
+.ct-select {
+    position: relative;
+    z-index: 9;
+
+    .select-name {
+        border: 1px solid #bfbfbf;
+        border-radius: 3px;
+        background: #fff;
+        height: 32px;
+        line-height: 32px;
+        padding: 0 15px;
+        cursor: pointer;
+
+        i {
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+    }
+
+    .select-list {
+        position: absolute;
+        top: 34px;
+        left: 0;
+        background: #fff;
+        border-radius: 3px;
+        border: 1px solid #bfbfbf;
+        min-width: 120px;
+        border-top: 2px solid #20b11d;
+        cursor: default;
+        display: none;
+
+        li {
+            height: 30px;
+            line-height: 30px;
+            border-bottom: 1px solid #d5d9df;
+
+            a {
+                color: #757575;
+                display: block;
+                text-indent: 10px;
+            }
+        }
+
+        li.selected {
+            background-color: #20b11d;
+
+            a {
+                color: #fff;
+            }
+        }
+
+        li:hover {
+            background-color: #A3E9A4;
+
+            a {
+                color: #757575;
+            }
+        }
+
+        li:last-child {
+            border-bottom: 0 none;
+        }
+    }
+}
