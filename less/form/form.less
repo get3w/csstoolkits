@@ -1,0 +1,140 @@
+@import "../var/variables.less";
+@import "../var/functions.less";
+
+.ct-form {
+    background: #fff;
+    padding: 25px;
+
+    .row {
+        margin-bottom: 15px;
+        zoom: 1;
+
+        &:after {
+            clear: both;
+            content: ".";
+            display: block;
+            height: 0;
+            visibility: hidden;
+            font-size: 0;
+        }
+    }
+
+    .label {
+        font-size: 14px;
+        min-width: 100px;
+        margin-right: 20px;
+        margin-top: 10px;
+        float: left;
+    }
+
+    .label-sm:extend(.ct-form .label) {
+        min-width: 30px;
+        margin-right: 10px;
+    }
+
+    .label-lg:extend(.ct-form .label) {
+        min-width: 150px;
+    }
+
+    .text {
+        width: 80%;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid #d2d2d2;
+        text-indent: 7px;
+        font-size: 14px;
+        padding: 3px;
+        float: left;
+    }
+
+    .text-sm:extend(.ct-form .text) {
+        width: 192px;
+    }
+
+    .textarea {
+        width: 80%;
+        height: 120px;
+        border: 1px solid #d2d2d2;
+        font-size: 14px;
+        padding: 3px;
+        float: left;
+    }
+
+    .text:focus, .text-sm:focus, .textarea:focus {
+        border-color: #20b11d;
+    }
+
+    .error, .error:focus {
+        border-color: #ee5a5a;
+    }
+
+    .tips {
+        margin: 10px 0 0 20px;
+        color: #808080;
+        float: left;
+    }
+
+    .combine {
+        border: 1px solid #c9c9c9;
+        width: 515px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 7px;
+
+        label {
+            background: #eee;
+            width: 60px;
+            font-size: 14px;
+            text-align: center;
+            border-right: 1px solid #c9c9c9;
+            margin-top: 0;
+            border-radius: 5px 0 0 5px;
+            margin-right: 3px;
+        }
+
+        input {
+            height: 30px;
+            line-height: 30px;
+            padding-left: 5px;
+            width: 440px;
+            border: 0 none;
+            font-size: 14px;
+        }
+
+        input[disabled] {
+            background-color: #fff;
+        }
+    }
+}
+
+.ct-form.mini {
+    padding: 5px;
+
+    .label {
+        min-width: 20px;
+        margin: 5px;
+        font-size: 12px;
+        float: left;
+    }
+
+    .text {
+        width: 80%;
+        border: 1px solid #d2d2d2;
+        height: 18px;
+        line-height: 18px;
+        padding: 3px;
+        font-size: 12px;
+        text-indent: 2px;
+        float: left;
+    }
+
+    .text-sm {
+        width: 80px;
+        border: 1px solid #d2d2d2;
+        height: 18px;
+        line-height: 18px;
+        padding: 3px;
+        font-size: 12px;
+        float: left;
+    }
+}

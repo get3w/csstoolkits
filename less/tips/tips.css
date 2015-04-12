@@ -1,0 +1,57 @@
+﻿.ct-tips {
+  margin: 0 12px 10px;
+  padding: 30px;
+  background: #fff1a6;
+  font-family: "Microsoft Yahei";
+  font-size: 14px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.ct-tips a.link {
+  display: inline-block;
+  margin-left: 7px;
+  color: #3378b5;
+  text-decoration: none;
+}
+.ct-tips a.link:hover {
+  color: #2267a4;
+}
+.ct-tips .single {
+  height: 40px;
+  line-height: 40px;
+}
+.ct-tips .icon {
+  font-size: inherit;
+}
+.ct-tips .icon i {
+  float: left;
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  background: #ff7e00;
+  height: 40px;
+  line-height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.ct-tips .left {
+  display: table;
+  float: left;
+  height: 40px;
+  font-size: inherit;
+  line-height: 20px;
+  color: #333;
+  text-align: left;
+  vertical-align: middle;
+}
+.ct-tips .right {
+  font-size: inherit;
+  float: right;
+}
+/*# sourceMappingURL=tips.css.map */
