@@ -1,0 +1,123 @@
+/* line 4, btn.less */
+.ct-btn {
+  display: inline-block;
+  padding: 0 50px;
+  height: 37px;
+  line-height: 37px;
+  background-color: #f1f1f1;
+  color: #757575;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 3px 4px #CCC;
+  border: 0 none;
+  text-decoration: none;
+  font-family: "Microsoft YaHei";
+  height: 40px;
+  line-height: 40px;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 21, btn.less */
+.ct-btn i {
+  font-size: 14px;
+  margin-right: 5px;
+}
+/* line 26, btn.less */
+.ct-btn:hover,
+.ct-btn:focus,
+.ct-btn.focus {
+  text-decoration: none;
+  background: #e0e0e0;
+}
+/* line 33, btn.less */
+.ct-btn:active,
+.ct-btn.active {
+  outline: 0;
+  background-image: none;
+}
+/* line 39, btn.less */
+.ct-btn.disabled,
+.ct-btn[disabled],
+fieldset[disabled] .ct-btn {
+  cursor: crosshair;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+}
+/* line 47, btn.less */
+.ct-btn.green {
+  background: #3bbf38;
+  color: #fff;
+}
+/* line 51, btn.less */
+.ct-btn.green:hover {
+  background: #2aae27;
+}
+/* line 56, btn.less */
+.ct-btn.red {
+  background: #f36c60;
+  color: #fff;
+}
+/* line 60, btn.less */
+.ct-btn.red:hover {
+  background: #e25b4f;
+}
+/* line 65, btn.less */
+.ct-btn.blue {
+  background: #29b6f6;
+  color: #fff;
+}
+/* line 69, btn.less */
+.ct-btn.blue:hover {
+  background: #18a5e5;
+}
+/* line 74, btn.less */
+.ct-btn.large {
+  height: 40px;
+  line-height: 40px;
+  width: 180px;
+}
+/* line 79, btn.less */
+.ct-btn.small {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  padding: 0 15px;
+}
+/* line 85, btn.less */
+.ct-btn.mini {
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  height: 25px;
+  line-height: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  padding: 0;
+}
+/* line 93, btn.less */
+.ct-btn.mini i {
+  margin-right: 0;
+}
+/* line 98, btn.less */
+.ct-btn.block {
+  display: block;
+  width: 100%;
+}
+/* line 103, btn.less */
+.ct-btn.radius {
+  border-radius: 30px;
+}
+/* line 108, btn.less */
+.ct-btn + .ct-btn {
+  margin-left: 7px;
+}
+/* line 112, btn.less */
+.ct-btn.block + .ct-btn.block {
+  margin-top: 5px;
+  margin-left: 0;
+}

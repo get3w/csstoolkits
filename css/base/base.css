@@ -1,0 +1,35 @@
+/* line 6, base.less */
+.ct-clearfix {
+  zoom: 1;
+}
+/* line 9, base.less */
+.ct-clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+/* line 21, base.less */
+.ct-center {
+  text-align: center;
+}
+/* line 25, base.less */
+.ct-left {
+  text-align: left;
+}
+/* line 29, base.less */
+.ct-right {
+  text-align: right;
+}
+/* line 35, base.less */
+.ct-fl {
+  float: left;
+  display: inline;
+}
+/* line 40, base.less */
+.ct-fr {
+  float: right;
+  display: inline;
+}
