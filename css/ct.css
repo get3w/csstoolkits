@@ -9,14 +9,23 @@
   visibility: hidden;
   font-size: 0;
 }
-.ct-center {
-  text-align: center;
-}
 .ct-left {
   text-align: left;
 }
+.ct-center {
+  text-align: center;
+}
 .ct-right {
   text-align: right;
+}
+.ct-top {
+  vertical-align: top;
+}
+.ct-middle {
+  vertical-align: middle;
+}
+.ct-bottom {
+  vertical-align: bottom;
 }
 .ct-fl {
   float: left;
