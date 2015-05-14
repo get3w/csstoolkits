@@ -1,6 +1,5 @@
 var requireDir = require('require-dir');
+var gulp = require('gulp');
 
 requireDir('./gulp', { recurse: true });
-
-var gulp = require('gulp');
-gulp.task('default', ['less']);
+gulp.task('default', ['css', 'min']);
