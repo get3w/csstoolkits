@@ -256,7 +256,7 @@ fieldset[disabled] .ct-btn {
 }
 .ct-form .text,
 .ct-form .text-sm {
-  width: 80%;
+  width: 70%;
   height: 30px;
   line-height: 30px;
   border: 1px solid #d2d2d2;
@@ -269,7 +269,7 @@ fieldset[disabled] .ct-btn {
   width: 192px;
 }
 .ct-form .textarea {
-  width: 80%;
+  width: 70%;
   height: 120px;
   border: 1px solid #d2d2d2;
   font-size: 14px;
@@ -328,7 +328,7 @@ fieldset[disabled] .ct-btn {
   float: left;
 }
 .ct-form.mini .text {
-  width: 80%;
+  width: 70%;
   border: 1px solid #d2d2d2;
   height: 18px;
   line-height: 18px;
