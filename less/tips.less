@@ -3,26 +3,30 @@
 
 .ct-tips {
     margin: 0 12px 10px;
-    padding: 30px;
+    padding: 15px;
     background: #fff1a6;
     font-size: 14px;
     .ct-font("Microsoft Yahei";14px;);
     .ct-border-radius(3px);
 
-    a.link {
-            display: inline-block;
-            margin-left: 7px;
-            color: #3378b5;
-            text-decoration: none;
-            &:hover {
-                color:#3378b5 - #111 ;
-            }
-     }
-    .single {
-        .ct-height(40px);
+    &.\--large {
+        padding: 30px;
     }
-    .icon {
-        font-size: inherit;
+
+    &:after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    .__left {
+        float: left;
+        color: #333;
+        text-align: left;
+        .ct-height(40px);
 
         i {
             float: left;
@@ -38,19 +42,8 @@
             .ct-border-radius(50%);
         }
     }
-    .left {
-        display: table;
-        float: left;
-        height: 40px;
-        font-size: inherit;
-        line-height: 20px;
-        color: #333;
-        text-align: left;
-        vertical-align: middle;
-    }
 
-    .right {
-        font-size: inherit;
+    .__right {
         float: right;
     }
 }
