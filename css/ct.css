@@ -68,43 +68,6 @@
   float: right;
   display: inline;
 }
-.ct-clearfix {
-  zoom: 1;
-}
-.ct-clearfix:after {
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  visibility: hidden;
-  font-size: 0;
-}
-.ct-left {
-  text-align: left;
-}
-.ct-center {
-  text-align: center;
-}
-.ct-right {
-  text-align: right;
-}
-.ct-top {
-  vertical-align: top;
-}
-.ct-middle {
-  vertical-align: middle;
-}
-.ct-bottom {
-  vertical-align: bottom;
-}
-.ct-fl {
-  float: left;
-  display: inline;
-}
-.ct-fr {
-  float: right;
-  display: inline;
-}
 .ct-border {
   border: 0px solid #d2d2d2;
 }
