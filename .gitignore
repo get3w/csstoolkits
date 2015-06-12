@@ -1,4 +1,4 @@
 node_modules
 *.map
 html
-jade
+/docs/jade-dome

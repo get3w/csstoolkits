@@ -1,12 +1,47 @@
-- var no_nav = true
-
 doctype html
-html(lang="en")
+html
   head
-    include include/_head.jade
+    meta(charset='UTF-8')
+    title docs index
+    include include/_css.jade
   body
-    include include/_navbar.jade
-    main
-      include index/index_content.html
-    include include/_footer.html
-    include include/_scripts.html
+    include include/_head.jade
+    main.banner
+      .container
+        span.logo-icon C
+        p.lead CssToolkits是基于Material Design，纯HTML,CSS的组件库，用它可以快速构建优美的网站应用。
+        p.lead.ct-clearfix
+          a.download(href='javascript:;') 下载CssToolkits
+        p.version 当前版本： v0.0.1 | 文档更新于：2015-06-12
+    section.featurette
+      .container
+        .featurette-title
+          | 为所有开发者、所有应用场景而设计。
+        p.lead CssToolkits让前端开发更快速、简单。所有开发者都能快速上手、所有项目都适用。
+        hr.half-rule
+    .books
+      .container.ct-row
+        .col.s4
+          .items
+            img(src='images/less.png')
+            h4 预处理脚本
+            p
+              | 虽然可以直接使用 CssToolkits 提供的 CSS 样式表，不要忘记 CssToolkits 的源码是基于最流行的 CSS 预处理脚本Less 开发的。你可以采用预编译的 CSS 文件快速开发.
+        .col.s4
+          .items
+            img(src='images/devices.png')
+            h4 一个框架、多种设备
+            p
+              | 你的网站和应用能在 CssToolkits 的帮助下通过同一份代码快速、有效适配手机、平板、PC 设备，这一切都是 CSS 媒体查询（Media Query）的功劳。
+        .col.s4
+          .items
+            img(src='images/components.png')
+            h4 特性齐全
+            p CssToolkits 提供了全面、美观的文档。你能在这里找到关于 HTML 元素、HTML 和 CSS 组件方面的所有详细文档。
+    section.featurette
+      .container
+        hr.half-rule
+        p.lead CssToolkits 是完全开源的。它的代码托管、开发、维护都依赖 GitHub 平台。
+        a.lookgithub(href='#') 查看 GitHub 项目主页
+        hr.half-rule
+    include include/_foot.jade

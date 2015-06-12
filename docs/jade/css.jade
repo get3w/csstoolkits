@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title docs index
+    include include/_css.jade
+  body
+    header
+      .container.ct-clearfix
+        .logo CssToolkits
+        nav
+          ul.nav.ct-fl
+            li
+              a(href='javascript:;') 起步
+            li
+              a(href='javascript:;') CSS
+            li
+              a(href='javascript:;') 组件
+          ul.nav.ct-fr
+            li
+              a(href='javascript:;') Csstoolkits
+    main.banner
+      .container
+        p.subtitle 起步
+        p.sumary.ct-left CssToolkits是基于Material Design，纯HTML,CSS的组件库，用它可以快速构建优美的网站应用。
+    .content-area
+      .container.ct-row
+        include include/_menu-area.jade
+        include include/_menu-tree.jade
+    include include/_foot.jade
