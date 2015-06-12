@@ -9,6 +9,39 @@
   visibility: hidden;
   font-size: 0;
 }
+.ct-flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.ct-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ct-left {
+  text-align: left;
+}
+.ct-center {
+  text-align: center;
+}
+.ct-right {
+  text-align: right;
+}
+.ct-top {
+  vertical-align: top;
+}
+.ct-middle {
+  vertical-align: middle;
+}
+.ct-bottom {
+  vertical-align: bottom;
+}
 .ct-left {
   text-align: left;
 }
@@ -34,6 +67,54 @@
 .ct-fr {
   float: right;
   display: inline;
+}
+.ct-border {
+  border: 0px solid #d2d2d2;
+}
+.ct-border.\--all {
+  border-width: 1px;
+}
+.ct-border.\--top {
+  border-top-width: 1px;
+}
+.ct-border.\--right {
+  border-right-width: 1px;
+}
+.ct-border.\--bottom {
+  border-bottom-width: 1px;
+}
+.ct-border.\--left {
+  border-left-width: 1px;
+}
+.ct-border.\--thick.\--all {
+  border-width: 4px;
+}
+.ct-border.\--thick.\--top {
+  border-top-width: 4px;
+}
+.ct-border.\--thick.\--right {
+  border-right-width: 4px;
+}
+.ct-border.\--thick.\--bottom {
+  border-bottom-width: 4px;
+}
+.ct-border.\--thick.\--left {
+  border-left-width: 4px;
+}
+.ct-border.\--green {
+  border-color: #A3E9A4;
+}
+.ct-border.\--red {
+  border-color: #f36c60;
+}
+.ct-border.\--blue {
+  border-color: #29b6f6;
+}
+.ct-border.\--yellow {
+  border-color: #fbc02d;
+}
+.ct-border.\--purple {
+  border-color: #6e5494;
 }
 .ct-box {
   border: 1px solid #eee;
@@ -186,6 +267,100 @@ fieldset[disabled] .ct-btn {
   margin-top: 5px;
   margin-left: 0;
 }
+.ct-calendar {
+  width: 350px;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ct-calendar .__head.\--controls:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.ct-calendar .__prev-btn {
+  width: 14.28571429%;
+  height: 50px;
+  line-height: 50px;
+  color: #666666;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+}
+.ct-calendar .__prev-btn:before {
+  font-family: FontAwesome;
+  content: "\f0d9";
+}
+.ct-calendar .__next-btn {
+  width: 14.28571429%;
+  height: 50px;
+  line-height: 50px;
+  color: #666666;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+}
+.ct-calendar .__next-btn:before {
+  font-family: FontAwesome;
+  content: "\f0da";
+}
+.ct-calendar .__date-display {
+  width: 71.42857143%;
+  height: 50px;
+  line-height: 50px;
+  color: #000;
+  text-align: center;
+  float: left;
+}
+.ct-calendar .__body:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.ct-calendar .__cell {
+  width: 14.28571429%;
+  height: 50px;
+  line-height: 50px;
+  color: #666666;
+  border-right: 1px solid #f7f7f7;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ct-calendar .__cell:last-of-type {
+  border: none;
+}
+.ct-calendar .__cell:hover {
+  background: #666;
+  color: #ffffff;
+}
+.ct-calendar .__cell.\--day {
+  color: #cccccc;
+  cursor: auto;
+}
+.ct-calendar .__cell.\--day:hover {
+  background: inherit;
+  color: #cccccc;
+}
+.ct-calendar .__cell.\--prev-month,
+.ct-calendar .__cell.\--next-month {
+  color: #eeeeee;
+}
+.ct-calendar .__cell.\--prev-month:hover,
+.ct-calendar .__cell.\--next-month:hover {
+  color: #ffffff;
+}
+.ct-calendar .__cell.current {
+  border-bottom: 4px solid #20b11d;
+}
 .ct-bg {
   background: #FAFAFA none repeat scroll 0 0;
 }
@@ -265,14 +440,14 @@ fieldset[disabled] .ct-btn {
 }
 .ct-form .text,
 .ct-form .text-sm {
+  float: left;
   width: 70%;
   height: 30px;
+  padding: 3px;
   line-height: 30px;
-  border: 1px solid #d2d2d2;
   text-indent: 7px;
   font-size: 14px;
-  padding: 3px;
-  float: left;
+  border: 1px solid #d2d2d2;
 }
 .ct-form .text-sm {
   width: 192px;
@@ -282,6 +457,7 @@ fieldset[disabled] .ct-btn {
   height: 120px;
   border: 1px solid #d2d2d2;
   font-size: 14px;
+  text-indent: 7px;
   padding: 3px;
   float: left;
 }
@@ -307,14 +483,14 @@ fieldset[disabled] .ct-btn {
   margin-right: 7px;
 }
 .ct-form .combine label {
-  background: #eee;
+  margin-top: 0;
+  margin-right: 3px;
   width: 60px;
   font-size: 14px;
   text-align: center;
   border-right: 1px solid #c9c9c9;
-  margin-top: 0;
+  background: #eee;
   border-radius: 5px 0 0 5px;
-  margin-right: 3px;
 }
 .ct-form .combine input {
   height: 30px;
@@ -1118,7 +1294,16 @@ fieldset[disabled] .ct-btn {
 }
 .ct-select {
   position: relative;
-  z-index: 9;
+  width: 160px;
+}
+.ct-select.full {
+  width: 95%;
+}
+.ct-select.small {
+  min-width: 120px;
+}
+.ct-select.mini {
+  min-width: 60px;
 }
 .ct-select .select-name {
   border: 1px solid #bfbfbf;
@@ -1130,8 +1315,9 @@ fieldset[disabled] .ct-btn {
   cursor: pointer;
 }
 .ct-select .select-name i {
-  vertical-align: middle;
   margin-left: 10px;
+  margin-top: 10px;
+  float: right;
 }
 .ct-select .select-list {
   position: absolute;
@@ -1140,10 +1326,13 @@ fieldset[disabled] .ct-btn {
   background: #fff;
   border-radius: 3px;
   border: 1px solid #bfbfbf;
-  min-width: 120px;
   border-top: 2px solid #20b11d;
   cursor: default;
   display: none;
+  width: 99%;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 9999;
 }
 .ct-select .select-list li {
   height: 30px;
@@ -1172,7 +1361,7 @@ fieldset[disabled] .ct-btn {
 }
 .ct-tips {
   margin: 0 12px 10px;
-  padding: 30px;
+  padding: 15px;
   background: #fff1a6;
   font-family: "Microsoft Yahei";
   font-size: 14px;
@@ -1180,23 +1369,25 @@ fieldset[disabled] .ct-btn {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.ct-tips a.link {
-  display: inline-block;
-  margin-left: 7px;
-  color: #3378b5;
-  text-decoration: none;
+.ct-tips.\--large {
+  padding: 30px;
 }
-.ct-tips a.link:hover {
-  color: #2267a4;
+.ct-tips:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
 }
-.ct-tips .single {
+.ct-tips .__left {
+  float: left;
+  color: #333;
+  text-align: left;
   height: 40px;
   line-height: 40px;
 }
-.ct-tips .icon {
-  font-size: inherit;
-}
-.ct-tips .icon i {
+.ct-tips .__left i {
   float: left;
   display: inline-block;
   width: 40px;
@@ -1212,17 +1403,6 @@ fieldset[disabled] .ct-btn {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-.ct-tips .left {
-  display: table;
-  float: left;
-  height: 40px;
-  font-size: inherit;
-  line-height: 20px;
-  color: #333;
-  text-align: left;
-  vertical-align: middle;
-}
-.ct-tips .right {
-  font-size: inherit;
+.ct-tips .__right {
   float: right;
 }

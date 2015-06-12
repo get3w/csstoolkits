@@ -1,31 +1,17 @@
-// Opacity
-.ct-opacity(@opacity) {
-    opacity: @opacity;
-    // IE8 filter
-    @opacity-ie: (@opacity * 100);
-    filter: ~"alpha(opacity=@{opacity-ie})";
-}
-
-.ct-border-radius(@radius) {
-    -webkit-border-radius: @radius;
-    -moz-border-radius: @radius;
-    border-radius: @radius;
-}
-
 // Block button
-.ct-height(@height) {
+.height(@height) {
     height: @height;
     line-height: @height;
 }
 
-.ct-transition(@times) {
+.transition(@times) {
     -moz-transition: all @times;
     -o-transition: all @times;
     -webkit-transition: all @times;
     transition: all @times;
 } 
 
-.ct-font(@family; @size) {
+.font(@family; @size) {
     font-family: @family;
     font-size: @size;
 }
