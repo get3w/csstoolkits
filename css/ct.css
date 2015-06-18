@@ -1,3 +1,8 @@
+.ct-center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 .ct-clearfix {
   zoom: 1;
 }
@@ -19,28 +24,17 @@
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
+.ct-text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
 .ct-overflow {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.ct-left {
-  text-align: left;
-}
-.ct-center {
-  text-align: center;
-}
-.ct-right {
-  text-align: right;
-}
-.ct-top {
-  vertical-align: top;
-}
-.ct-middle {
-  vertical-align: middle;
-}
-.ct-bottom {
-  vertical-align: bottom;
 }
 .ct-left {
   text-align: left;
@@ -1309,7 +1303,7 @@ fieldset[disabled] .ct-btn {
     margin-left: 91.66667%;
   }
   .ct-row .col.offset-l12 {
-    pxmargin-left: 100%;
+    margin-left: 100%;
   }
 }
 .ct-row:after {
