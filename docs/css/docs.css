@@ -85,17 +85,17 @@ a:hover {
   transition: all 0.3s ease;
 }
 /*Base Style of Mixins*/
-/* line 109, docs.less */
+/* line 115, docs.less */
 .container {
   max-width: 1170px;
   margin: 0 auto;
 }
-/* line 114, docs.less */
+/* line 120, docs.less */
 header {
   height: 50px;
   background: #fff;
 }
-/* line 117, docs.less */
+/* line 123, docs.less */
 header .logo {
   float: left;
   font-size: 18px;
@@ -106,19 +106,19 @@ header .logo {
   font-weight: 700;
   margin-right: 20px;
 }
-/* line 128, docs.less */
+/* line 134, docs.less */
 header .nav li {
   float: left;
   padding: 15px 15px;
   line-height: 20px;
   font-size: 14px;
 }
-/* line 134, docs.less */
+/* line 139, docs.less */
 header .nav li.active,
 header .nav li:hover {
   background: #f1f1f1;
 }
-/* line 141, docs.less */
+/* line 146, docs.less */
 .banner {
   padding: 80px 0;
   position: relative;
@@ -130,10 +130,9 @@ header .nav li:hover {
   background-image: -webkit-linear-gradient(to bottom, #33ca6c 0, #24964f 100%);
   background-image: -o-linear-gradient(to bottom, #33ca6c 0, #24964f 100%);
   background-image: linear-gradient(to bottom, #33ca6c 0, #24964f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@lgreen', endColorstr='@green', GradientType=0);
   background-repeat: repeat-x;
 }
-/* line 155, docs.less */
+/* line 158, docs.less */
 .banner .logo-icon {
   margin: 0 auto 30px;
   background-color: transparent;
@@ -148,42 +147,42 @@ header .nav li:hover {
   cursor: default;
   border-radius: 15%;
 }
-/* line 169, docs.less */
+/* line 172, docs.less */
 .banner .version {
   height: 50px;
   line-height: 50px;
   color: #02742d;
   font-size: 14px;
 }
-/* line 175, docs.less */
+/* line 178, docs.less */
 .banner .subtitle,
 .banner .sumary {
   padding: 0 20px;
 }
-/* line 178, docs.less */
+/* line 182, docs.less */
 .banner .subtitle {
   font-size: 45px;
   text-align: left;
 }
-/* line 182, docs.less */
+/* line 186, docs.less */
 .banner .sumary {
   font-size: 30px;
   color: rgba(255, 255, 255, 0.85);
   font-weight: 100;
 }
-/* line 189, docs.less */
+/* line 193, docs.less */
 .half-rule {
   width: 100px;
   margin: 40px auto;
   border-top: 1px solid #eee;
 }
-/* line 195, docs.less */
+/* line 199, docs.less */
 .lead {
   width: 80%;
   margin: 30px auto 0 auto;
   font-size: 30px;
 }
-/* line 200, docs.less */
+/* line 203, docs.less */
 .lead .download {
   display: inline-block;
   padding: 15px 30px;
@@ -193,12 +192,12 @@ header .nav li:hover {
   border: solid 1px #fff;
   border-radius: 6px;
 }
-/* line 209, docs.less */
+/* line 211, docs.less */
 .lead .download:hover {
   color: #24964f;
   background: #fff;
 }
-/* line 216, docs.less */
+/* line 218, docs.less */
 .featurette {
   text-align: center;
   background-color: #fff;
@@ -235,7 +234,7 @@ header .nav li:hover {
   background: #24964f;
   color: rgba(255, 255, 255, 0.85);
 }
-/* line 252, docs.less */
+/* line 253, docs.less */
 .books {
   padding: 40px 0;
   text-align: center;
@@ -244,24 +243,24 @@ header .nav li:hover {
 .books .items {
   padding: 0 10px;
 }
-/* line 259, docs.less */
+/* line 258, docs.less */
 .books .items h4 {
   font-size: 22px;
   padding-bottom: 10px;
 }
-/* line 260, docs.less */
+/* line 262, docs.less */
 .books .items p {
   text-align: left;
 }
-/* line 262, docs.less */
+/* line 266, docs.less */
 .books img {
   max-width: 100%;
 }
-/* line 268, docs.less */
+/* line 271, docs.less */
 .content-area {
   padding: 80px 0;
 }
-/* line 273, docs.less */
+/* line 274, docs.less */
 .content-area .menu-trees li {
   text-indent: 20px;
   font-size: 14px;
@@ -274,7 +273,7 @@ header .nav li:hover {
 .content-area .menu-trees li:hover {
   border-left: 2px solid #24964f;
 }
-/* line 288, docs.less */
+/* line 287, docs.less */
 .footer {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -282,4 +281,85 @@ header .nav li:hover {
   border-top: 1px solid #e5e5e5;
   text-align: center;
   font-size: 14px;
+}
+/* line 296, docs.less */
+.h100 {
+  height: 150px;
+  line-height: 150px;
+  margin-right: 7px;
+  float: left;
+}
+/* line 303, docs.less */
+.w100 {
+  width: 150px;
+  text-align: center;
+}
+/* line 307, docs.less */
+code,
+kbd,
+pre,
+samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+/* line 310, docs.less */
+.highlight {
+  margin-top: 10px;
+  padding: 9px 14px;
+  margin-bottom: 14px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px;
+}
+/* line 317, docs.less */
+.highlight pre {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  word-break: normal;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+/* line 328, docs.less */
+pre {
+  display: block;
+  padding: 9.5px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/* line 339, docs.less */
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+}
+/* line 349, docs.less */
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+/* line 358, docs.less */
+.area-title {
+  padding-bottom: 10px;
+  border-bottom: solid 1px #dedede;
+}
+/* line 362, docs.less */
+.area-content > p {
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
