@@ -1,3 +1,8 @@
+.ct-center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 .ct-clearfix {
   zoom: 1;
 }
@@ -19,28 +24,17 @@
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
+.ct-text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
 .ct-overflow {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.ct-left {
-  text-align: left;
-}
-.ct-center {
-  text-align: center;
-}
-.ct-right {
-  text-align: right;
-}
-.ct-top {
-  vertical-align: top;
-}
-.ct-middle {
-  vertical-align: middle;
-}
-.ct-bottom {
-  vertical-align: bottom;
 }
 .ct-left {
   text-align: left;
@@ -67,6 +61,30 @@
 .ct-fr {
   float: right;
   display: inline;
+}
+.ct-rounded {
+  border-radius: 6px;
+}
+.ct-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.ct-circle {
+  border-radius: 50%;
+}
+.ct-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .ct-border {
   border: 0px solid #d2d2d2;
@@ -246,7 +264,7 @@ fieldset[disabled] .ct-btn {
   height: 25px;
   line-height: 25px;
   -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
+  pxpxpxpx-moz-border-radius: 50%;
   border-radius: 50%;
   padding: 0;
 }
@@ -256,6 +274,7 @@ fieldset[disabled] .ct-btn {
 .ct-btn.block {
   display: block;
   width: 100%;
+  padding: 0;
 }
 .ct-btn.radius {
   border-radius: 30px;
@@ -1366,7 +1385,7 @@ fieldset[disabled] .ct-btn {
   font-family: "Microsoft Yahei";
   font-size: 14px;
   -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
+  pxpxpxpx-moz-border-radius: 3px;
   border-radius: 3px;
 }
 .ct-tips.\--large {
@@ -1400,7 +1419,7 @@ fieldset[disabled] .ct-btn {
   height: 40px;
   line-height: 40px;
   -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
+  pxpxpxpx-moz-border-radius: 50%;
   border-radius: 50%;
 }
 .ct-tips .__right {

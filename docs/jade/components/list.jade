@@ -1,0 +1,54 @@
+h2.ct-h2.area-title.ct-mt#overview-list LIST
+div.area-content
+  p
+    code .ct-list
+    |列表
+  pre
+    code.html
+      |&lt;div class="ct-list">
+      |  &lt;table>
+      |    &lt;thead>
+      |      &lt;tr>
+      |        &lt;td>
+      |          &lt;input type="checkbox" class="checkbox"/>
+      |        &lt;/td>
+      |        &lt;td>编号&lt;/td>
+      |        &lt;td>姓名&lt;/td>
+      |        &lt;td>电话&lt;/td>
+      |      &lt;/tr>
+      |    &lt;/thead>
+      |    &lt;tbody>
+      |      &lt;tr class="selected">
+      |        &lt;td>
+      |          &lt;input type="checkbox" class="checkbox"/>
+      |        &lt;/td>
+      |        &lt;td>[#1] 2015-06-16 16:58&lt;/td>
+      |        &lt;td>123123&lt;/td>
+      |        &lt;td>13211112222&lt;/td>
+      |      &lt;/tr>
+      |    &lt;/tbody>
+      |  &lt;/table>
+      |&lt;/div>
+  div.container
+    .ct-list
+      table
+        thead
+          tr
+            td
+              input.checkbox(type='checkbox')
+            td 编号
+            td 姓名
+            td 电话
+        tbody
+          tr
+            td
+              input.checkbox(type='checkbox')
+            td [#1] 2015-06-16 16:58
+            td 123123
+            td 13211112222
+          tr.selected
+            td
+              input.checkbox(type='checkbox')
+            td [#1] 2015-06-16 16:58
+            td 123123
+            td 13211112222
