@@ -4,12 +4,24 @@
     border: 1px solid transparent;
     border-radius: 4px;
 
+    &.\--success {
+        background-color: #74C080;
+        border-color: #74C080;
+        color: #fff;
+    }
+
     &.\--success hr {
         border-top-color: #bae0c0;
     }
 
     &.\--success a {
         color: #51b060;
+    }
+
+    &.\--info {
+        background-color: #56CDFC;
+        border-color: #56CDFC;
+        color: #fff;
     }
 
     &.\--info hr {
@@ -48,17 +60,21 @@
         color: #e6e6e6;
     }
 
-    &.__title {
+    a {
+        color: inherit;
+    }
+
+    .__title {
         font-weight: 700;
         display: block;
         font-size: 14px;
     }
 
-    &.__title:not(:only-child) {
+    .__title:not(:only-child) {
         padding-bottom: 4px;
     }
 
-    &.__body {
+    .__body {
         font-size: 13px;
     }
 }
