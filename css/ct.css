@@ -92,11 +92,21 @@
   border: 1px solid transparent;
   border-radius: 4px;
 }
+.ct-alert.\--success {
+  background-color: #74C080;
+  border-color: #74C080;
+  color: #fff;
+}
 .ct-alert.\--success hr {
   border-top-color: #bae0c0;
 }
 .ct-alert.\--success a {
   color: #51b060;
+}
+.ct-alert.\--info {
+  background-color: #56CDFC;
+  border-color: #56CDFC;
+  color: #fff;
 }
 .ct-alert.\--info hr {
   border-top-color: #baebfe;
@@ -126,15 +136,18 @@
 .ct-alert.\--danger a {
   color: #e6e6e6;
 }
-.ct-alert.__title {
+.ct-alert a {
+  color: inherit;
+}
+.ct-alert .__title {
   font-weight: 700;
   display: block;
   font-size: 14px;
 }
-.ct-alert.__title:not(:only-child) {
+.ct-alert .__title:not(:only-child) {
   padding-bottom: 4px;
 }
-.ct-alert.__body {
+.ct-alert .__body {
   font-size: 13px;
 }
 .ct-border {
@@ -457,6 +470,9 @@ fieldset[disabled] .ct-btn {
 .ct-bg.purple {
   color: #fff;
   background-color: #6e5494;
+}
+.ct-color {
+  color: #fff;
 }
 .ct-color.green {
   color: #3bbf38;
