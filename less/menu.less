@@ -1,0 +1,32 @@
+.ct-menu {
+    display: inline-block;
+    min-width: 125px;
+    font-size: 14px;
+    background-color: rgb(247, 247, 247);
+    border: rgb(240, 240, 240);
+    .border-radius (5px);
+    .item {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-bottom: solid 1px rgb(240, 240, 240);
+        box-sizing: border-box;
+        &:last-child {
+            border-bottom: none;
+        }
+        &.active,
+        &.active > a {
+            color: rgb(62, 192, 59);
+        }
+    }
+    &.__lg .item {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 15px;
+    }
+    &.__sm .item {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 13px;
+    }
+}
