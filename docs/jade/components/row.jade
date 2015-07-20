@@ -5,7 +5,7 @@ div.area-content.ct-clearfix
     |用于设置元素栅栏布局，一行一共分十二栏，通过
     code .col
     code .s1`s12
-    |来分配
+    |来分配, 默认页面采用这个样式。即PC端页面。
   pre
     code.html
       |&lt;div class="ct-row">
@@ -87,16 +87,16 @@ div.area-content.ct-clearfix
   div.container.ct-row.ct-center.ct-pb-xs
     .col.s6.offset-s3.ct-bg.red s6 offset-s3
   p
-    code @media only screen and (min-width : 993px) 
-    |用于设置大页面，响应布局。
-    code .l1
+    code @media only screen and (min-width : 602px) and (max-width:960px)
+    |用于设置PAD平版页面，响应布局。
+    code .p1
     | - 
-    code .l12
+    code .p12
     br  
     |同时，也有偏移类可供使用
-    code .offset-l1
+    code .offset-p1
     | - 
-    code .offset-l12
+    code .offset-p12
     br    
     code @media only screen and (min-width : 601px)
     |用于设置小页面的响应布局
