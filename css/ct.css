@@ -1503,26 +1503,26 @@ fieldset[disabled] .ct-btn {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-.ct-menu .item {
+.ct-menu .__item {
   display: block;
   width: 100%;
   padding: 10px;
   border-bottom: solid 1px #f0f0f0;
   box-sizing: border-box;
 }
-.ct-menu .item:last-child {
+.ct-menu .__item:last-child {
   border-bottom: none;
 }
-.ct-menu .item.active,
-.ct-menu .item.active > a {
+.ct-menu .__item.__active,
+.ct-menu .__item.__active > a {
   color: #3ec03b;
 }
-.ct-menu.__lg .item {
+.ct-menu.\--lg .__item {
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 15px;
 }
-.ct-menu.__sm .item {
+.ct-menu.\--sm .__item {
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 13px;

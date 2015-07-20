@@ -5,7 +5,7 @@
     background-color: rgb(247, 247, 247);
     border: rgb(240, 240, 240);
     .border-radius (5px);
-    .item {
+    .__item {
         display: block;
         width: 100%;
         padding: 10px;
@@ -14,17 +14,17 @@
         &:last-child {
             border-bottom: none;
         }
-        &.active,
-        &.active > a {
+        &.__active,
+        &.__active > a {
             color: rgb(62, 192, 59);
         }
     }
-    &.__lg .item {
+    &.\--lg .__item {
         padding-top: 15px;
         padding-bottom: 15px;
         font-size: 15px;
     }
-    &.__sm .item {
+    &.\--sm .__item {
         padding-top: 5px;
         padding-bottom: 5px;
         font-size: 13px;
