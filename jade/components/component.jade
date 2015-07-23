@@ -1,0 +1,102 @@
+h2.ct-h2.area-title.ct-mt#overview-component 组件
+div.area-content.ct-clearfix
+  h4.ct-h4.ct-mt 图片形状
+  p
+    code .ct-rounded
+    |用于设置元素有角为6px的圆角
+    code .ct-thumbnail
+    |用于设置元素带圆角带边框的样式
+    code .ct-circle
+    |用于设置元素元素的形状为圆形
+  pre
+    code.html
+      |&lt;div class="ct-rounded">.ct-rounded&lt;/div>
+      |&lt;div class="ct-thumbnail">.ct-thumbnail&lt;/div>
+      |&lt;div class="ct-circle">.ct-circle&lt;/div>
+
+  div.container.ct-clearfix
+    div.h100.w100.ct-bg.green.ct-rounded ct-rounded
+    div.h100.w100.ct-thumbnail ct-thumbnail
+    div.h100.w100.ct-bg.purple.ct-circle ct-circle
+
+  h4.ct-h4.ct-mt 响应式图片
+  p 
+    |通过为图片添加 
+    code .ct-responsive
+    |类可以让图片支持响应式布局。其实质是为图片设置了 
+    code max-width: 100%;
+    |、 
+    code height: auto; 
+    |和 
+    code display: block;
+    |属性，从而让图片在其父元素中更好的缩放。
+  p
+    |如果需要让使用了 
+    code .ct-responsive 
+    |类的图片水平居中，请使用 
+    code .ct-center-block 
+    |类
+  pre
+    code.html
+      |&lt;img class="ct-responsive" alt="responsive image" />
+      |&lt;img class="ct-responsive ct-center-block" alt="responsive image" />
+
+  h4.ct-h4.ct-mt 清除浮动
+  p
+    code .ct-clearfix
+    |清除浮动
+  pre
+    code.html
+      |&lt;div class="ct-clearfix">clearfix &lt;div>
+
+  h4.ct-h4.ct-mt 两端对齐
+  p
+    code .ct-flex
+    |通过设置父元素的flex属性，子元素可以水平排列，并且两端对齐
+  pre
+    code.html
+      |&lt;div class="ct-flex">
+      | &lt;div class="1">1&lt;/div>
+      | &lt;div class="2">2&lt;/div>
+      | &lt;div class="3">3&lt;/div>
+      |&lt;div>
+  div.container.ct-flex
+    div.h100.w100.ct-bg.green 1
+    div.h100.w100.ct-bg.yellow 2
+    div.h100.w100.ct-bg.purple 3
+
+  h4.ct-h4.ct-mt 文字对齐
+  p
+    code .ct-left
+    |文字水平左对齐
+    code .ct-center
+    |文字水平中对齐
+    code .ct-right
+    |文字水平右对齐
+    code .ct-top
+    |文字垂直上对齐
+    code .ct-middle
+    |文字垂直中对齐
+    code .ct-bottom
+    |文字垂直下对齐
+
+  h4.ct-h4.ct-mt 浮动
+  p
+    code .ct-fl
+    |元素向左浮动
+    code .ct-fr
+    |元素向右浮动
+
+  h4.ct-h4.ct-mt 文本隐藏
+    p
+      code .ct-text-hide
+      |文本隐藏
+      
+  h4.ct-h4.ct-mt 溢出省略
+    p
+      code .ct-overflow
+      |溢出省略，通过设置
+      code overlow:hidden;
+      code text-overflow: ellipsis;
+      code white-space: nowrap;
+      

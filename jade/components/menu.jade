@@ -1,0 +1,58 @@
+h2.ct-h2.area-title.ct-mt#overview-color 下拉菜单ct-menu
+div.area-content
+  p
+    code .ct-menu
+    |用于设置菜单的下拉样式，通过
+    code .--lg
+    code .--sm
+    |来设置菜单项的内填充大小。--lg 上下内填充为15px; --sm上下内填充为5px;
+    code .__active 
+    |为当前选中的菜单项
+  pre
+    code.html
+      |&lt;ul class="ct-menu">
+      |&lt;li class="__item __active">&lt;a href="javascript:;">中文&lt;/a>&lt;/li>
+      |&lt;li class="__item">&lt;a href="javascript:;">English&lt;/a>&lt;/li>
+      |&lt;li class="__item">&lt;a href="javascript:;">繁体中文&lt;/a>&lt;/li>
+      |...
+      |&lt;/ul>
+  div.ct-m
+    ul.ct-menu
+      li.__item.__active 
+        a(href='javascript:;') 中文
+      li.__item
+        a(href='javascript:;') English
+      li.__item
+        a(href='javascript:;') 繁体中文
+  pre
+    code.html
+      |&lt;ul class="ct-menu --lg">
+      |&lt;li class="__item __active">&lt;a href="javascript:;">中文&lt;/a>&lt;/li>
+      |&lt;li class="__item">&lt;a href="javascript:;">English&lt;/a>&lt;/li>
+      |&lt;li class="__item">&lt;a href="javascript:;">繁体中文&lt;/a>&lt;/li>
+      |...
+      |&lt;/ul>
+  div.ct-m
+    ul.ct-menu.--lg
+      li.__item.__active 
+        a(href='javascript:;') 中文
+      li.__item
+        a(href='javascript:;') English
+      li.__item
+        a(href='javascript:;') 繁体中文
+  pre
+    code.html
+      |&lt;ul class="ct-menu --sm">
+      |&lt;li class="__item __active">&lt;a href="javascript:;">中文&lt;/a>&lt;/li>
+      |&lt;li class="__item">&lt;a href="javascript:;">English&lt;/a>&lt;/li>
+      |&lt;li class="__item">&lt;a href="javascript:;">繁体中文&lt;/a>&lt;/li>
+      |...
+      |&lt;/ul>
+  div.ct-m
+    ul.ct-menu.--sm
+      li.__item.__active 
+        a(href='javascript:;') 中文
+      li.__item
+        a(href='javascript:;') English
+      li.__item
+        a(href='javascript:;') 繁体中文

@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-jade": "^1.0.0",
+    "jade": "^1.9.2",
+    "require-dir": "*",
+    "rimraf": "^2.2.8",
+    "run-sequence": "^1.0.2"
+  }
+}

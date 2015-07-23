@@ -1,0 +1,112 @@
+h2.ct-h2.area-title.ct-mt#overview-row 栅栏布局ct-row 
+div.area-content.ct-clearfix
+  p
+    code .ct-row
+    |用于设置元素栅栏布局，一行一共分十二栏，通过
+    code .col
+    code .s1`s12
+    |来分配, 默认页面采用这个样式。即PC端页面。
+  pre
+    code.html
+      |&lt;div class="ct-row">
+      |  &lt;div class="col s6">s6&lt;/div>
+      |  &lt;div class="col s6">s6&lt;/div>
+      |&lt;/div>
+
+  div.container.ct-row.ct-center.ct-pb-xs
+    .col.s1.ct-bg.green s1
+    .col.s1.ct-bg.red   s1
+    .col.s1.ct-bg.green s1
+    .col.s1.ct-bg.red s1
+    .col.s1.ct-bg.green s1
+    .col.s1.ct-bg.red s1
+    .col.s1.ct-bg.green s1
+    .col.s1.ct-bg.red s1
+    .col.s1.ct-bg.green s1
+    .col.s1.ct-bg.red s1
+    .col.s1.ct-bg.green s1
+    .col.s1.ct-bg.red s1
+  div.container.ct-row.ct-center.ct-pb-xs
+    .col.s2.ct-bg.green s2
+    .col.s2.ct-bg.red   s2
+    .col.s2.ct-bg.green s2
+    .col.s2.ct-bg.red   s2
+    .col.s2.ct-bg.green s2
+    .col.s2.ct-bg.red   s2
+  div.container.ct-row.ct-center.ct-pb-xs
+    .col.s3.ct-bg.green s3
+    .col.s3.ct-bg.red   s3
+    .col.s3.ct-bg.green s3
+    .col.s3.ct-bg.red   s3
+  div.container.ct-row.ct-center.ct-pb-xs
+    .col.s4.ct-bg.green s4
+    .col.s4.ct-bg.red   s4
+    .col.s4.ct-bg.green s4
+  div.container.ct-row.ct-center.ct-pb-xs
+    .col.s5.ct-bg.green s5
+    .col.s5.ct-bg.red   s5
+    .col.s2.ct-bg.green s2
+  div.container.ct-row.ct-center.ct-pb-xs
+    .col.s6.ct-bg.green s6
+    .col.s6.ct-bg.red   s6
+  div.container.ct-row.ct-center.ct-pb-xs
+    .col.s7.ct-bg.green s7
+    .col.s5.ct-bg.red   s5
+  div.container.ct-row.ct-center.ct-pb-xs
+    .col.s8.ct-bg.green s8
+    .col.s4.ct-bg.red   s4
+  div.container.ct-row.ct-center.ct-pb-xs
+    .col.s9.ct-bg.green s9
+    .col.s3.ct-bg.red   s3
+  div.container.ct-row.ct-center.ct-pb-xs
+    .col.s10.ct-bg.green s10
+    .col.s2.ct-bg.red   s2
+  div.container.ct-row.ct-center.ct-pb-xs
+    .col.s11.ct-bg.green s11
+    .col.s1.ct-bg.red   s1
+  div.container.ct-row.ct-center.ct-pb-xs
+    .col.s12.ct-bg.green s12
+
+  p
+    |偏移（Offsets）
+    code .offset-s1
+    |`
+    code .offset-s12
+  pre
+    code.html
+      |&lt;div class="ct-row">
+      |  &lt;div class="col s4 offset-s4">s4 offset-s4&lt;/div>
+      |  &lt;div class="col s4">s4&lt;/div>
+      |&lt;/div>
+  div.container.ct-row.ct-center.ct-pb-xs
+    .col.s4.offset-s4.ct-bg.red s4 offset-s4
+    .col.s4.ct-bg.green s11
+  div.container.ct-row.ct-center.ct-pb-xs
+    .col.s3.offset-s3.ct-bg.red s3 offset-s3
+    .col.s3.offset-s3.ct-bg.red s3 offset-s3
+  div.container.ct-row.ct-center.ct-pb-xs
+    .col.s6.offset-s3.ct-bg.red s6 offset-s3
+  p
+    code @media only screen and (min-width : 602px) and (max-width:960px)
+    |用于设置PAD平版页面，响应布局。
+    code .p1
+    | - 
+    code .p12
+    br  
+    |同时，也有偏移类可供使用
+    code .offset-p1
+    | - 
+    code .offset-p12
+    br    
+    code @media only screen and (min-width : 601px)
+    |用于设置小页面的响应布局
+
+    br  
+    code .m1
+    | - 
+    code .m12
+    |同时，也有偏移类可供使用
+    code .offset-m1
+    | - 
+    code .offset-m12 
+    

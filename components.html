@@ -1,0 +1,111 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>CssToolkits 中文文档</title><!-- link(href='http://git.hub/node_modules/font-awesome/css/font-awesome.min.css', rel='stylesheet')--><!-- link(href='http://git.hub/node_modules/normalize.css/normalize.css', rel='stylesheet')--><!--link(href='http://git.hub/csstoolkits/css/ct.min.css', rel='stylesheet')--><link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"><link rel="icon" type="image/png" href="images/favicon.png"><link href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"><link href="http://cdn.bootcss.com/normalize/3.0.3/normalize.min.css" rel="stylesheet"><link href="http://git.hub/csstoolkits/css/ct.min.css" rel="stylesheet"><link href="css/ct.min.css" rel="stylesheet"><link href="css/docs.css" rel="stylesheet"></head><body><header><div class="container ct-clearfix"><div class="logo">CssToolkits</div><nav><ul class="nav ct-fl"><li><a href="index.html">首页</a></li><li><a href="css.html">CSS</a></li><li><a href="components.html">组件</a></li></ul><ul class="nav ct-fr"><li><a href="//csstoolkits.com">CssToolkits</a></li></ul></nav></div></header><main class="banner"><div class="container"><p class="subtitle">组件</p><p class="sumary ct-left">CssToolkits是基于Material Design，纯HTML,CSS的组件库，用它可以快速构建优美的网站应用。</p></div></main><div class="content-area"><div class="container ct-row"><div class="col s10"><div class="areas"><h2 id="overview-box" class="ct-h2 area-title ct-mt">盒子box</h2><div class="area-content"><p><code>.ct-box</code>用于制作盒子模型 <code>.ct-box</code>由<code>.head</code>和<code>.body</code>组成。</p><pre><code class="html">&lt;div class="ct-box">
+    &lt;div class="head ct-clearfix">Study Plan  &lt;/div>
+    &lt;div class="body ct-p">About Us Contents&lt;/div>
+&lt;/div></code></pre><div class="ct-box"><div class="head ct-clearfix">Study Plan  </div><div class="body ct-p">About Us Contents    </div></div></div><h2 id="overview-btn" class="ct-h2 area-title ct-mt">按钮 btn</h2><div class="area-content"><p><code>.ct-btn</code>按钮，我们可以利用 <code>.ct-btn</code>直接写出各种大小，各种颜色的按钮。</p><pre><code class="html">&lt;a class="ct-btn" href="javascript:;"> .ct-btn &lt;/a>
+&lt;a class="ct-btn green" href="javascript:;"> .ct-btn .green &lt;/a>
+&lt;a class="ct-btn red" href="javascript:;"> .ct-btn .red &lt;/a>
+&lt;a class="ct-btn blue" href="javascript:;"> .ct-btn .blue &lt;/a></code></pre><div class="container"><a href="javascript:;" class="ct-btn">.ct-btn</a><a href="javascript:;" class="ct-btn green"> 
+.ct-btn .green</a><a href="javascript:;" class="ct-btn red">.ct-btn .red</a><a href="javascript:;" class="ct-btn blue">.ct-btn .blue</a></div><p>通过 <code>.large</code><code>.small</code><code>.mini</code>设置按钮的大小</p><pre><code class="html">&lt;a class="ct-btn large" href="javascript:;"> .ct-btn .large&lt;/a>
+&lt;a class="ct-btn green" href="javascript:;"> .ct-btn .green &lt;/a>
+&lt;a class="ct-btn red small" href="javascript:;"> .ct-btn .red .small&lt;/a>
+&lt;a class="ct-btn blue mini" href="javascript:;"> .ct-btn .blue .mini&lt;/a></code></pre><div class="container"><a href="javascript:;" class="ct-btn large">.ct-btn .large</a><a href="javascript:;" class="ct-btn green"> 
+.ct-btn .green</a><a href="javascript:;" class="ct-btn red small">.ct-btn .red .small</a><a href="javascript:;" class="ct-btn blue mini">mi</a></div><p>通过 <code>.radius</code>设置按钮为大圆角按钮</p><pre><code class="html">&lt;a class="ct-btn radius" href="javascript:;">.ct-btn .radius&lt;/a>
+&lt;a class="ct-btn green radius" href="javascript:;">.ct-btn .green .radius &lt;/a>
+&lt;a class="ct-btn red radius" href="javascript:;">.ct-btn .red .radius&lt;/a>
+&lt;a class="ct-btn blue radius" href="javascript:;">.ct-btn .blue .radius&lt;/a></code></pre><div class="container"><a href="javascript:;" class="ct-btn radius">.ct-btn .radius</a><a href="javascript:;" class="ct-btn green radius"> 
+.ct-btn .green .radius</a><a href="javascript:;" class="ct-btn red radius">.ct-btn .red .radius</a><a href="javascript:;" class="ct-btn blue radius">.ct-btn .blue .radius</a></div><p>通过 <code>.block</code>设置按钮100%显示</p><pre><code class="html">&lt;a class="ct-btn block" href="javascript:;">.ct-btn .block&lt;/a>
+&lt;a class="ct-btn green block" href="javascript:;">.ct-btn .green .block &lt;/a>
+&lt;a class="ct-btn red block" href="javascript:;">.ct-btn .red .block&lt;/a>
+&lt;a class="ct-btn blue block" href="javascript:;">.ct-btn .blue .block&lt;/a></code></pre><div class="container"><a href="javascript:;" class="ct-btn block">.ct-btn .block</a><a href="javascript:;" class="ct-btn green block"> 
+.ct-btn .green .block</a><a href="javascript:;" class="ct-btn red block">.ct-btn .red .block</a><a href="javascript:;" class="ct-btn blue block">.ct-btn .blue .block</a></div><p>通过 <code>.disabled</code>设置按钮为锁定状态，通过<code>.focus</code>设置按钮为获取焦点状态。</p><pre><code class="html">&lt;a class="ct-btn disabled" href="javascript:;">.disabled&lt;/a>
+&lt;a class="ct-btn" disabled href="javascript:;">disabled&lt;/a>
+&lt;a class="ct-btn focus" href="javascript:;">.focus&lt;/a></code></pre><div class="container"><a href="javascript:;" class="ct-btn green disabled">.ct-btn .disabled</a><a href="javascript:;" disabled class="ct-btn green"> 
+.ct-btn .green</a><a href="javascript:;" class="ct-btn green focus">.ct-btn .focus</a></div><p>通过 <code>font-awesome</code>为按钮设置图标<code>&lt;i class="fa fa-github">&lt;/i></code></p><pre><code class="html">&lt;a class="ct-btn green" href="javascript:;">&lt;i class="fa fa-github">&lt;/i>Github&lt;/a>
+&lt;a class="ct-btn green" href="javascript:;">&lt;i class="fa fa-wechat">&lt;/i>wechat&lt;/a>
+&lt;a class="ct-btn green" href="javascript:;">&lt;i class="fa fa-weibo">&lt;/i>weibo&lt;/a></code></pre><div class="container"><a href="javascript:;" class="ct-btn green"><i class="fa fa-github"></i>.ct-btn .green</a><a href="javascript:;" class="ct-btn green"> <i class="fa fa-weibo"></i>.ct-btn .green</a><a href="javascript:;" class="ct-btn green"><i class="fa fa-wechat"></i>.ct-btn .green</a></div></div><h2 id="overview-form" class="ct-h2 area-title ct-mt">表格form</h2><div class="area-content"><p><code>.ct-form</code>用于设置表单的样式</p><pre><code class="html">&lt;div class="ct-form">
+&lt;div class="row">
+ &lt;label class="label">活动名称&lt;/label>
+ &lt;input name="title" type="text" class="text" placeholder="请输入活动名称" value="">
+&lt;/div>
+&lt;/div></code></pre><div class="container"><div class="ct-form"><div class="row"><label class="label">活动名称</label><input name="title" type="text" placeholder="请输入活动名称" value="" class="text"></div></div></div><p>通过添加<code>.error</code>用于设置表单的报错样式</p><pre><code class="html">&lt;div class="ct-form">
+...
+ &lt;input name="title" type="text" class="text error" placeholder="请输入活动名称" value="">
+...
+&lt;/div></code></pre><div class="container"><div class="ct-form"><div class="row"><label class="label">活动名称</label><input name="title" type="text" placeholder="请输入活动名称" value="" class="text error"></div></div></div><p><code>.text-sm</code>用于设置小号表单样式<code>.textarea</code>用于设置多行表单样式</p><pre><code class="html">&lt;div class="ct-form">
+ &lt;div class="row">
+   &lt;label class="label">活动名称&lt;/label>
+   &lt;textarea placeholder="多行表单" class="textarea">&lt;/textarea>
+ &lt;/div>
+ &lt;div class="row">
+   &lt;label class="label">活动名称&lt;/label>
+   &lt;input name="title" type="text" placeholder="请输入活动名称" value="" class="text-sm"/>
+ &lt;/div>
+&lt;/div></code></pre><div class="container"><div class="ct-form"><div class="row"><label class="label">活动名称</label><textarea placeholder="多行表单" class="textarea"></textarea></div><div class="row"><label class="label">活动名称</label><input name="title" type="text" placeholder="请输入活动名称" value="" class="text-sm"></div></div></div><p>通过给<code>.ct-form</code>添加类<code>.mini</code>获取小号的表单</p><pre><code class="html">&lt;div class="ct-form mini">
+ ...
+&lt;/div></code></pre><div class="container">    <div class="ct-form mini"><div class="row"><label class="label">活动名称</label><input placeholder="多行表单" class="text"></div><div class="row"><label class="label">活动名称</label><input name="title" type="text" placeholder="请输入活动名称" value="" class="text-sm"></div></div></div></div><h2 id="overview-calendar" class="ct-h2 area-title ct-mt">日历calendar</h2><div class="area-content"><p><code>.ct-calendar</code>日历插件</p><pre><code class="html"></code>&lt;div class="ct-calendar">
+&lt;div class="__head --controls">
+&lt;div class="__prev-btn">&lt;/div>
+&lt;div class="__date-display">十一月 2015&lt;/div>
+&lt;div class="__next-btn">&lt;/div>
+&lt;/div>
+&lt;div class="__head --days-of-week">
+&lt;div class="__cell --day">三&lt;/div>
+&lt;/div>
+&lt;div class="__body">
+&lt;div class="__cell __cell --prev-month">&lt;span>1&lt;/span>&lt;/div>
+...
+&lt;div class="__cell __cell --this-month">&lt;span class="__day-label">29&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;/div></pre><div class="container">     <div class="ct-calendar"><div class="__head --controls"><div class="__prev-btn"></div><div class="__date-display">十一月 2015</div><div class="__next-btn"></div></div><div class="__head --days-of-week"><div class="__cell --day">三</div><div class="__cell --day">四</div><div class="__cell --day">五</div><div class="__cell --day">六</div><div class="__cell --day">日</div><div class="__cell --day">一</div><div class="__cell --day">二</div></div><div class="__body"><div class="__cell __cell --prev-month"><span>1</span></div><div class="__cell __cell --prev-month"><span>2</span></div><div class="__cell __cell --prev-month"><span>3</span></div><div class="__cell __cell --prev-month"><span>4</span></div><div class="__cell __cell --prev-month"><span>5</span></div><div class="__cell __cell --prev-month"><span>6</span></div><div class="__cell __cell --prev-month"><span>7</span></div><div class="__cell __cell --prev-month"><span>8</span></div><div class="__cell __cell --prev-month"><span>9</span></div><div class="__cell __cell --prev-month"><span>10</span></div><div class="__cell __cell --prev-month"><span>11</span></div><div class="__cell __cell --prev-month"><span>12</span></div><div class="__cell __cell --prev-month"><span>13</span></div><div class="__cell __cell --prev-month"><span>14</span></div><div class="__cell __cell --prev-month"><span>15</span></div><div class="__cell __cell --prev-month"><span>16</span></div><div class="__cell __cell --prev-month"><span>17</span></div><div class="__cell __cell --prev-month"><span>18</span></div><div class="__cell __cell --prev-month"><span>19</span></div><div class="__cell __cell --prev-month"><span>20</span></div><div class="__cell __cell --prev-month"><span>21</span></div><div class="__cell __cell --prev-month"><span>22</span></div><div class="__cell __cell --prev-month"><span>23</span></div><div class="__cell __cell --prev-month"><span>24</span></div><div class="__cell __cell --prev-month"><span>25</span></div><div class="__cell __cell --prev-month"><span>26</span></div><div class="__cell __cell --prev-month"><span>27</span></div><div class="__cell __cell"><span>28</span></div><div class="__cell __cell --this-month"><span class="__day-label">29</span></div><div class="__cell __cell --prev-month"><span>30</span></div><div class="__cell __cell --prev-month"><span>31</span></div><div class="__cell __cell --prev-month"><span>1</span></div><div class="__cell __cell --prev-month"><span>2</span></div><div class="__cell __cell --prev-month"><span>3</span></div><div class="__cell __cell --prev-month"><span>4</span></div></div></div></div></div><h2 id="overview-list" class="ct-h2 area-title ct-mt">LIST</h2><div class="area-content"><p><code>.ct-list</code>列表</p><pre><code class="html">&lt;div class="ct-list">
+ &lt;table>
+   &lt;thead>
+     &lt;tr>
+       &lt;td>
+         &lt;input type="checkbox" class="checkbox"/>
+       &lt;/td>
+       &lt;td>编号&lt;/td>
+       &lt;td>姓名&lt;/td>
+       &lt;td>电话&lt;/td>
+     &lt;/tr>
+   &lt;/thead>
+   &lt;tbody>
+     &lt;tr class="selected">
+       &lt;td>
+         &lt;input type="checkbox" class="checkbox"/>
+       &lt;/td>
+       &lt;td>[#1] 2015-06-16 16:58&lt;/td>
+       &lt;td>123123&lt;/td>
+       &lt;td>13211112222&lt;/td>
+     &lt;/tr>
+   &lt;/tbody>
+ &lt;/table>
+&lt;/div></code></pre><div class="container"><div class="ct-list"><table><thead><tr><td><input type="checkbox" class="checkbox"></td><td>编号</td><td>姓名</td><td>电话</td></tr></thead><tbody><tr><td><input type="checkbox" class="checkbox"></td><td>[#1] 2015-06-16 16:58</td><td>123123</td><td>13211112222</td></tr><tr class="selected"><td><input type="checkbox" class="checkbox"></td><td>[#1] 2015-06-16 16:58</td><td>123123</td><td>13211112222</td></tr></tbody></table></div></div></div><h2 id="overview-row" class="ct-h2 area-title ct-mt">栅栏布局ct-row </h2><div class="area-content ct-clearfix"><p><code>.ct-row</code>用于设置元素栅栏布局，一行一共分十二栏，通过<code>.col</code><code>.s1`s12</code>来分配, 默认页面采用这个样式。即PC端页面。</p><pre><code class="html">&lt;div class="ct-row">
+ &lt;div class="col s6">s6&lt;/div>
+ &lt;div class="col s6">s6&lt;/div>
+&lt;/div></code></pre><div class="container ct-row ct-center ct-pb-xs"><div class="col s1 ct-bg green">s1</div><div class="col s1 ct-bg red">  s1</div><div class="col s1 ct-bg green">s1</div><div class="col s1 ct-bg red">s1</div><div class="col s1 ct-bg green">s1</div><div class="col s1 ct-bg red">s1</div><div class="col s1 ct-bg green">s1</div><div class="col s1 ct-bg red">s1</div><div class="col s1 ct-bg green">s1</div><div class="col s1 ct-bg red">s1</div><div class="col s1 ct-bg green">s1</div><div class="col s1 ct-bg red">s1</div></div><div class="container ct-row ct-center ct-pb-xs"><div class="col s2 ct-bg green">s2</div><div class="col s2 ct-bg red">  s2</div><div class="col s2 ct-bg green">s2</div><div class="col s2 ct-bg red">  s2</div><div class="col s2 ct-bg green">s2</div><div class="col s2 ct-bg red">  s2</div></div><div class="container ct-row ct-center ct-pb-xs"><div class="col s3 ct-bg green">s3</div><div class="col s3 ct-bg red">  s3</div><div class="col s3 ct-bg green">s3</div><div class="col s3 ct-bg red">  s3</div></div><div class="container ct-row ct-center ct-pb-xs"><div class="col s4 ct-bg green">s4</div><div class="col s4 ct-bg red">  s4</div><div class="col s4 ct-bg green">s4</div></div><div class="container ct-row ct-center ct-pb-xs"><div class="col s5 ct-bg green">s5</div><div class="col s5 ct-bg red">  s5</div><div class="col s2 ct-bg green">s2</div></div><div class="container ct-row ct-center ct-pb-xs"><div class="col s6 ct-bg green">s6</div><div class="col s6 ct-bg red">  s6</div></div><div class="container ct-row ct-center ct-pb-xs"><div class="col s7 ct-bg green">s7</div><div class="col s5 ct-bg red">  s5</div></div><div class="container ct-row ct-center ct-pb-xs"><div class="col s8 ct-bg green">s8</div><div class="col s4 ct-bg red">  s4</div></div><div class="container ct-row ct-center ct-pb-xs"><div class="col s9 ct-bg green">s9</div><div class="col s3 ct-bg red">  s3</div></div><div class="container ct-row ct-center ct-pb-xs"><div class="col s10 ct-bg green">s10</div><div class="col s2 ct-bg red">  s2</div></div><div class="container ct-row ct-center ct-pb-xs"><div class="col s11 ct-bg green">s11</div><div class="col s1 ct-bg red">  s1</div></div><div class="container ct-row ct-center ct-pb-xs"><div class="col s12 ct-bg green">s12</div></div><p>偏移（Offsets）<code>.offset-s1</code>`<code>.offset-s12</code></p><pre><code class="html">&lt;div class="ct-row">
+ &lt;div class="col s4 offset-s4">s4 offset-s4&lt;/div>
+ &lt;div class="col s4">s4&lt;/div>
+&lt;/div></code></pre><div class="container ct-row ct-center ct-pb-xs"><div class="col s4 offset-s4 ct-bg red">s4 offset-s4</div><div class="col s4 ct-bg green">s11</div></div><div class="container ct-row ct-center ct-pb-xs"><div class="col s3 offset-s3 ct-bg red">s3 offset-s3</div><div class="col s3 offset-s3 ct-bg red">s3 offset-s3</div></div><div class="container ct-row ct-center ct-pb-xs"><div class="col s6 offset-s3 ct-bg red">s6 offset-s3</div></div><p><code>@media only screen and (min-width : 602px) and (max-width:960px)</code>用于设置PAD平版页面，响应布局。<code>.p1</code>- <code>.p12</code><br>同时，也有偏移类可供使用<code>.offset-p1</code>- <code>.offset-p12</code><br><code>@media only screen and (min-width : 601px)</code>用于设置小页面的响应布局<br><code>.m1</code>- <code>.m12</code>同时，也有偏移类可供使用<code>.offset-m1</code>- <code>.offset-m12 </code></p></div><h2 id="overview-alert" class="ct-h2 area-title">alert</h2><div class="area-content"><p><code>.ct-alert</code>用于设置警报样式，设置警报样式需要同时配合 <code>.--success</code><code>.--info </code><code>.--warning </code><code>.--danger</code>来设置样式</p><pre><code class="html">&lt;div class="ct-alert --success">C&lt;/div></code></pre><div class="ct-alert --success">success</div><pre><code class="html">&lt;div class="ct-alert --info">info&lt;/div></code></pre><div class="ct-alert --info">info</div><pre><code class="html">&lt;div class="ct-alert --warning">C&lt;/div></code></pre><div class="ct-alert --warning">warning</div><pre><code class="html">&lt;div class="ct-alert --danger">C&lt;/div></code></pre><div class="ct-alert --danger">danger</div><p>同时可以添加子元素<code>.__title</code><code>.__body</code>来区分内容的不同属性，当然
+.__title 和 .__body不一定要同时出现，也可以一个都不出现。<code>hr</code>在这里是一个分隔线的作用。</p><pre><code class="html">&lt;div class="ct-alert --info">
+&lt;div class="__title">标题&lt;/div>
+&lt;hr>
+&lt;div class="__body">
+  正文  &lt;a href="#">带链接的正文&lt;a>
+&lt;/div>
+&lt;/div></code></pre><div class="ct-alert --info"><div class="__title">标题</div><hr><div class="__body">正文<a href="#">带链接的正文</a></div></div></div><h2 id="overview-color" class="ct-h2 area-title ct-mt">下拉菜单ct-menu</h2><div class="area-content"><p><code>.ct-menu</code>用于设置菜单的下拉样式，通过<code>.--lg</code><code>.--sm</code>来设置菜单项的内填充大小。--lg 上下内填充为15px; --sm上下内填充为5px;<code>.__active </code>为当前选中的菜单项</p><pre><code class="html">&lt;ul class="ct-menu">
+&lt;li class="__item __active">&lt;a href="javascript:;">中文&lt;/a>&lt;/li>
+&lt;li class="__item">&lt;a href="javascript:;">English&lt;/a>&lt;/li>
+&lt;li class="__item">&lt;a href="javascript:;">繁体中文&lt;/a>&lt;/li>
+...
+&lt;/ul></code></pre><div class="ct-m"><ul class="ct-menu"><li class="__item __active"> <a href="javascript:;">中文</a></li><li class="__item"><a href="javascript:;">English</a></li><li class="__item"><a href="javascript:;">繁体中文</a></li></ul></div><pre><code class="html">&lt;ul class="ct-menu --lg">
+&lt;li class="__item __active">&lt;a href="javascript:;">中文&lt;/a>&lt;/li>
+&lt;li class="__item">&lt;a href="javascript:;">English&lt;/a>&lt;/li>
+&lt;li class="__item">&lt;a href="javascript:;">繁体中文&lt;/a>&lt;/li>
+...
+&lt;/ul></code></pre><div class="ct-m"><ul class="ct-menu --lg"><li class="__item __active"> <a href="javascript:;">中文</a></li><li class="__item"><a href="javascript:;">English</a></li><li class="__item"><a href="javascript:;">繁体中文</a></li></ul></div><pre><code class="html">&lt;ul class="ct-menu --sm">
+&lt;li class="__item __active">&lt;a href="javascript:;">中文&lt;/a>&lt;/li>
+&lt;li class="__item">&lt;a href="javascript:;">English&lt;/a>&lt;/li>
+&lt;li class="__item">&lt;a href="javascript:;">繁体中文&lt;/a>&lt;/li>
+...
+&lt;/ul></code></pre><div class="ct-m"><ul class="ct-menu --sm"><li class="__item __active"> <a href="javascript:;">中文</a></li><li class="__item"><a href="javascript:;">English</a></li><li class="__item"><a href="javascript:;">繁体中文</a></li></ul></div></div></div></div><div class="col s2"><ul class="menu-trees"><li><a href="#overview-box">box</a></li><li><a href="#overview-btn">btn</a></li><li><a href="#overview-form">form</a></li><li><a href="#overview-calendar">calendar</a></li><li><a href="#overview-list">list</a></li><li><a href="#overview-row">row</a></li><li><a href="#overview-alert">alert</a></li></ul></div></div></div><footer class="footer"><div class="container"><p>当前版本： v0.0.1</p></div></footer></body></html>
