@@ -259,7 +259,7 @@
   box-shadow: 0 3px 4px #CCC;
   border: 0 none;
   text-decoration: none;
-  font-family: "Microsoft YaHei";
+  cursor: pointer;
   height: 40px;
   line-height: 40px;
   -moz-transition: all 0.5s;
@@ -1490,17 +1490,23 @@ fieldset[disabled] .ct-btn {
   border-bottom: 0 none;
 }
 .ct-tips {
-  margin: 0 12px 10px;
+  margin: 10px;
   padding: 15px;
   background: #fff1a6;
-  font-family: "Microsoft Yahei";
   font-size: 14px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  color: #333;
+  text-align: left;
+  height: 40px;
+  line-height: 40px;
 }
 .ct-tips.\--large {
   padding: 30px;
+}
+.ct-tips.\--small {
+  padding: 10px;
 }
 .ct-tips:after {
   clear: both;
@@ -1510,16 +1516,7 @@ fieldset[disabled] .ct-btn {
   visibility: hidden;
   font-size: 0;
 }
-.ct-tips .__left {
-  float: left;
-  color: #333;
-  text-align: left;
-  height: 40px;
-  line-height: 40px;
-}
-.ct-tips .__left i {
-  float: left;
-  display: inline-block;
+.ct-tips i {
   width: 40px;
   text-align: center;
   margin-right: 10px;
@@ -1532,9 +1529,6 @@ fieldset[disabled] .ct-btn {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-}
-.ct-tips .__right {
-  float: right;
 }
 .ct-menu {
   display: inline-block;
