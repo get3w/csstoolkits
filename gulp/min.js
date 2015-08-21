@@ -10,11 +10,11 @@ var combiner = require('stream-combiner2');
 gulp.task('min', function () {
 
     var combined = combiner.obj([
-        gulp.src(['./less/all.less']),
+        gulp.src(['./less/csstoolkits.less']),
         less(),
         cssmin(),
         concat('ct.min.css'),
-        gulp.dest('./css')
+        gulp.dest('./dist/css')
     ]);
 
     combined.on('error', console.error.bind(console));
