@@ -1,9 +1,9 @@
 .ct-alert {
-    padding: 10px;
     border: 1px solid transparent;
-    border-radius: 4px;
-    text-align: center;
-    font-size: 14px;
+    font-size: @font-size-base;
+    .border-radius(4px);
+    .text-center();
+    .p-sm();
 
     &.\--success {
         background-color: #74C080;
@@ -68,7 +68,7 @@
     .__title {
         font-weight: 700;
         display: block;
-        font-size: 14px;
+        font-size: @font-size-base;
     }
 
     .__title:not(:only-child) {
@@ -76,6 +76,6 @@
     }
 
     .__body {
-        font-size: 13px;
+        font-size: (@font-size-base - 1);
     }
 }

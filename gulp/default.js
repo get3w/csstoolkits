@@ -1,3 +1,7 @@
 var gulp = require('gulp');
 
-gulp.task('default', ['css', 'min']);
+gulp.task('default', [
+    'css', 
+    'autoprefixer', 
+    'min'
+]);

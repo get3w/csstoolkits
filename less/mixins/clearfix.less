@@ -7,21 +7,18 @@
 //    that are clearfixed.
 // 2. The use of `table` rather than `block` is only necessary if using
 //    `:before` to contain the top-margins of child elements.
-
 .clearfix() {
-  &:before,
-  &:after {
-    content: " "; // 1
-    display: table; // 2
-  }
-  &:after {
-    clear: both;
-  }
+    &:before,
+    &:after {
+        content: " "; // 1
+        display: table; // 2
+    }
+    &:after {
+        clear: both;
+    }
 }
 
-//clearfix
-
-.ct-clearfix {
+.clear() {
     zoom: 1;
 
     &:after {
