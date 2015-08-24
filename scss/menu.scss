@@ -1,0 +1,36 @@
+.ct-menu {
+    display: inline-block;
+    min-width: 125px;
+    font-size: 14px;
+    background-color: rgb(247, 247, 247);
+    border: rgb(240, 240, 240);
+    @include border-radius (5px);
+    .__item {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-bottom: solid 1px rgb(240, 240, 240);
+        box-sizing: border-box;
+        color: #8d8f8f;
+        line-height: 14px;
+        &:last-child {
+            border-bottom: none;
+        }
+        &.__active,
+        &.__active > a {
+            color: rgb(62, 192, 59);
+        }
+    }
+    &.\--lg .__item {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 15px;
+        line-height: 15px;
+    }
+    &.\--sm .__item {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 13px;
+        line-height: 13px;
+    }
+}
