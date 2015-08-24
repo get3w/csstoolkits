@@ -1,38 +1,39 @@
 .ct-tips {
-    margin: 0 12px 10px;
+    margin: 10px;
+    padding: 15px;
     background: #fff1a6;
-    .font("Microsoft Yahei";14px;);
+    font-size: 14px;
     .border-radius(3px);
-    .pb();
-    .clear();
-
+    color: #333;
+    text-align: left;
+    .height(40px);
 
     &.\--large {
         padding: 30px;
     }
 
-    .__left {
-        .fl();
-        color: #333;
-        .text-left();
-        .height(40px);
-
-        i {
-            .fl();
-            display: inline-block;
-            width: 40px;
-            color: @white;
-            font-size: 30px;
-            font-style: normal;
-            background: #ff7e00;
-            .height(40px);
-            .border-radius(50%);
-            .text-center();
-            .mr-sm();
-        }
+    &.\--small {
+        padding: 10px;
     }
 
-    .__right {
-        float: right;
+    &:after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    i {
+        width: 40px;
+        text-align: center;
+        margin-right: 10px;
+        color: #fff;
+        font-size: 30px;
+        font-style: normal;
+        background: #ff7e00;
+        .height(40px);
+        .border-radius(50%);
     }
 }
