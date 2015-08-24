@@ -1,0 +1,31 @@
+//Rounded six pixel
+.ct-rounded {
+  .border-radius(6px); 
+}
+.ct-thumbnail {
+  display: inline-block;
+  padding: 4px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid @grey-400;
+  background-color: @white;
+  line-height: 1.4;
+  transition: all .2s ease-in-out;
+  .border-radius(4px);
+}
+//Elements can be displayed in a circle
+.ct-circle {
+  .border-radius(50%);
+}
+//When the image is out of the window, it will automatically zoom.
+.ct-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+//Picture in the window area 100% show
+.ct-img100 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
