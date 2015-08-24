@@ -3,10 +3,11 @@
  * Copyright 2015-2016 Get3w.com, Inc.
  * Licensed under MIT
  */
-
+@charset "UTF-8";
 // Core variables and mixins
 @import "material-ui-color.scss";
 @import "variables.scss";
+@import "gird.scss";
 @import "mixins.scss";
 
 // Reset and dependencies
@@ -17,13 +18,9 @@
 @import "box.scss";
 // Components
 
-
-
 // Components w/ JavaScript
 
-
 // Utility classes
-
 @import "alert.scss";
 @import "border.scss";
 @import "flex.scss";
