@@ -1,8 +1,8 @@
 .ct-form {
-    background: #fff;
+    background: @white;
     padding: 15px;
 
-    .row {
+    .__row {
         margin-bottom: 15px;
         zoom: 1;
 
@@ -16,24 +16,24 @@
         }
     }
 
-    .label {
-        font-size: 14px;
+    .__label {
+        font-size: @font-size-base;
         min-width: 100px;
         margin-right: 20px;
         margin-top: 10px;
         float: left;
     }
 
-    .label-sm:extend(.ct-form .label) {
+    .__label-sm:extend(.ct-form .__label) {
         min-width: 30px;
         margin-right: 10px;
     }
 
-    .label-lg:extend(.ct-form .label) {
+    .__label-lg:extend(.ct-form .__label) {
         min-width: 150px;
     }
 
-    .text {
+    .__text {
         float: left;
         width: 70%;
         height: 30px;
@@ -44,11 +44,11 @@
         border: 1px solid #d2d2d2;
     }
 
-    .text-sm:extend(.ct-form .text) {
+    .__text-sm:extend(.ct-form .__text) {
         width: 192px;
     }
 
-    .textarea {
+    .__textarea {
         width: 70%;
         height: 120px;
         border: 1px solid #d2d2d2;
@@ -58,21 +58,21 @@
         float: left;
     }
 
-    .text:focus, .text-sm:focus, .textarea:focus {
+    .__text:focus, .__text-sm:focus, .__textarea:focus {
         border-color: #20b11d;
     }
 
-    .error, .error:focus {
+    .\--error, .\--error:focus {
         border-color: #ee5a5a;
     }
 
-    .tips {
+    .__tips {
         margin: 10px 0 0 20px;
         color: #808080;
         float: left;
     }
 
-    .combine {
+    .__combine {
         border: 1px solid #c9c9c9;
         width: 515px;
         height: 30px;
@@ -105,17 +105,17 @@
     }
 }
 
-.ct-form.mini {
+.ct-form.__mini {
     padding: 5px;
 
-    .label {
+    .__label {
         min-width: 20px;
         margin: 5px;
         font-size: 12px;
         float: left;
     }
 
-    .text {
+    .__text {
         width: 70%;
         border: 1px solid #d2d2d2;
         height: 18px;
@@ -126,7 +126,7 @@
         float: left;
     }
 
-    .text-sm {
+    .__text-sm {
         width: 80px;
         border: 1px solid #d2d2d2;
         height: 18px;
