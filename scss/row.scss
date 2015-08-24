@@ -1,127 +1,125 @@
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
 .ct-container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    &:after,
-    &:before {
-        display: table;
-        content: " ";
-        box-sizing: border-box;
+  @include make-container();
+
+  // For each breakpoint, define the maximum width of the container in a media query
+  @each $breakpoint, $container-max-width in $container-max-widths {
+    @include media-breakpoint-up($breakpoint) {
+      max-width: $container-max-width;
     }
+  }
 }
+
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
 
 .ct-container-fluid {
-    max-width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    &:after,
-    &:before {
-        display: table;
-        content: " ";
-        box-sizing: border-box;
-    }
+  @include make-container();
 }
+
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
 
 .ct-row {
-    margin-left: auto;
-    margin-right: auto;
-    .col {
-        box-sizing: border-box;
-        padding: 0 0.75rem;
-        &.md1 {
-            width: 8.33333%;
-            margin-left: 0;
-        }
-        &.md2 {
-            width: 16.66667%;
-            margin-left: 0;
-        }
-        &.md3 {
-            width: 25%;
-            margin-left: 0;
-        }
-        &.md4 {
-            width: 33.33333%;
-            margin-left: 0;
-        }
-        &.md5 {
-            width: 41.66667%;
-            margin-left: 0;
-        }
-        &.md6 {
-            width: 50%;
-            margin-left: 0;
-        }
-        &.md7 {
-            width: 58.33333%;
-            margin-left: 0;
-        }
-        &.md8 {
-            width: 66.66667%;
-            margin-left: 0;
-        }
-        &.md9 {
-            width: 75%;
-            margin-left: 0;
-        }
-        &.md10 {
-            width: 83.33333%;
-            margin-left: 0;
-        }
-        &.md11 {
-            width: 91.66667%;
-            margin-left: 0;
-        }
-        &.md12 {
-            width: 100%;
-            margin-left: 0;
-        }
-        &.offset-md1 {
-            margin-left: 8.33333%;
-        }
-        &.offset-md2 {
-            margin-left: 16.66667%;
-        }
-        &.offset-md3 {
-            margin-left: 25%;
-        }
-        &.offset-md4 {
-            margin-left: 33.33333%;
-        }
-        &.offset-md5 {
-            margin-left: 41.66667%;
-        }
-        &.offset-md6 {
-            margin-left: 50%;
-        }
-        &.offset-md7 {
-            margin-left: 58.33333%;
-        }
-        &.offset-md8 {
-            margin-left: 66.66667%;
-        }
-        &.offset-md9 {
-            margin-left: 75%;
-        }
-        &.offset-md10 {
-            margin-left: 83.33333%;
-        }
-        &.offset-md11 {
-            margin-left: 91.66667%;
-        }
-        &.offset-md12 {
-            margin-left: 100%;
-        }
-    }
-    &:after,
-    &:before {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  @include make-row();
 }
 
 
+// Columns
+//
+// Common styles for small and large grid columns
+
+@include make-grid-columns();
+
+
+// Flex variation
+//
+// Custom styles for additional flex alignment options.
+
+@if $enable-flex {
+
+  // Flex column reordering
+
+  .ct-xs-first { order: -1; }
+  .ct-xs-last { order: 1; }
+
+  @include media-breakpoint-up(sm) {
+    .ct-sm-first { order: -1; }
+    .ct-sm-last { order: 1; }
+  }
+  @include media-breakpoint-up(md) {
+    .ct-md-first { order: -1; }
+    .ct-md-last { order: 1; }
+  }
+  @include media-breakpoint-up(lg) {
+    .ct-lg-first { order: -1; }
+    .ct-lg-last { order: 1; }
+  }
+  @include media-breakpoint-up(xl) {
+    .ct-xl-first { order: -1; }
+    .ct-xl-last { order: 1; }
+  }
+
+  // Alignment for every column in row
+
+  .row-xs-top    { align-items: flex-start; }
+  .row-xs-center { align-items: center; }
+  .row-xs-bottom { align-items: flex-end; }
+
+  @include media-breakpoint-up(sm) {
+    .row-sm-top    { align-items: flex-start; }
+    .row-sm-center { align-items: center; }
+    .row-sm-bottom { align-items: flex-end; }
+  }
+  @include media-breakpoint-up(md) {
+    .row-md-top    { align-items: flex-start; }
+    .row-md-center { align-items: center; }
+    .row-md-bottom { align-items: flex-end; }
+  }
+  @include media-breakpoint-up(lg) {
+    .row-lg-top    { align-items: flex-start; }
+    .row-lg-center { align-items: center; }
+    .row-lg-bottom { align-items: flex-end; }
+  }
+  @include media-breakpoint-up(xl) {
+    .row-xl-top    { align-items: flex-start; }
+    .row-xl-center { align-items: center; }
+    .row-xl-bottom { align-items: flex-end; }
+  }
+
+  // Alignment per column
+
+  .ct-xs-top    { align-self: flex-start; }
+  .ct-xs-center { align-self: center; }
+  .ct-xs-bottom { align-self: flex-end; }
+
+  @include media-breakpoint-up(sm) {
+    .ct-sm-top    { align-self: flex-start; }
+    .ct-sm-center { align-self: center; }
+    .ct-sm-bottom { align-self: flex-end; }
+  }
+  @include media-breakpoint-up(md) {
+    .ct-md-top    { align-self: flex-start; }
+    .ct-md-center { align-self: center; }
+    .ct-md-bottom { align-self: flex-end; }
+  }
+  @include media-breakpoint-up(lg) {
+    .ct-lg-top    { align-self: flex-start; }
+    .ct-lg-center { align-self: center; }
+    .ct-lg-bottom { align-self: flex-end; }
+  }
+  @include media-breakpoint-up(xl) {
+    .ct-xl-top    { align-self: flex-start; }
+    .ct-xl-center { align-self: center; }
+    .ct-xl-bottom { align-self: flex-end; }
+  }
+
+}
