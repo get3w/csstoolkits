@@ -1,0 +1,17 @@
+// Block button
+@mixin height($height) {
+    height: $height;
+    line-height: $height;
+}
+
+@mixin transition($times) {
+    transition: all $times;
+} 
+
+@mixin font($family, $size) {
+    font-family: $family;
+    font-size: $size;
+}
+@mixin text-d-none() {
+	text-decoration: none;
+}

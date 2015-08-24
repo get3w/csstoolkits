@@ -1,0 +1,23 @@
+@mixin text-left() {
+    text-align: left;
+}
+
+@mixin text-center() {
+    text-align: center;
+}
+
+@mixin text-right() {
+    text-align: right;
+}
+
+@mixin vertical-top() {
+    vertical-align: top;
+}
+
+@mixin vertical-middle() {
+    vertical-align: middle;
+}
+
+@mixin vertical-bottom() {
+    vertical-align: bottom;
+}

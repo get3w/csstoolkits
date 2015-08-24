@@ -1,0 +1,23 @@
+.ct-left {
+    @include text-left();
+}
+
+.ct-center {
+    @include text-center();
+}
+
+.ct-right {
+    @include text-right();
+}
+
+.ct-top{
+    @include vertical-top();
+}
+
+.ct-middle{
+    @include vertical-middle();
+}
+
+.ct-bottom{
+    @include vertical-bottom();
+}

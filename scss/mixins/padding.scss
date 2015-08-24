@@ -1,0 +1,88 @@
+/* Extra small padding 5px*/
+
+@mixin p-xs() {
+    padding: $number-xs;
+}
+
+@mixin pt-xs() {
+    padding-top: $number-xs;
+}
+
+@mixin pr-xs() {
+    padding-right: $number-xs;
+}
+
+@mixin pb-xs() {
+    padding-bottom: $number-xs;
+}
+
+@mixin pl-xs() {
+    padding-left: $number-xs;
+}
+
+
+/*Small padding 10px*/
+
+@mixin p-sm() {
+    padding: $number-sm;
+}
+
+@mixin pt-sm() {
+    padding-top: $number-sm;
+}
+
+@mixin pr-sm() {
+    padding-right: $number-sm;
+}
+
+@mixin pb-sm() {
+    padding-bottom: $number-sm;
+}
+
+@mixin pl-sm() {
+    padding-left: $number-sm;
+}
+
+//Default size
+@mixin p() {
+    padding: $number-md;
+}
+
+@mixin pt() {
+    padding-top: $number-md;
+}
+
+@mixin pr() {
+    padding-right: $number-md;
+}
+
+@mixin pb() {
+    padding-bottom: $number-md;
+}
+
+@mixin pl() {
+    padding-left: $number-md;
+}
+
+
+/*Large padding 20px*/
+
+@mixin p-lg() {
+    padding: $number-lg;
+}
+
+@mixin pt-lg() {
+    padding-top: $number-lg;
+}
+
+@mixin pr-lg() {
+    padding-right: $number-lg;
+}
+
+@mixin pb-lg() {
+    padding-bottom: $number-lg;
+}
+
+@mixin pl-lg() {
+    padding-left: $number-lg;
+}

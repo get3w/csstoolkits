@@ -1,0 +1,88 @@
+/* Extra small margin  5px*/
+
+@mixin m-xs() {
+    margin: $number-xs;
+}
+
+@mixin mt-xs() {
+    margin-top: $number-xs;
+}
+
+@mixin mr-xs() {
+    margin-right: $number-xs;
+}
+
+@mixin mb-xs() {
+    margin-bottom: $number-xs;
+}
+
+@mixin ml-xs() {
+    margin-left: $number-xs;
+}
+
+
+/*Small margin  10px*/
+
+@mixin m-sm() {
+    margin: $number-sm;
+}
+
+@mixin mt-sm() {
+    margin-top: $number-sm;
+}
+
+@mixin mr-sm() {
+    margin-right: $number-sm;
+}
+
+@mixin mb-sm() {
+    margin-bottom: $number-sm;
+}
+
+@mixin ml-sm() {
+    margin-left: $number-sm;
+}
+
+//Default size
+@mixin m() {
+    margin: $number-md;
+}
+
+@mixin mt() {
+    margin-top: $number-md;
+}
+
+@mixin mr() {
+    margin-right: $number-md;
+}
+
+@mixin mb() {
+    margin-bottom: $number-md;
+}
+
+@mixin ml() {
+    margin-left: $number-md;
+}
+
+
+/*Large margin  20px*/
+
+@mixin m-lg() {
+    margin: $number-lg;
+}
+
+@mixin mt-lg() {
+    margin-top: $number-lg;
+}
+
+@mixin mr-lg() {
+    margin-right: $number-lg;
+}
+
+@mixin mb-lg() {
+    margin-bottom: $number-lg;
+}
+
+@mixin ml-lg() {
+    margin-left: $number-lg;
+}

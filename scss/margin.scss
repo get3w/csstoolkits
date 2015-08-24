@@ -1,0 +1,88 @@
+/* Extra small margin  5px*/
+
+.ct-m-xs {
+    @include m-xs();
+}
+
+.ct-mt-xs {
+    @include mt-xs();
+}
+
+.ct-mr-xs {
+    @include mr-xs();
+}
+
+.ct-mb-xs {
+    @include mb-xs();
+}
+
+.ct-ml-xs {
+    @include ml-xs();
+}
+
+
+/*Small margin  10px*/
+
+.ct-m-sm {
+    @include m-sm();
+}
+
+.ct-mt-sm {
+    @include mt-sm();
+}
+
+.ct-mr-sm {
+    @include mr-sm();
+}
+
+.ct-mb-sm {
+    @include mb-sm();
+}
+
+.ct-ml-sm {
+    @include ml-sm();
+}
+
+//Default size
+.ct-m {
+    @include m();
+}
+
+.ct-mt {
+    @include mt();
+}
+
+.ct-mr {
+    @include mr();
+}
+
+.ct-mb {
+    @include mb();
+}
+
+.ct-ml {
+    @include ml();
+}
+
+
+/*Large margin  20px*/
+
+.ct-m-lg {
+    @include m-lg();
+}
+
+.ct-mt-lg {
+    @include mt-lg();
+}
+
+.ct-mr-lg {
+    @include mr-lg();
+}
+
+.ct-mb-lg {
+    @include mb-lg();
+}
+
+.ct-ml-lg {
+    @include ml-lg();
+}

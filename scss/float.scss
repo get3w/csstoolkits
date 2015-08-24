@@ -1,0 +1,18 @@
+//float
+
+.ct-fl {
+    float: left;
+    display: inline;
+}
+
+.ct-fr {
+    float: right;
+    display: inline;
+}
+
+@mixin fl() {
+	float: left;
+}
+@mixin fr() {
+	float: right;
+}

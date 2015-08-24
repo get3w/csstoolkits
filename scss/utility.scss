@@ -1,0 +1,13 @@
+//Set the element level in the middle
+.ct-center-block {
+    @include center-block();
+}
+
+// Requires inline-block or block for proper styling
+.ct-overflow {
+    @include text-overflow();
+}
+
+.ct-text-hide {
+    @include text-hide();
+}
