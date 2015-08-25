@@ -1,6 +1,6 @@
 .ct-box {
     border: 1px solid $grey-200;
-    @include font($font-family-base,$font-size-base);
+    font-size: $font-size-base;
     .__head {
         font-size: $font-size-lg;
         color: $grey-600;
