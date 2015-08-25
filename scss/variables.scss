@@ -6,18 +6,18 @@
 //
 //## Gray and brand colors for use across csstoolkits
 //Black series
-$black: #000;
-$full-black: rgba(0, 0, 0, 1);
-$dark-black: rgba(0, 0, 0, 0.87);
-$light-black: rgba(0, 0, 0, 0.54);
-$min-black: rgba(0, 0, 0, 0.26);
-$faint-black: rgba(0, 0, 0, 0.12);
+$black: #000 !important;
+$full-black: rgba(0, 0, 0, 1) !important;
+$dark-black: rgba(0, 0, 0, 0.87) !important;
+$light-black: rgba(0, 0, 0, 0.54) !important;
+$min-black: rgba(0, 0, 0, 0.26) !important;
+$faint-black: rgba(0, 0, 0, 0.12) !important;
 
 //White series
-$white: #fff;
-$full-white: rgba(255, 255, 255, 1);
-$dark-white: rgba(255, 255, 255, 0.87);
-$light-white: rgba(255, 255, 255, 0.54);
+$white: #fff !important;
+$full-white: rgba(255, 255, 255, 1) !important;
+$dark-white: rgba(255, 255, 255, 0.87) !important;
+$light-white: rgba(255, 255, 255, 0.54) !important;
 
 // This is place to put any variable overrides as well.
 
@@ -29,12 +29,12 @@ $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 $font-family:             $font-family-sans-serif;
 
-$color-green: rgba(59, 191, 56, 1);
+$color-green: rgba(59, 191, 56, 1) !important;
 $color-red: $red-300;
 $color-blue: $light-blue-400;
 $color-yellow: $yellow-700;
 $color-grey: $grey-500;
-$color-purple: rgba(110, 84, 148, 1);
+$color-purple: rgba(110, 84, 148, 1) !important;
 
 
 //Some common values
