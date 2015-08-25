@@ -7,11 +7,12 @@ html
   body
     include include/_head.jade
     main.banner
-      .container
+      .ct-container
         p.subtitle CSS
         p.sumary.ct-left CssToolkits是基于Material Design，纯HTML,CSS的组件库，用它可以快速构建优美的网站应用。
     .content-area
-      .container.ct-row
-        include include/_component-area.jade
-        include include/_component-tree.jade
+      .ct-container
+        .ct-row
+          include include/_component-area.jade
+          include include/_component-tree.jade
     include include/_foot.jade

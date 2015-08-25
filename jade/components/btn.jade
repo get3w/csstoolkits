@@ -9,19 +9,19 @@ div.area-content
   pre
     code.html
       |&lt;a class="ct-btn" href="javascript:;"> .ct-btn &lt;/a>
-      |&lt;a class="ct-btn green" href="javascript:;"> .ct-btn .green &lt;/a>
-      |&lt;a class="ct-btn red" href="javascript:;"> .ct-btn .red &lt;/a>
-      |&lt;a class="ct-btn blue" href="javascript:;"> .ct-btn .blue &lt;/a>
+      |&lt;a class="ct-btn ct-bg-green" href="javascript:;"> .ct-btn .green &lt;/a>
+      |&lt;a class="ct-btn ct-bg-red" href="javascript:;"> .ct-btn .red &lt;/a>
+      |&lt;a class="ct-btn ct-bg-blue" href="javascript:;"> .ct-btn .blue &lt;/a>
 
-  .container
+  .ct-container
     a.ct-btn(href='javascript:;')
       |.ct-btn
-    a.ct-btn.green(href='javascript:;') 
-      |.ct-btn .green
-    a.ct-btn.red(href='javascript:;')
-      |.ct-btn .red
-    a.ct-btn.blue(href='javascript:;')
-      |.ct-btn .blue
+    a.ct-btn.ct-bg-green(href='javascript:;') 
+      |.ct-btn .ct-bg-green
+    a.ct-btn.ct-bg-red(href='javascript:;')
+      |.ct-btn .ct-bg-red
+    a.ct-btn.ct-bg-blue(href='javascript:;')
+      |.ct-btn .ct-bg-blue
   p
     |通过 
     code .large
@@ -35,14 +35,14 @@ div.area-content
       |&lt;a class="ct-btn green" href="javascript:;"> .ct-btn .green &lt;/a>
       |&lt;a class="ct-btn red small" href="javascript:;"> .ct-btn .red .small&lt;/a>
       |&lt;a class="ct-btn blue mini" href="javascript:;"> .ct-btn .blue .mini&lt;/a>
-  .container
+  .ct-container
     a.ct-btn.large(href='javascript:;')
       |.ct-btn .large
     a.ct-btn.green(href='javascript:;') 
       |.ct-btn .green
-    a.ct-btn.red.small(href='javascript:;')
+    a.ct-btn.ct-bg-red.small(href='javascript:;')
       |.ct-btn .red .small
-    a.ct-btn.blue.mini(href='javascript:;')
+    a.ct-btn.ct-bg-blue.mini(href='javascript:;')
       |mi
   p
     |通过 
@@ -58,12 +58,12 @@ div.area-content
   .container
     a.ct-btn.radius(href='javascript:;')
       |.ct-btn .radius
-    a.ct-btn.green.radius(href='javascript:;') 
-      |.ct-btn .green .radius
-    a.ct-btn.red.radius(href='javascript:;')
-      |.ct-btn .red .radius
-    a.ct-btn.blue.radius(href='javascript:;')
-      |.ct-btn .blue .radius
+    a.ct-btn.ct-bg-green.radius(href='javascript:;') 
+      |.ct-btn .ct-bg-green .radius
+    a.ct-btn.ct-bg-red.radius(href='javascript:;')
+      |.ct-btn .ct-bg-red .radius
+    a.ct-btn.ct-bg-blue.radius(href='javascript:;')
+      |.ct-btn .ct-bg-blue .radius
 
   p
     |通过 
@@ -73,9 +73,9 @@ div.area-content
   pre
     code.html
       |&lt;a class="ct-btn block" href="javascript:;">.ct-btn .block&lt;/a>
-      |&lt;a class="ct-btn green block" href="javascript:;">.ct-btn .green .block &lt;/a>
-      |&lt;a class="ct-btn red block" href="javascript:;">.ct-btn .red .block&lt;/a>
-      |&lt;a class="ct-btn blue block" href="javascript:;">.ct-btn .blue .block&lt;/a>
+      |&lt;a class="ct-btn ct-bg-green block" href="javascript:;">.ct-btn .ct-bg-green .block &lt;/a>
+      |&lt;a class="ct-btn ct-bg-red block" href="javascript:;">.ct-btn .ct-bg-red .block&lt;/a>
+      |&lt;a class="ct-btn ct-bg-blue block" href="javascript:;">.ct-btn .ct-bg-blue .block&lt;/a>
   .container
     a.ct-btn.block(href='javascript:;')
       |.ct-btn .block
@@ -100,11 +100,11 @@ div.area-content
       |&lt;a class="ct-btn" disabled href="javascript:;">disabled&lt;/a>
       |&lt;a class="ct-btn focus" href="javascript:;">.focus&lt;/a>
   .container
-    a.ct-btn.green.disabled(href='javascript:;')
+    a.ct-btn.ct-bg-green.disabled(href='javascript:;')
       |.ct-btn .disabled
-    a.ct-btn.green(href='javascript:;',disabled) 
+    a.ct-btn.ct-bg-green(href='javascript:;',disabled) 
       |.ct-btn .green
-    a.ct-btn.green.focus(href='javascript:;')
+    a.ct-btn.ct-bg-green.focus(href='javascript:;')
       |.ct-btn .focus
   p
     |通过 
@@ -115,16 +115,16 @@ div.area-content
     
   pre
     code.html
-      |&lt;a class="ct-btn green" href="javascript:;">&lt;i class="fa fa-github">&lt;/i>Github&lt;/a>
-      |&lt;a class="ct-btn green" href="javascript:;">&lt;i class="fa fa-wechat">&lt;/i>wechat&lt;/a>
-      |&lt;a class="ct-btn green" href="javascript:;">&lt;i class="fa fa-weibo">&lt;/i>weibo&lt;/a>
+      |&lt;a class="ct-btn ct-bg-green" href="javascript:;">&lt;i class="fa fa-github">&lt;/i>Github&lt;/a>
+      |&lt;a class="ct-btn ct-bg-green" href="javascript:;">&lt;i class="fa fa-wechat">&lt;/i>wechat&lt;/a>
+      |&lt;a class="ct-btn ct-bg-green" href="javascript:;">&lt;i class="fa fa-weibo">&lt;/i>weibo&lt;/a>
   .container
-    a.ct-btn.green(href='javascript:;')
+    a.ct-btn.ct-bg-green(href='javascript:;')
       i.fa.fa-github
-      |.ct-btn .green
-    a.ct-btn.green(href='javascript:;') 
+      |.ct-btn .ct-bg-green
+    a.ct-btn.ct-bg-green(href='javascript:;') 
       i.fa.fa-weibo
-      |.ct-btn .green
-    a.ct-btn.green(href='javascript:;')
+      |.ct-btn .ct-bg-green
+    a.ct-btn.ct-bg-green(href='javascript:;')
       i.fa.fa-wechat
       |.ct-btn .green
