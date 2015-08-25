@@ -11,9 +11,9 @@ div.area-content
       |  &lt;input name="title" type="text" class="text" placeholder="请输入活动名称" value="">
       | &lt;/div>
       |&lt;/div>
-  .container
+  .ct-container
     .ct-form
-      .row
+      .ct-row
         label.label 活动名称
         input.text(name='title', type='text', placeholder='请输入活动名称', value='')
   p
@@ -27,9 +27,9 @@ div.area-content
       |  &lt;input name="title" type="text" class="text error" placeholder="请输入活动名称" value="">
       | ...
       |&lt;/div>
-  .container
+  .ct-container
     .ct-form
-      .row
+      .ct-row
         label.label 活动名称
         input.text.error(name='title', type='text', placeholder='请输入活动名称', value='')
 
@@ -51,12 +51,12 @@ div.area-content
       |    &lt;input name="title" type="text" placeholder="请输入活动名称" value="" class="text-sm"/>
       |  &lt;/div>
       |&lt;/div>
-  .container
+  .ct-container
     .ct-form
-      .row
+      .ct-row
         label.label 活动名称
         textarea.textarea(placeholder='多行表单')
-      .row
+      .ct-row
         label.label 活动名称
         input.text-sm(name='title', type='text', placeholder='请输入活动名称', value='')
   p
@@ -71,12 +71,12 @@ div.area-content
       |&lt;div class="ct-form mini">
       |  ...
       |&lt;/div>
-  .container     
+  .ct-container     
     .ct-form.mini
-      .row
+      .ct-row
         label.label 活动名称
         input.text(placeholder='多行表单')
-      .row
+      .ct-row
         label.label 活动名称
         input.text-sm(name='title', type='text', placeholder='请输入活动名称', value='')
         

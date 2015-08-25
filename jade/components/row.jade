@@ -3,110 +3,89 @@ div.area-content.ct-clearfix
   p
     code .ct-row
     |用于设置元素栅栏布局，一行一共分十二栏，通过
-    code .col
-    code .s1`s12
+    code .ct-xs-*[1-12]
+    code .ct-sm-*[1-12]
+    code .ct-md-*[1-12]
+    code .ct-lg-*[1-12]
+    code .ct-xl-*[1-12]
     |来分配, 默认页面采用这个样式。即PC端页面。
   pre
     code.html
       |&lt;div class="ct-row">
-      |  &lt;div class="col s6">s6&lt;/div>
-      |  &lt;div class="col s6">s6&lt;/div>
+      |  &lt;div class="ct-md-6">ct-md-6&lt;/div>
+      |  &lt;div class="ct-md-6">ct-md-6&lt;/div>
       |&lt;/div>
 
-  div.container.ct-row.ct-center.ct-pb-xs
-    .col.s1.ct-bg.green s1
-    .col.s1.ct-bg.red   s1
-    .col.s1.ct-bg.green s1
-    .col.s1.ct-bg.red s1
-    .col.s1.ct-bg.green s1
-    .col.s1.ct-bg.red s1
-    .col.s1.ct-bg.green s1
-    .col.s1.ct-bg.red s1
-    .col.s1.ct-bg.green s1
-    .col.s1.ct-bg.red s1
-    .col.s1.ct-bg.green s1
-    .col.s1.ct-bg.red s1
-  div.container.ct-row.ct-center.ct-pb-xs
-    .col.s2.ct-bg.green s2
-    .col.s2.ct-bg.red   s2
-    .col.s2.ct-bg.green s2
-    .col.s2.ct-bg.red   s2
-    .col.s2.ct-bg.green s2
-    .col.s2.ct-bg.red   s2
-  div.container.ct-row.ct-center.ct-pb-xs
-    .col.s3.ct-bg.green s3
-    .col.s3.ct-bg.red   s3
-    .col.s3.ct-bg.green s3
-    .col.s3.ct-bg.red   s3
-  div.container.ct-row.ct-center.ct-pb-xs
-    .col.s4.ct-bg.green s4
-    .col.s4.ct-bg.red   s4
-    .col.s4.ct-bg.green s4
-  div.container.ct-row.ct-center.ct-pb-xs
-    .col.s5.ct-bg.green s5
-    .col.s5.ct-bg.red   s5
-    .col.s2.ct-bg.green s2
-  div.container.ct-row.ct-center.ct-pb-xs
-    .col.s6.ct-bg.green s6
-    .col.s6.ct-bg.red   s6
-  div.container.ct-row.ct-center.ct-pb-xs
-    .col.s7.ct-bg.green s7
-    .col.s5.ct-bg.red   s5
-  div.container.ct-row.ct-center.ct-pb-xs
-    .col.s8.ct-bg.green s8
-    .col.s4.ct-bg.red   s4
-  div.container.ct-row.ct-center.ct-pb-xs
-    .col.s9.ct-bg.green s9
-    .col.s3.ct-bg.red   s3
-  div.container.ct-row.ct-center.ct-pb-xs
-    .col.s10.ct-bg.green s10
-    .col.s2.ct-bg.red   s2
-  div.container.ct-row.ct-center.ct-pb-xs
-    .col.s11.ct-bg.green s11
-    .col.s1.ct-bg.red   s1
-  div.container.ct-row.ct-center.ct-pb-xs
-    .col.s12.ct-bg.green s12
+  div.ct-container.ct-row.ct-center.ct-pb-xs
+    .ct-md-1.ct-bg.ct-bg-green .ct-md-1
+    .ct-md-1.ct-bg.ct-bg-red   .ct-md-1
+    .ct-md-1.ct-bg.ct-bg-green .ct-md-1
+    .ct-md-1.ct-bg.ct-bg-red .ct-md-1
+    .ct-md-1.ct-bg.ct-bg-green .ct-md-1
+    .ct-md-1.ct-bg.ct-bg-red .ct-md-1
+    .ct-md-1.ct-bg.ct-bg-green .ct-md-1
+    .ct-md-1.ct-bg.ct-bg-red .ct-md-1
+    .ct-md-1.ct-bg.ct-bg-green .ct-md-1
+    .ct-md-1.ct-bg.ct-bg-red .ct-md-1
+    .ct-md-1.ct-bg.ct-bg-green .ct-md-1
+    .ct-md-1.ct-bg.ct-bg-red .ct-md-1
+  div.ct-container.ct-row.ct-center.ct-pb-xs
+    .ct-md-2.ct-bg.ct-bg-green .ct-md-2
+    .ct-md-2.ct-bg.ct-bg-red   .ct-md-2
+    .ct-md-2.ct-bg.ct-bg-green .ct-md-2
+    .ct-md-2.ct-bg.ct-bg-red   .ct-md-2
+    .ct-md-2.ct-bg.ct-bg-green .ct-md-2
+    .ct-md-2.ct-bg.ct-bg-red   .ct-md-2
+  div.ct-container.ct-row.ct-center.ct-pb-xs
+    .ct-md-3.ct-bg.ct-bg-green .ct-md-3
+    .ct-md-3.ct-bg.ct-bg-red   .ct-md-3
+    .ct-md-3.ct-bg.ct-bg-green .ct-md-3
+    .ct-md-3.ct-bg.ct-bg-red   .ct-md-3
+  div.ct-container.ct-row.ct-center.ct-pb-xs
+    .ct-md-4.ct-bg.ct-bg-green .ct-md-4
+    .ct-md-4.ct-bg.ct-bg-red   .ct-md-4
+    .ct-md-4.ct-bg.ct-bg-green .ct-md-4
+  div.ct-container.ct-row.ct-center.ct-pb-xs
+    .ct-md-5.ct-bg.ct-bg-green .ct-md-5
+    .ct-md-5.ct-bg.ct-bg-red   .ct-md-5
+    .ct-md-2.ct-bg.ct-bg-green .ct-md-2
+  div.ct-container.ct-row.ct-center.ct-pb-xs
+    .ct-md-6.ct-bg.ct-bg-green .ct-md-6
+    .ct-md-6.ct-bg.ct-bg-red   .ct-md-6
+  div.ct-container.ct-row.ct-center.ct-pb-xs
+    .ct-md-7.ct-bg.ct-bg-green .ct-md-7
+    .ct-md-5.ct-bg.ct-bg-red   .ct-md-5
+  div.ct-container.ct-row.ct-center.ct-pb-xs
+    .ct-md-8.ct-bg.ct-bg-green .ct-md-8
+    .ct-md-4.ct-bg.ct-bg-red   .ct-md-4
+  div.ct-container.ct-row.ct-center.ct-pb-xs
+    .ct-md-9.ct-bg.ct-bg-green .ct-md-9
+    .ct-md-3.ct-bg.ct-bg-red   .ct-md-3
+  div.ct-container.ct-row.ct-center.ct-pb-xs
+    .ct-md-10.ct-bg.ct-bg-green .ct-md-10
+    .ct-md-2.ct-bg.ct-bg-red   .ct-md-2
+  div.ct-container.ct-row.ct-center.ct-pb-xs
+    .ct-md-11.ct-bg.ct-bg-green .ct-md-11
+    .ct-md-1.ct-bg.ct-bg-red   .ct-md-1
+  div.ct-container.ct-row.ct-center.ct-pb-xs
+    .ct-md-12.ct-bg.ct-bg-green .ct-md-12
 
   p
     |偏移（Offsets）
-    code .offset-s1
+    code .ct-offset-11
     |`
-    code .offset-s12
+    code .ct-offset-12
   pre
     code.html
       |&lt;div class="ct-row">
-      |  &lt;div class="col s4 offset-s4">s4 offset-s4&lt;/div>
-      |  &lt;div class="col s4">s4&lt;/div>
+      |  &lt;div class="ct-md-4 ct-offset-4">ct-md-4 ct-offset-4&lt;/div>
+      |  &lt;div class="ct-md-4">ct-md-4&lt;/div>
       |&lt;/div>
-  div.container.ct-row.ct-center.ct-pb-xs
-    .col.s4.offset-s4.ct-bg.red s4 offset-s4
-    .col.s4.ct-bg.green s11
-  div.container.ct-row.ct-center.ct-pb-xs
-    .col.s3.offset-s3.ct-bg.red s3 offset-s3
-    .col.s3.offset-s3.ct-bg.red s3 offset-s3
-  div.container.ct-row.ct-center.ct-pb-xs
-    .col.s6.offset-s3.ct-bg.red s6 offset-s3
-  p
-    code @media only screen and (min-width : 602px) and (max-width:960px)
-    |用于设置PAD平版页面，响应布局。
-    code .p1
-    | - 
-    code .p12
-    br  
-    |同时，也有偏移类可供使用
-    code .offset-p1
-    | - 
-    code .offset-p12
-    br    
-    code @media only screen and (min-width : 601px)
-    |用于设置小页面的响应布局
-
-    br  
-    code .m1
-    | - 
-    code .m12
-    |同时，也有偏移类可供使用
-    code .offset-m1
-    | - 
-    code .offset-m12 
-    
+  div.ct-container.ct-row.ct-center.ct-pb-xs
+    .ct-md-4.ct-offset-4.ct-bg.ct-bg-red ct-md-4 offset-s4
+    .ct-md-4.ct-bg.ct-bg-green ct-md-411
+  div.ct-container.ct-row.ct-center.ct-pb-xs
+    .ct-md-3.ct-offset-3.ct-bg.ct-bg-red ct-md-3 offset-s3
+    .ct-md-3.ct-offset-3.ct-bg.ct-bg-red ct-md-3 offset-s3
+  div.ct-container.ct-row.ct-center.ct-pb-xs
+    .ct-md-6.ct-offset-3.ct-bg.ct-bg-red ct-md-6 offset-s3
