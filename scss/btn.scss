@@ -6,7 +6,7 @@
     font-size: $font-size-base;
     box-shadow: 0 3px 4px $grey-400;
     border: 0 none;
-    font-family: $font-family-base;
+    cursor: pointer;
     @include height(40px);
     @include transition(0.5s);
     @include text-d-none();
