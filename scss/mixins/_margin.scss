@@ -1,4 +1,4 @@
-/* Extra small margin  5px*/
+// Extra small margin  5px
 
 @mixin m-xs() {
     margin: $number-xs;
@@ -21,7 +21,7 @@
 }
 
 
-/*Small margin  10px*/
+//Small margin  10px
 
 @mixin m-sm() {
     margin: $number-sm;
@@ -64,8 +64,7 @@
     margin-left: $number-md;
 }
 
-
-/*Large margin  20px*/
+//Large margin  20px
 
 @mixin m-lg() {
     margin: $number-lg;

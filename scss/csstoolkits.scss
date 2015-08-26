@@ -1,50 +1,43 @@
 /*!
- * Csstoolkits v1.1.1 (http://csstoolkits.com)
- * Copyright 2015-2016 Get3w.com, Inc.
+ * Csstoolkits v0.0.1 (http://csstoolkits.com)
+ * Copyright 2015-2016 Get3w Inc.
  * Licensed under MIT
  */
 @charset "UTF-8";
 // Core variables and mixins
-@import "material-ui-color.scss";
-@import "variables.scss";
-@import "gird.scss";
-@import "mixins.scss";
+@import "material-ui-color";
+@import "variables";
+@import "mixins";
 
 // Reset and dependencies
-@import "normalize.scss";
+@import "normalize";
 
 // Core CSS
-@import "row.scss";
-@import "box.scss";
+@import "row";
+@import "box";
+
 // Components
+@import "alert";
+@import "border";
+@import "float";
+@import "text-align";
 
-// Components w/ JavaScript
+@import "typography";
+@import "bg";
+@import "card";
 
-// Utility classes
-@import "alert.scss";
-@import "border.scss";
-@import "flex.scss";
-@import "float.scss";
-@import "text-align.scss";
+@import "btn";
+@import "calendar";
+@import "clearfix";
+@import "utility";  // for example ct-center-block, ct-overflow and so on
+@import "border-radius";
+@import "color";
+@import "form";
+@import "heading";
+@import "hint";
+@import "list";
 
-@import "typography.scss";
-@import "bg.scss";
-@import "card.scss";
-
-@import "btn.scss";
-@import "calendar.scss";
-@import "clearfix.scss";
-@import "utility.scss";  // for example ct-center-block, ct-overflow and so on
-@import "border-radius.scss";
-@import "color.scss";
-@import "form.scss";
-@import "heading.scss";
-@import "hint.scss";
-@import "list.scss";
-@import "margin.scss";
-@import "padding.scss";
-
-@import "select.scss";
-@import "tips.scss";
-@import "menu.scss";
-@import "navbar.scss";
+@import "select";
+@import "tips";
+@import "menu";
+@import "navbar";

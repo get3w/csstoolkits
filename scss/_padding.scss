@@ -1,4 +1,4 @@
-/* Extra small padding 5px*/
+// Extra small padding 5px
 
 .ct-p-xs {
     @include p-xs();
@@ -21,7 +21,7 @@
 }
 
 
-/*Small padding 10px*/
+// Small padding 10px
 
 .ct-p-sm {
     @include p-sm();
@@ -43,7 +43,7 @@
     @include pl-sm();
 }
 
-//Default size
+// Default size
 .ct-p {
     @include p();
 }
@@ -65,7 +65,7 @@
 }
 
 
-/*Large padding 20px*/
+// Large padding 20px
 
 .ct-p-lg {
     @include p-lg();
