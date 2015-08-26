@@ -22,6 +22,14 @@
     background-color: $color-purple !important;
     color: #fff;
 }
+.ct-bg-black {
+    background-color: $black !important; 
+    color: #fff;
+}
+.ct-bg-white {
+    background-color: $white !important; 
+    color: $grey-600;
+}
 
 .ct-bg-red-50 {
     background-color: $red-50 !important; 
@@ -802,13 +810,6 @@
 }
 .ct-bg-grey-900 {
     background-color: $grey-900 !important; 
-}
-
-.ct-bg-black {
-    background-color: $black !important; 
-}
-.ct-bg-white {
-    background-color: $white !important; 
 }
 
 .ct-bg-full-black {

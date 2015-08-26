@@ -1017,6 +1017,15 @@ th {
 .ct-font-monospace {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
 
+.ct-capitalize {
+  text-transform: capitalize; }
+
+.ct-uppercase {
+  text-transform: uppercase; }
+
+.ct-lowercase {
+  text-transform: lowercase; }
+
 .ct-h1,
 .ct-h2,
 .ct-h3,
@@ -1194,6 +1203,14 @@ th {
 .ct-bg-purple {
   background-color: #6e5494 !important;
   color: #fff; }
+
+.ct-bg-black {
+  background-color: #000 !important;
+  color: #fff; }
+
+.ct-bg-white {
+  background-color: #fff !important;
+  color: #757575; }
 
 .ct-bg-red-50 {
   background-color: #fde0dc !important; }
@@ -1956,12 +1973,6 @@ th {
 
 .ct-bg-grey-900 {
   background-color: #212121 !important; }
-
-.ct-bg-black {
-  background-color: #000 !important; }
-
-.ct-bg-white {
-  background-color: #fff !important; }
 
 .ct-bg-full-black {
   background-color: black !important; }

@@ -34,8 +34,18 @@
 .ct-font-helvetica {
     font-family: "Helvetica Neue",HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,"Nimbus Sans L","Liberation Sans",Arial,sans-serif;
 }
-.ct-font-monospace{
+.ct-font-monospace {
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.ct-capitalize {
+    text-transform:capitalize;
+}
+.ct-uppercase {
+    text-transform:uppercase;
+}
+.ct-lowercase {
+    text-transform:lowercase;
 }
 
 .ct-h1,
