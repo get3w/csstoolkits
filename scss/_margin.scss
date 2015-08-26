@@ -1,4 +1,4 @@
-/* Extra small margin  5px*/
+// Extra small margin  5px
 
 .ct-m-xs {
     @include m-xs();
@@ -21,7 +21,7 @@
 }
 
 
-/*Small margin  10px*/
+// Small margin  10px
 
 .ct-m-sm {
     @include m-sm();
@@ -43,7 +43,7 @@
     @include ml-sm();
 }
 
-//Default size
+// Default size
 .ct-m {
     @include m();
 }
@@ -65,7 +65,7 @@
 }
 
 
-/*Large margin  20px*/
+// Large margin  20px
 
 .ct-m-lg {
     @include m-lg();

@@ -1,4 +1,4 @@
-/* Extra small padding 5px*/
+// Extra small padding 5px
 
 @mixin p-xs() {
     padding: $number-xs;
@@ -21,7 +21,7 @@
 }
 
 
-/*Small padding 10px*/
+//Small padding 10px
 
 @mixin p-sm() {
     padding: $number-sm;
@@ -65,7 +65,7 @@
 }
 
 
-/*Large padding 20px*/
+//Large padding 20px
 
 @mixin p-lg() {
     padding: $number-lg;

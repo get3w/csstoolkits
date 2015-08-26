@@ -90,56 +90,56 @@
         }
     }
     // Alignment for every column in row
-    .row-xs-top {
+    .ct-xs-top {
         align-items: flex-start;
     }
-    .row-xs-center {
+    .ct-xs-center {
         align-items: center;
     }
-    .row-xs-bottom {
+    .ct-xs-bottom {
         align-items: flex-end;
     }
     @include media-breakpoint-up(sm) {
-        .row-sm-top {
+        .ct-sm-top {
             align-items: flex-start;
         }
-        .row-sm-center {
+        .ct-sm-center {
             align-items: center;
         }
-        .row-sm-bottom {
+        .ct-sm-bottom {
             align-items: flex-end;
         }
     }
     @include media-breakpoint-up(md) {
-        .row-md-top {
+        .ct-md-top {
             align-items: flex-start;
         }
-        .row-md-center {
+        .ct-md-center {
             align-items: center;
         }
-        .row-md-bottom {
+        .ct-md-bottom {
             align-items: flex-end;
         }
     }
     @include media-breakpoint-up(lg) {
-        .row-lg-top {
+        .ct-lg-top {
             align-items: flex-start;
         }
-        .row-lg-center {
+        .ct-lg-center {
             align-items: center;
         }
-        .row-lg-bottom {
+        .ct-lg-bottom {
             align-items: flex-end;
         }
     }
     @include media-breakpoint-up(xl) {
-        .row-xl-top {
+        .ct-xl-top {
             align-items: flex-start;
         }
-        .row-xl-center {
+        .ct-xl-center {
             align-items: center;
         }
-        .row-xl-bottom {
+        .ct-xl-bottom {
             align-items: flex-end;
         }
     }
