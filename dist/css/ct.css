@@ -1182,35 +1182,27 @@ th {
 
 .ct-bg-green {
   background-color: #3bbf38 !important;
-  color: #fff; }
+  color: #fff !important; }
 
 .ct-bg-red {
   background-color: #f36c60 !important;
-  color: #fff; }
+  color: #fff !important; }
 
 .ct-bg-blue {
   background-color: #29b6f6 !important;
-  color: #fff; }
+  color: #fff !important; }
 
 .ct-bg-yellow {
   background-color: #fbc02d !important;
-  color: #fff; }
+  color: #fff !important; }
 
 .ct-bg-grey {
   background-color: #9e9e9e !important;
-  color: #fff; }
+  color: #fff !important; }
 
 .ct-bg-purple {
   background-color: #6e5494 !important;
-  color: #fff; }
-
-.ct-bg-black {
-  background-color: #000 !important;
-  color: #fff; }
-
-.ct-bg-white {
-  background-color: #fff !important;
-  color: #757575; }
+  color: #fff !important; }
 
 .ct-bg-red-50 {
   background-color: #fde0dc !important; }
@@ -1973,6 +1965,12 @@ th {
 
 .ct-bg-grey-900 {
   background-color: #212121 !important; }
+
+.ct-bg-black {
+  background-color: #000 !important; }
+
+.ct-bg-white {
+  background-color: #fff !important; }
 
 .ct-bg-full-black {
   background-color: black !important; }

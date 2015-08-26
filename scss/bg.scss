@@ -1,34 +1,26 @@
 .ct-bg-green {
     background-color: $color-green !important;
-    color: #fff;
+    color: #fff !important;
 }
 .ct-bg-red {
     background-color: $color-red !important;
-    color: #fff;
+    color: #fff !important;
 }
 .ct-bg-blue {
     background-color: $color-blue !important;
-    color: #fff;
+    color: #fff !important;
 }
 .ct-bg-yellow {
     background-color: $color-yellow !important;
-    color: #fff;
+    color: #fff !important;
 }
 .ct-bg-grey {
     background-color: $color-grey !important;
-    color: #fff;
+    color: #fff !important;
 }
 .ct-bg-purple {
     background-color: $color-purple !important;
-    color: #fff;
-}
-.ct-bg-black {
-    background-color: $black !important; 
-    color: #fff;
-}
-.ct-bg-white {
-    background-color: $white !important; 
-    color: $grey-600;
+    color: #fff !important;
 }
 
 .ct-bg-red-50 {
@@ -810,6 +802,13 @@
 }
 .ct-bg-grey-900 {
     background-color: $grey-900 !important; 
+}
+
+.ct-bg-black {
+    background-color: $black !important; 
+}
+.ct-bg-white {
+    background-color: $white !important; 
 }
 
 .ct-bg-full-black {
