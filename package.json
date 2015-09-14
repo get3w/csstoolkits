@@ -4,18 +4,9 @@
     "gulp-autoprefixer": "^2.3.1",
     "gulp-concat": "*",
     "gulp-cssmin": "*",
-    "gulp-react": "*",
-    "gulp-rename": "*",
-    "gulp-replace": "^0.5.0",
     "gulp-plumber": "^0.5.0",
     "gulp-sass": "^2.0.4",
-    "gulp-uglify": "^1.1.0",
-    "gulp-util": "^3.0.4",
-    "gulp-watch": "*",
     "require-dir": "*",
-    "rimraf": "^2.2.8",
-    "run-sequence": "^1.0.2",
-    "stream-combiner2": "^1.0.2",
-    "vinyl-source-stream": "*"
+    "stream-combiner2": "^1.0.2"
   }
 }
