@@ -20,7 +20,13 @@
     @include pl-xs();
 }
 
+.ct-ptb-xs {
+    @include ptb-xs();
+}
 
+.ct-plr-xs {
+    @include plr-xs();
+}
 // Small padding 10px
 
 .ct-p-sm {
@@ -43,6 +49,13 @@
     @include pl-sm();
 }
 
+.ct-ptb-sm {
+    @include ptb-sm();
+}
+
+.ct-plr-sm {
+    @include plr-sm();
+}
 // Default size
 .ct-p {
     @include p();
@@ -62,6 +75,14 @@
 
 .ct-pl {
     @include pl();
+}
+
+.ct-ptb {
+    @include ptb();
+}
+
+.ct-plr {
+    @include plr();
 }
 
 
@@ -85,4 +106,12 @@
 
 .ct-pl-lg {
     @include pl-lg();
+}
+
+.ct-ptb-lg {
+    @include ptb-lg();
+}
+
+.ct-plr-lg {
+    @include plr-lg();
 }

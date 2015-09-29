@@ -28,6 +28,28 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'codropsicons';
+    src:url('./font/codropsicons/codropsicons.eot');
+    src:url('./font/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+        url('./font/codropsicons/codropsicons.woff') format('woff'),
+        url('./font/codropsicons/codropsicons.ttf') format('truetype'),
+        url('./font/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'feathericons';
+    src:url('../fonts/feathericons/feathericons.eot?-8is7zf');
+    src:url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
+        url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
+        url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
+        url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
+}
+
 .ct-font-roboto {
     font-family: "Roboto", sans-serif;
 }
@@ -37,6 +59,13 @@
 .ct-font-monospace {
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+.ct-codropsicons {
+    font-family: "codropsicons", sans-serif;
+}
+.ct-feathericons {
+    font-family: "feathericons", sans-serif;
+}
+
 
 .ct-capitalize {
     text-transform: capitalize;

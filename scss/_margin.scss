@@ -20,6 +20,14 @@
     @include ml-xs();
 }
 
+.ct-mlr-xs {
+    @include mlr-xs();
+}
+
+.ct-mtb-xs {
+    @include mtb-xs();
+}
+
 
 // Small margin  10px
 
@@ -43,6 +51,14 @@
     @include ml-sm();
 }
 
+.ct-mtb-sm {
+    @include mtb-sm();
+}
+
+.ct-mlr-sm {
+    @include mlr-sm();
+}
+
 // Default size
 .ct-m {
     @include m();
@@ -62,6 +78,14 @@
 
 .ct-ml {
     @include ml();
+}
+
+.ct-mtb {
+    @include mtb();
+}
+
+.ct-mlr {
+    @include mlr();
 }
 
 
@@ -85,4 +109,12 @@
 
 .ct-ml-lg {
     @include ml-lg();
+}
+
+.ct-mtb-lg {
+    @include mtb-lg();
+}
+
+.ct-mlr-lg {
+    @include mlr-lg();
 }
