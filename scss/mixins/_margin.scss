@@ -20,6 +20,16 @@
     margin-left: $number-xs;
 }
 
+@mixin mlr-xs() {
+    margin-left: $number-xs;
+    margin-right: $number-xs;
+}
+
+@mixin mtb-xs() {
+    margin-top: $number-xs;
+    margin-bottom: $number-xs;
+}
+
 
 //Small margin  10px
 
@@ -43,6 +53,16 @@
     margin-left: $number-sm;
 }
 
+@mixin mtb-sm() {
+    margin-top: $number-sm;
+    margin-bottom: $number-sm;
+}
+
+@mixin mlr-sm() {
+    margin-left: $number-sm;
+    margin-right: $number-sm;
+}
+
 //Default size
 @mixin m() {
     margin: $number-md;
@@ -64,6 +84,15 @@
     margin-left: $number-md;
 }
 
+@mixin mtb() {
+    margin-top: $number-md;
+    margin-bottom: $number-md;
+}
+
+@mixin mlr() {
+    margin-left: $number-md;
+    margin-right: $number-md;
+}
 //Large margin  20px
 
 @mixin m-lg() {
@@ -84,4 +113,14 @@
 
 @mixin ml-lg() {
     margin-left: $number-lg;
+}
+
+@mixin mtb-lg() {
+    margin-bottom: $number-lg;
+    margin-top: $number-lg;
+}
+
+@mixin mlr-lg() {
+    margin-left: $number-lg;
+    margin-right: $number-lg;
 }

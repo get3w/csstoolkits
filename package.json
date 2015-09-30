@@ -6,6 +6,9 @@
     "gulp-cssmin": "*",
     "gulp-plumber": "^0.5.0",
     "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.3.5",
     "require-dir": "*",
     "stream-combiner2": "^1.0.2"
   }

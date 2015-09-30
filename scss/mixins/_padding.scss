@@ -20,6 +20,15 @@
     padding-left: $number-xs;
 }
 
+@mixin plr-xs() {
+    padding-left: $number-xs;
+    padding-right: $number-xs;
+}
+
+@mixin ptb-xs() {
+    padding-top: $number-xs;
+    padding-bottom: $number-xs;
+}
 
 //Small padding 10px
 
@@ -43,6 +52,16 @@
     padding-left: $number-sm;
 }
 
+@mixin plr-sm() {
+    padding-left: $number-sm;
+    padding-right: $number-sm;
+}
+
+@mixin ptb-sm() {
+    padding-top: $number-sm;
+    padding-bottom: $number-sm;
+}
+
 //Default size
 @mixin p() {
     padding: $number-md;
@@ -62,6 +81,16 @@
 
 @mixin pl() {
     padding-left: $number-md;
+}
+
+@mixin plr() {
+    padding-left: $number-md;
+    padding-right: $number-md;
+}
+
+@mixin ptb() {
+    padding-top: $number-md;
+    padding-bottom: $number-md;
 }
 
 
@@ -85,4 +114,13 @@
 
 @mixin pl-lg() {
     padding-left: $number-lg;
+}
+
+@mixin plr-lg() {
+    padding-left: $number-lg;
+    padding-right: $number-lg;
+}
+@mixin ptb-lg() {
+    padding-top: $number-lg;
+    padding-bottom: $number-lg;
 }

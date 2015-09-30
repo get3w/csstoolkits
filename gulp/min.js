@@ -1,5 +1,8 @@
 var gulp = require('gulp');
+var watch = require('gulp-watch');
 var concat = require('gulp-concat');
+var rename = require('gulp-rename');
+var uglify = require('gulp-uglify');
 var cssmin = require('gulp-cssmin');
 var combiner = require('stream-combiner2');
 

@@ -73,9 +73,8 @@
 
     &.\--small {
         font-size: $font-size-sm;
-        @include height(30px);
-        @include pl();
-        @include pr();
+        @include height(35px);
+        @include plr();
     }
 
     &.\--mini {
