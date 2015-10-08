@@ -7,30 +7,27 @@
     box-shadow: 0 3px 4px $grey-400;
     border: 0 none;
     cursor: pointer;
-    @include height(40px);
-    @include transition(0.5s);
+    height: $button-height;
+    line-height: $button-line-height;
+    @include transition(0.3s);
     @include text-d-none();
     @include text-center();
-    @include border-radius(3px);
-
+    @include border-radius(2px);
     i {
         font-size: $font-size-base;
         @include mr-xs();
     }
-
     &:hover,
     &:focus,
     &.focus {
         background: $grey-200;
         @include text-d-none();
     }
-
     &:active,
     &.active {
         outline: 0;
         background-image: none;
     }
-
     &.disabled,
     &[disabled],
     fieldset[disabled] & {
@@ -38,45 +35,36 @@
         pointer-events: none; // Future-proof disabling of clicks
         @include opacity(.65);
     }
-
     &.\--green {
         background: $color-green;
         color: $white;
-
         &:hover {
             background: ($color-green - $grey-900);
         }
     }
-
     &.\--red {
         background: $color-red;
         color: $white;
-
         &:hover {
             background: ($color-red - $grey-900);
         }
     }
-
     &.\--blue {
         background: $color-blue;
         color: $white;
-
         &:hover {
             background: ($color-blue - $grey-900);
         }
     }
-
     &.\--large {
         @include height(40px);
-        width: 180px;
+        min-width: 180px;
     }
-
     &.\--small {
         font-size: $font-size-sm;
         @include height(35px);
         @include plr();
     }
-
     &.\--mini {
         padding: 0;
         width: 30px;
@@ -84,20 +72,20 @@
         @include border-radius(50%);
         @include text-center();
         @include text-d-none();
-
-        i{
+        i {
             margin-right: 0;
         }
     }
-
     &.\--block {
         display: block;
         width: 100%;
         padding: 0;
     }
-
     &.\--radius {
         @include border-radius(30px);
+    }
+    &.\--no-shadow {
+        box-shadow: 0 0 0 transparent;
     }
 }
 
@@ -105,7 +93,7 @@
     @include ml-xs();
 }
 
-.ct-btn.block + .ct-btn.block {
-    @include mt-xs();
+.ct-btn.\--block + .ct-btn.\--block {
+    @include mt-sm();
     margin-left: 0;
 }

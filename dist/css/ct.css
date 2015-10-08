@@ -1263,7 +1263,7 @@ th {
   font-family: "Roboto", sans-serif; }
 
 .ct-font-helvetica {
-  font-family: "Helvetica Neue",HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,"Nimbus Sans L","Liberation Sans",Arial,sans-serif; }
+  font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif; }
 
 .ct-font-monospace {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
@@ -1349,93 +1349,74 @@ th {
 .ct-text {
   font-weight: 300; }
 
-@media only screen and (min-width: 360px) {
-  .ct-text {
-    font-size: 1.2rem; } }
-
-@media only screen and (min-width: 390px) {
-  .ct-text {
-    font-size: 1.224rem; } }
-
-@media only screen and (min-width: 420px) {
-  .ct-text {
-    font-size: 1.248rem; } }
-
-@media only screen and (min-width: 450px) {
-  .ct-text {
-    font-size: 1.272rem; } }
-
-@media only screen and (min-width: 480px) {
-  .ct-text {
-    font-size: 1.296rem; } }
-
-@media only screen and (min-width: 510px) {
-  .ct-text {
-    font-size: 1.32rem; } }
-
-@media only screen and (min-width: 540px) {
-  .ct-text {
-    font-size: 1.344rem; } }
-
-@media only screen and (min-width: 570px) {
-  .ct-text {
-    font-size: 1.368rem; } }
-
-@media only screen and (min-width: 600px) {
-  .ct-text {
-    font-size: 1.392rem; } }
-
-@media only screen and (min-width: 630px) {
-  .ct-text {
-    font-size: 1.416rem; } }
-
-@media only screen and (min-width: 660px) {
-  .ct-text {
-    font-size: 1.44rem; } }
-
-@media only screen and (min-width: 690px) {
-  .ct-text {
-    font-size: 1.464rem; } }
-
-@media only screen and (min-width: 720px) {
-  .ct-text {
-    font-size: 1.488rem; } }
-
-@media only screen and (min-width: 750px) {
-  .ct-text {
-    font-size: 1.512rem; } }
-
-@media only screen and (min-width: 780px) {
-  .ct-text {
-    font-size: 1.536rem; } }
-
-@media only screen and (min-width: 810px) {
-  .ct-text {
-    font-size: 1.56rem; } }
-
-@media only screen and (min-width: 840px) {
-  .ct-text {
-    font-size: 1.584rem; } }
-
-@media only screen and (min-width: 870px) {
-  .ct-text {
-    font-size: 1.608rem; } }
-
-@media only screen and (min-width: 900px) {
-  .ct-text {
-    font-size: 1.632rem; } }
-
-@media only screen and (min-width: 930px) {
-  .ct-text {
-    font-size: 1.656rem; } }
-
-@media only screen and (min-width: 960px) {
-  .ct-text {
-    font-size: 1.68rem; } }
+.ct-text {
+  font-weight: 300; }
+  @media only screen and (min-width: 360px) {
+    .ct-text {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 390px) {
+    .ct-text {
+      font-size: 1.224rem; } }
+  @media only screen and (min-width: 420px) {
+    .ct-text {
+      font-size: 1.248rem; } }
+  @media only screen and (min-width: 450px) {
+    .ct-text {
+      font-size: 1.272rem; } }
+  @media only screen and (min-width: 480px) {
+    .ct-text {
+      font-size: 1.296rem; } }
+  @media only screen and (min-width: 510px) {
+    .ct-text {
+      font-size: 1.32rem; } }
+  @media only screen and (min-width: 540px) {
+    .ct-text {
+      font-size: 1.344rem; } }
+  @media only screen and (min-width: 570px) {
+    .ct-text {
+      font-size: 1.368rem; } }
+  @media only screen and (min-width: 600px) {
+    .ct-text {
+      font-size: 1.392rem; } }
+  @media only screen and (min-width: 630px) {
+    .ct-text {
+      font-size: 1.416rem; } }
+  @media only screen and (min-width: 660px) {
+    .ct-text {
+      font-size: 1.44rem; } }
+  @media only screen and (min-width: 690px) {
+    .ct-text {
+      font-size: 1.464rem; } }
+  @media only screen and (min-width: 720px) {
+    .ct-text {
+      font-size: 1.488rem; } }
+  @media only screen and (min-width: 750px) {
+    .ct-text {
+      font-size: 1.512rem; } }
+  @media only screen and (min-width: 780px) {
+    .ct-text {
+      font-size: 1.536rem; } }
+  @media only screen and (min-width: 810px) {
+    .ct-text {
+      font-size: 1.56rem; } }
+  @media only screen and (min-width: 840px) {
+    .ct-text {
+      font-size: 1.584rem; } }
+  @media only screen and (min-width: 870px) {
+    .ct-text {
+      font-size: 1.608rem; } }
+  @media only screen and (min-width: 900px) {
+    .ct-text {
+      font-size: 1.632rem; } }
+  @media only screen and (min-width: 930px) {
+    .ct-text {
+      font-size: 1.656rem; } }
+  @media only screen and (min-width: 960px) {
+    .ct-text {
+      font-size: 1.68rem; } }
 
 @media only screen and (max-width: 360px) {
-  .ct-text {
-    font-size: 1.2rem; } }
+  font-size: 1.2rem; }
 
 .ct-bg-green {
   background-color: #3bbf38 !important;
@@ -2331,14 +2312,14 @@ th {
           box-shadow: 0 3px 4px #bdbdbd;
   border: 0 none;
   cursor: pointer;
-  height: 40px;
-  line-height: 40px;
-  -webkit-transition: all 0.5s;
-       -o-transition: all 0.5s;
-          transition: all 0.5s;
+  height: 36px;
+  line-height: 36px;
+  -webkit-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
   text-decoration: none;
   text-align: center;
-  border-radius: 3px; }
+  border-radius: 2px; }
   .ct-btn i {
     font-size: 14px;
     margin-right: 5px; }
@@ -2375,7 +2356,7 @@ th {
   .ct-btn.\--large {
     height: 40px;
     line-height: 40px;
-    width: 180px; }
+    min-width: 180px; }
   .ct-btn.\--small {
     font-size: 12px;
     height: 35px;
@@ -2398,12 +2379,15 @@ th {
     padding: 0; }
   .ct-btn.\--radius {
     border-radius: 30px; }
+  .ct-btn.\--no-shadow {
+    -webkit-box-shadow: 0 0 0 transparent;
+            box-shadow: 0 0 0 transparent; }
 
 .ct-btn + .ct-btn {
   margin-left: 5px; }
 
-.ct-btn.block + .ct-btn.block {
-  margin-top: 5px;
+.ct-btn.\--block + .ct-btn.\--block {
+  margin-top: 10px;
   margin-left: 0; }
 
 .ct-calendar {
