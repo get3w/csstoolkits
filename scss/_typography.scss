@@ -32,47 +32,46 @@
     font-weight: normal;
     font-style: normal;
     font-family: 'codropsicons';
-    src:url('./font/codropsicons/codropsicons.eot');
-    src:url('./font/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
-        url('./font/codropsicons/codropsicons.woff') format('woff'),
-        url('./font/codropsicons/codropsicons.ttf') format('truetype'),
-        url('./font/codropsicons/codropsicons.svg#codropsicons') format('svg');
+    src: url('./font/codropsicons/codropsicons.eot');
+    src: url('./font/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'), url('./font/codropsicons/codropsicons.woff') format('woff'), url('./font/codropsicons/codropsicons.ttf') format('truetype'), url('./font/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
 
 @font-face {
     font-weight: normal;
     font-style: normal;
     font-family: 'feathericons';
-    src:url('../fonts/feathericons/feathericons.eot?-8is7zf');
-    src:url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
-        url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
-        url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
-        url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
+    src: url('../fonts/feathericons/feathericons.eot?-8is7zf');
+    src: url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'), url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'), url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'), url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
 }
 
 .ct-font-roboto {
     font-family: "Roboto", sans-serif;
 }
+
 .ct-font-helvetica {
-    font-family: "Helvetica Neue",HelveticaNeue,Helvetica,TeXGyreHeros,FreeSans,"Nimbus Sans L","Liberation Sans",Arial,sans-serif;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
 }
+
 .ct-font-monospace {
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
 .ct-codropsicons {
     font-family: "codropsicons", sans-serif;
 }
+
 .ct-feathericons {
     font-family: "feathericons", sans-serif;
 }
 
-
 .ct-capitalize {
     text-transform: capitalize;
 }
+
 .ct-uppercase {
     text-transform: uppercase;
 }
+
 .ct-lowercase {
     text-transform: lowercase;
 }
@@ -160,132 +159,18 @@
     font-weight: 300;
 }
 
-@media only screen and (min-width: 360px) {
-    .ct-text {
-        font-size: 1.2rem;
+.ct-text {
+    font-weight: 300;
+    $i: 0;
+    @while $i <=$intervals {
+        @media only screen and (min-width: 360 + ($i * $interval-size)) {
+            font-size: 1.2rem * (1 + (.02 * $i));
+        }
+        $i: $i + 1;
     }
 }
 
-@media only screen and (min-width: 390px) {
-    .ct-text {
-        font-size: 1.224rem;
-    }
-}
-
-@media only screen and (min-width: 420px) {
-    .ct-text {
-        font-size: 1.248rem;
-    }
-}
-
-@media only screen and (min-width: 450px) {
-    .ct-text {
-        font-size: 1.272rem;
-    }
-}
-
-@media only screen and (min-width: 480px) {
-    .ct-text {
-        font-size: 1.296rem;
-    }
-}
-
-@media only screen and (min-width: 510px) {
-    .ct-text {
-        font-size: 1.32rem;
-    }
-}
-
-@media only screen and (min-width: 540px) {
-    .ct-text {
-        font-size: 1.344rem;
-    }
-}
-
-@media only screen and (min-width: 570px) {
-    .ct-text {
-        font-size: 1.368rem;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .ct-text {
-        font-size: 1.392rem;
-    }
-}
-
-@media only screen and (min-width: 630px) {
-    .ct-text {
-        font-size: 1.416rem;
-    }
-}
-
-@media only screen and (min-width: 660px) {
-    .ct-text {
-        font-size: 1.44rem;
-    }
-}
-
-@media only screen and (min-width: 690px) {
-    .ct-text {
-        font-size: 1.464rem;
-    }
-}
-
-@media only screen and (min-width: 720px) {
-    .ct-text {
-        font-size: 1.488rem;
-    }
-}
-
-@media only screen and (min-width: 750px) {
-    .ct-text {
-        font-size: 1.512rem;
-    }
-}
-
-@media only screen and (min-width: 780px) {
-    .ct-text {
-        font-size: 1.536rem;
-    }
-}
-
-@media only screen and (min-width: 810px) {
-    .ct-text {
-        font-size: 1.56rem;
-    }
-}
-
-@media only screen and (min-width: 840px) {
-    .ct-text {
-        font-size: 1.584rem;
-    }
-}
-
-@media only screen and (min-width: 870px) {
-    .ct-text {
-        font-size: 1.608rem;
-    }
-}
-
-@media only screen and (min-width: 900px) {
-    .ct-text {
-        font-size: 1.632rem;
-    }
-}
-
-@media only screen and (min-width: 930px) {
-    .ct-text {
-        font-size: 1.656rem;
-    }
-}
-
-@media only screen and (min-width: 960px) {
-    .ct-text {
-        font-size: 1.68rem;
-    }
-}
-
+// Handle below 360px screen
 @media only screen and (max-width: 360px) {
     .ct-text {
         font-size: 1.2rem;

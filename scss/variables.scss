@@ -39,6 +39,18 @@ $font-size-base: 14px;
 $font-size-sm: 12px;
 $font-size-lg: 16px;
 
+//About Button width
+$button-height: 36px !default;
+$button-line-height: 36px !default;
+
+// Flowtext
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$range : $large-screen - $small-screen !default;
+$intervals: 20 !default;
+$interval-size: $range / $intervals !default;
 
 // Variables
 //
@@ -69,7 +81,7 @@ $grid-gutter-width:          1.5rem !default;
 
 // Container sizes
 //
-// Define the maximum width of `.container` for different screen sizes.
+// Define the maximum width of `.ct-container` for different screen sizes.
 
 $container-max-widths: (
   sm: 34rem,    // 480
