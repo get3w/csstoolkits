@@ -1,63 +1,49 @@
 .ct-border {
     border: 0px solid #d2d2d2;
-
     &.\--all {
         border-width: 1px;
     }
-
     &.\--top {
         border-top-width: 1px;
     }
-
     &.\--right {
         border-right-width: 1px;
     }
-
     &.\--bottom {
         border-bottom-width: 1px;
     }
-
     &.\--left {
         border-left-width: 1px;
     }
-
     &.\--thick {
         &.\--all {
             border-width: 4px;
         }
-
         &.\--top {
             border-top-width: 4px;
         }
-
         &.\--right {
             border-right-width: 4px;
         }
-
         &.\--bottom {
             border-bottom-width: 4px;
         }
-
         &.\--left {
             border-left-width: 4px;
         }
     }
-
     &.\--green {
         border-color: $color-green;
     }
     &.\--red {
         border-color: $color-red;
     }
-
     &.\--blue {
         border-color: $color-blue;
     }
-
     &.\--yellow {
         border-color: $color-yellow;
     }
-
     &.\--purple {
         border-color: $color-purple;
     }

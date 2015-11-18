@@ -1,12 +1,15 @@
 @mixin text-shadow ($string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
-	text-shadow: $string;
+    text-shadow: $string;
 }
+
 @mixin box-shadow ($string) {
-	box-shadow:         $string;
+    box-shadow: $string;
 }
+
 @mixin drop-shadow ($x: 0, $y: 1px, $blur: 2px, $spread: 0, $alpha: 0.25) {
-	box-shadow:		$x $y $blur $spread rgba(0, 0, 0, $alpha);
+    box-shadow: $x $y $blur $spread rgba(0, 0, 0, $alpha);
 }
+
 @mixin inner-shadow ($x: 0, $y: 1px, $blur: 2px, $spread: 0, $alpha: 0.25) {
-	box-shadow:         inset $x $y $blur $spread rgba(0, 0, 0, $alpha);
+    box-shadow: inset $x $y $blur $spread rgba(0, 0, 0, $alpha);
 }
