@@ -4,77 +4,61 @@
     @include border-radius(4px);
     @include text-center();
     @include p-sm();
-
     &.\--success {
         background-color: #74C080;
         border-color: #74C080;
         color: #fff;
-
         hr {
             border-top-color: #bae0c0;
         }
-
         a {
             color: #51b060;
         }
     }
-
     &.\--info {
         background-color: #56CDFC;
         border-color: #56CDFC;
         color: #fff;
-
         hr {
             border-top-color: #baebfe;
         }
-
         a {
             color: #24befb;
         }
     }
-
     &.\--warning {
         background-color: #fef2e6;
         border-color: #fdd3aa;
         color: #FA9F47;
-
         hr {
             border-top-color: #fcc691;
         }
-
         a {
             color: #f98515;
         }
     }
-
     &.\--danger {
-        background-color: #D64242;
-        border-color: #D64242;
+        background-color: #F6938B;
+        border-color: #F6938B;
         color: #FFF;
-
         hr {
             border-top-color: #d12d2d;
         }
-
         a {
             color: #e6e6e6;
         }
     }
-
     a {
         color: inherit;
     }
-
     .__title {
         font-weight: 700;
         display: block;
         font-size: $font-size-base;
     }
-
     .__title:not(:only-child) {
         padding-bottom: 4px;
     }
-
     .__body {
         font-size: ($font-size-base - 1);
     }

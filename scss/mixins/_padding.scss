@@ -1,5 +1,4 @@
 // Extra small padding 5px
-
 @mixin p-xs() {
     padding: $number-xs;
 }
@@ -31,7 +30,6 @@
 }
 
 //Small padding 10px
-
 @mixin p-sm() {
     padding: $number-sm;
 }
@@ -93,9 +91,7 @@
     padding-bottom: $number-md;
 }
 
-
 //Large padding 20px
-
 @mixin p-lg() {
     padding: $number-lg;
 }
@@ -120,6 +116,7 @@
     padding-left: $number-lg;
     padding-right: $number-lg;
 }
+
 @mixin ptb-lg() {
     padding-top: $number-lg;
     padding-bottom: $number-lg;

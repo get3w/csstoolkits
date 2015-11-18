@@ -1,5 +1,5 @@
 /*!
- * Csstoolkits v0.0.1 (http://csstoolkits.com)
+ * Csstoolkits V0.0.2 (http://csstoolkits.com)
  * Copyright 2015-2016 Get3w Inc.
  * Licensed under MIT
  */
@@ -1220,6 +1220,615 @@ th {
 .ct-bottom {
   vertical-align: bottom; }
 
+/* Table */
+.table-wrapper {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto; }
+
+table {
+  margin: 0 0 2em 0;
+  width: 100%; }
+
+table tbody tr {
+  border: solid 1px;
+  border-left: 0;
+  border-right: 0; }
+
+table td {
+  padding: 0.75em 0.75em; }
+
+table th {
+  font-size: 0.9em;
+  font-weight: normal;
+  padding: 0 0.75em 0.75em 0.75em;
+  text-align: left; }
+
+table thead {
+  border-bottom: solid 2px; }
+
+table tfoot {
+  border-top: solid 2px; }
+
+table.alt {
+  border-collapse: separate; }
+
+table.alt tbody tr td {
+  border: solid 1px;
+  border-left-width: 0;
+  border-top-width: 0; }
+
+table.alt tbody tr td:first-child {
+  border-left-width: 1px; }
+
+table.alt tbody tr:first-child td {
+  border-top-width: 1px; }
+
+table.alt thead {
+  border-bottom: 0; }
+
+table.alt tfoot {
+  border-top: 0; }
+
+table.alt tbody tr td {
+  border-color: rgba(144, 144, 144, 0.2); }
+
+table tbody tr {
+  border-color: rgba(144, 144, 144, 0.2); }
+
+table tbody tr:nth-child(2n + 1) {
+  background-color: rgba(144, 144, 144, 0.075); }
+
+table th {
+  color: #707070; }
+
+table thead {
+  border-bottom-color: rgba(144, 144, 144, 0.2); }
+
+table tfoot {
+  border-top-color: rgba(144, 144, 144, 0.2); }
+
+@font-face {
+  font-family: 'octicons';
+  src: url("../font/octicons/octicons.eot?#iefix&v=a3a5b5edf00d5801adeb5d1357368e1c32b1bcc2") format("embedded-opentype"), url("../font/octicons/octicons.woff?v=a3a5b5edf00d5801adeb5d1357368e1c32b1bcc2") format("woff"), url("../font/octicons/octicons.ttf?v=a3a5b5edf00d5801adeb5d1357368e1c32b1bcc2") format("truetype"), url("../font/octicons/octicons.svg?v=a3a5b5edf00d5801adeb5d1357368e1c32b1bcc2#octicons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.octicon, .mega-octicon {
+  font: normal normal normal 16px/1 octicons;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.mega-octicon {
+  font-size: 32px; }
+
+.octicon-alert:before {
+  content: '\f02d'; }
+
+.octicon-arrow-down:before {
+  content: '\f03f'; }
+
+.octicon-arrow-left:before {
+  content: '\f040'; }
+
+.octicon-arrow-right:before {
+  content: '\f03e'; }
+
+.octicon-arrow-small-down:before {
+  content: '\f0a0'; }
+
+.octicon-arrow-small-left:before {
+  content: '\f0a1'; }
+
+.octicon-arrow-small-right:before {
+  content: '\f071'; }
+
+.octicon-arrow-small-up:before {
+  content: '\f09f'; }
+
+.octicon-arrow-up:before {
+  content: '\f03d'; }
+
+.octicon-microscope:before,
+.octicon-beaker:before {
+  content: '\f0dd'; }
+
+.octicon-bell:before {
+  content: '\f0de'; }
+
+.octicon-bold:before {
+  content: '\f0e2'; }
+
+.octicon-book:before {
+  content: '\f007'; }
+
+.octicon-bookmark:before {
+  content: '\f07b'; }
+
+.octicon-briefcase:before {
+  content: '\f0d3'; }
+
+.octicon-broadcast:before {
+  content: '\f048'; }
+
+.octicon-browser:before {
+  content: '\f0c5'; }
+
+.octicon-bug:before {
+  content: '\f091'; }
+
+.octicon-calendar:before {
+  content: '\f068'; }
+
+.octicon-check:before {
+  content: '\f03a'; }
+
+.octicon-checklist:before {
+  content: '\f076'; }
+
+.octicon-chevron-down:before {
+  content: '\f0a3'; }
+
+.octicon-chevron-left:before {
+  content: '\f0a4'; }
+
+.octicon-chevron-right:before {
+  content: '\f078'; }
+
+.octicon-chevron-up:before {
+  content: '\f0a2'; }
+
+.octicon-circle-slash:before {
+  content: '\f084'; }
+
+.octicon-circuit-board:before {
+  content: '\f0d6'; }
+
+.octicon-clippy:before {
+  content: '\f035'; }
+
+.octicon-clock:before {
+  content: '\f046'; }
+
+.octicon-cloud-download:before {
+  content: '\f00b'; }
+
+.octicon-cloud-upload:before {
+  content: '\f00c'; }
+
+.octicon-code:before {
+  content: '\f05f'; }
+
+.octicon-color-mode:before {
+  content: '\f065'; }
+
+.octicon-comment-add:before,
+.octicon-comment:before {
+  content: '\f02b'; }
+
+.octicon-comment-discussion:before {
+  content: '\f04f'; }
+
+.octicon-credit-card:before {
+  content: '\f045'; }
+
+.octicon-dash:before {
+  content: '\f0ca'; }
+
+.octicon-dashboard:before {
+  content: '\f07d'; }
+
+.octicon-database:before {
+  content: '\f096'; }
+
+.octicon-clone:before,
+.octicon-desktop-download:before {
+  content: '\f0dc'; }
+
+.octicon-device-camera:before {
+  content: '\f056'; }
+
+.octicon-device-camera-video:before {
+  content: '\f057'; }
+
+.octicon-device-desktop:before {
+  content: '\f27c'; }
+
+.octicon-device-mobile:before {
+  content: '\f038'; }
+
+.octicon-diff:before {
+  content: '\f04d'; }
+
+.octicon-diff-added:before {
+  content: '\f06b'; }
+
+.octicon-diff-ignored:before {
+  content: '\f099'; }
+
+.octicon-diff-modified:before {
+  content: '\f06d'; }
+
+.octicon-diff-removed:before {
+  content: '\f06c'; }
+
+.octicon-diff-renamed:before {
+  content: '\f06e'; }
+
+.octicon-ellipsis:before {
+  content: '\f09a'; }
+
+.octicon-eye-unwatch:before,
+.octicon-eye-watch:before,
+.octicon-eye:before {
+  content: '\f04e'; }
+
+.octicon-file-binary:before {
+  content: '\f094'; }
+
+.octicon-file-code:before {
+  content: '\f010'; }
+
+.octicon-file-directory:before {
+  content: '\f016'; }
+
+.octicon-file-media:before {
+  content: '\f012'; }
+
+.octicon-file-pdf:before {
+  content: '\f014'; }
+
+.octicon-file-submodule:before {
+  content: '\f017'; }
+
+.octicon-file-symlink-directory:before {
+  content: '\f0b1'; }
+
+.octicon-file-symlink-file:before {
+  content: '\f0b0'; }
+
+.octicon-file-text:before {
+  content: '\f011'; }
+
+.octicon-file-zip:before {
+  content: '\f013'; }
+
+.octicon-flame:before {
+  content: '\f0d2'; }
+
+.octicon-fold:before {
+  content: '\f0cc'; }
+
+.octicon-gear:before {
+  content: '\f02f'; }
+
+.octicon-gift:before {
+  content: '\f042'; }
+
+.octicon-gist:before {
+  content: '\f00e'; }
+
+.octicon-gist-secret:before {
+  content: '\f08c'; }
+
+.octicon-git-branch-create:before,
+.octicon-git-branch-delete:before,
+.octicon-git-branch:before {
+  content: '\f020'; }
+
+.octicon-git-commit:before {
+  content: '\f01f'; }
+
+.octicon-git-compare:before {
+  content: '\f0ac'; }
+
+.octicon-git-merge:before {
+  content: '\f023'; }
+
+.octicon-git-pull-request-abandoned:before,
+.octicon-git-pull-request:before {
+  content: '\f009'; }
+
+.octicon-globe:before {
+  content: '\f0b6'; }
+
+.octicon-graph:before {
+  content: '\f043'; }
+
+.octicon-heart:before {
+  content: '\2665'; }
+
+.octicon-history:before {
+  content: '\f07e'; }
+
+.octicon-home:before {
+  content: '\f08d'; }
+
+.octicon-horizontal-rule:before {
+  content: '\f070'; }
+
+.octicon-hubot:before {
+  content: '\f09d'; }
+
+.octicon-inbox:before {
+  content: '\f0cf'; }
+
+.octicon-info:before {
+  content: '\f059'; }
+
+.octicon-issue-closed:before {
+  content: '\f028'; }
+
+.octicon-issue-opened:before {
+  content: '\f026'; }
+
+.octicon-issue-reopened:before {
+  content: '\f027'; }
+
+.octicon-italic:before {
+  content: '\f0e4'; }
+
+.octicon-jersey:before {
+  content: '\f019'; }
+
+.octicon-key:before {
+  content: '\f049'; }
+
+.octicon-keyboard:before {
+  content: '\f00d'; }
+
+.octicon-law:before {
+  content: '\f0d8'; }
+
+.octicon-light-bulb:before {
+  content: '\f000'; }
+
+.octicon-link:before {
+  content: '\f05c'; }
+
+.octicon-link-external:before {
+  content: '\f07f'; }
+
+.octicon-list-ordered:before {
+  content: '\f062'; }
+
+.octicon-list-unordered:before {
+  content: '\f061'; }
+
+.octicon-location:before {
+  content: '\f060'; }
+
+.octicon-gist-private:before,
+.octicon-mirror-private:before,
+.octicon-git-fork-private:before,
+.octicon-lock:before {
+  content: '\f06a'; }
+
+.octicon-logo-github:before {
+  content: '\f092'; }
+
+.octicon-mail:before {
+  content: '\f03b'; }
+
+.octicon-mail-read:before {
+  content: '\f03c'; }
+
+.octicon-mail-reply:before {
+  content: '\f051'; }
+
+.octicon-mark-github:before {
+  content: '\f00a'; }
+
+.octicon-markdown:before {
+  content: '\f0c9'; }
+
+.octicon-megaphone:before {
+  content: '\f077'; }
+
+.octicon-mention:before {
+  content: '\f0be'; }
+
+.octicon-milestone:before {
+  content: '\f075'; }
+
+.octicon-mirror-public:before,
+.octicon-mirror:before {
+  content: '\f024'; }
+
+.octicon-mortar-board:before {
+  content: '\f0d7'; }
+
+.octicon-mute:before {
+  content: '\f080'; }
+
+.octicon-no-newline:before {
+  content: '\f09c'; }
+
+.octicon-octoface:before {
+  content: '\f008'; }
+
+.octicon-organization:before {
+  content: '\f037'; }
+
+.octicon-package:before {
+  content: '\f0c4'; }
+
+.octicon-paintcan:before {
+  content: '\f0d1'; }
+
+.octicon-pencil:before {
+  content: '\f058'; }
+
+.octicon-person-add:before,
+.octicon-person-follow:before,
+.octicon-person:before {
+  content: '\f018'; }
+
+.octicon-pin:before {
+  content: '\f041'; }
+
+.octicon-plug:before {
+  content: '\f0d4'; }
+
+.octicon-repo-create:before,
+.octicon-gist-new:before,
+.octicon-file-directory-create:before,
+.octicon-file-add:before,
+.octicon-plus:before {
+  content: '\f05d'; }
+
+.octicon-primitive-dot:before {
+  content: '\f052'; }
+
+.octicon-primitive-square:before {
+  content: '\f053'; }
+
+.octicon-pulse:before {
+  content: '\f085'; }
+
+.octicon-question:before {
+  content: '\f02c'; }
+
+.octicon-quote:before {
+  content: '\f063'; }
+
+.octicon-radio-tower:before {
+  content: '\f030'; }
+
+.octicon-repo-delete:before,
+.octicon-repo:before {
+  content: '\f001'; }
+
+.octicon-repo-clone:before {
+  content: '\f04c'; }
+
+.octicon-repo-force-push:before {
+  content: '\f04a'; }
+
+.octicon-gist-fork:before,
+.octicon-repo-forked:before {
+  content: '\f002'; }
+
+.octicon-repo-pull:before {
+  content: '\f006'; }
+
+.octicon-repo-push:before {
+  content: '\f005'; }
+
+.octicon-rocket:before {
+  content: '\f033'; }
+
+.octicon-rss:before {
+  content: '\f034'; }
+
+.octicon-ruby:before {
+  content: '\f047'; }
+
+.octicon-search-save:before,
+.octicon-search:before {
+  content: '\f02e'; }
+
+.octicon-server:before {
+  content: '\f097'; }
+
+.octicon-settings:before {
+  content: '\f07c'; }
+
+.octicon-shield:before {
+  content: '\f0e1'; }
+
+.octicon-log-in:before,
+.octicon-sign-in:before {
+  content: '\f036'; }
+
+.octicon-log-out:before,
+.octicon-sign-out:before {
+  content: '\f032'; }
+
+.octicon-squirrel:before {
+  content: '\f0b2'; }
+
+.octicon-star-add:before,
+.octicon-star-delete:before,
+.octicon-star:before {
+  content: '\f02a'; }
+
+.octicon-stop:before {
+  content: '\f08f'; }
+
+.octicon-repo-sync:before,
+.octicon-sync:before {
+  content: '\f087'; }
+
+.octicon-tag-remove:before,
+.octicon-tag-add:before,
+.octicon-tag:before {
+  content: '\f015'; }
+
+.octicon-tasklist:before {
+  content: '\f0e5'; }
+
+.octicon-telescope:before {
+  content: '\f088'; }
+
+.octicon-terminal:before {
+  content: '\f0c8'; }
+
+.octicon-text-size:before {
+  content: '\f0e3'; }
+
+.octicon-three-bars:before {
+  content: '\f05e'; }
+
+.octicon-thumbsdown:before {
+  content: '\f0db'; }
+
+.octicon-thumbsup:before {
+  content: '\f0da'; }
+
+.octicon-tools:before {
+  content: '\f031'; }
+
+.octicon-trashcan:before {
+  content: '\f0d0'; }
+
+.octicon-triangle-down:before {
+  content: '\f05b'; }
+
+.octicon-triangle-left:before {
+  content: '\f044'; }
+
+.octicon-triangle-right:before {
+  content: '\f05a'; }
+
+.octicon-triangle-up:before {
+  content: '\f0aa'; }
+
+.octicon-unfold:before {
+  content: '\f039'; }
+
+.octicon-unmute:before {
+  content: '\f0ba'; }
+
+.octicon-versions:before {
+  content: '\f064'; }
+
+.octicon-watch:before {
+  content: '\f0e0'; }
+
+.octicon-remove-close:before,
+.octicon-x:before {
+  content: '\f081'; }
+
+.octicon-zap:before {
+  content: '\26A1'; }
+
 @font-face {
   font-family: "Roboto";
   src: local(Roboto Thin), url("./font/roboto/Roboto-Thin.woff2") format("woff2"), url("./font/roboto/Roboto-Thin.woff") format("woff"), url("./font/roboto/Roboto-Thin.ttf") format("truetype");
@@ -1416,7 +2025,8 @@ th {
       font-size: 1.68rem; } }
 
 @media only screen and (max-width: 360px) {
-  font-size: 1.2rem; }
+  .ct-text {
+    font-size: 1.2rem; } }
 
 .ct-bg-green {
   background-color: #3bbf38 !important;
@@ -2354,9 +2964,8 @@ th {
     .ct-btn.\--blue:hover {
       background: #0895d5; }
   .ct-btn.\--large {
-    height: 40px;
-    line-height: 40px;
-    min-width: 180px; }
+    height: 45px;
+    line-height: 45px; }
   .ct-btn.\--small {
     font-size: 12px;
     height: 35px;
@@ -2490,7 +3099,7 @@ th {
   white-space: nowrap; }
 
 .ct-text-hide {
-  font: "0/0" a;
+  font: "0/0";
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -3378,9 +3987,12 @@ th {
     text-indent: 7px;
     padding: 3px;
     float: left; }
-  .ct-form .__text:focus, .ct-form .__text-sm:focus, .ct-form .__textarea:focus {
+  .ct-form .__text:focus,
+  .ct-form .__text-sm:focus,
+  .ct-form .__textarea:focus {
     border-color: #20b11d; }
-  .ct-form .\--error, .ct-form .\--error:focus {
+  .ct-form .\--error,
+  .ct-form .\--error:focus {
     border-color: #ee5a5a; }
   .ct-form .__tips {
     margin: 10px 0 0 20px;
@@ -3435,6 +4047,207 @@ th {
     padding: 3px;
     font-size: 12px;
     float: left; }
+
+.ct-form {
+  font-size: 14px; }
+  .ct-form.\--small {
+    font-size: 11px; }
+  .ct-form.\--inline label,
+  .ct-form.\--inline .ct-form-control,
+  .ct-form.\--inline .ct-select-wrapper {
+    display: inline-block; }
+  .ct-form.\--inline .ct-form-control {
+    width: auto; }
+  .ct-form.\--green .ct-form-control:focus {
+    border-color: #3bbf38;
+    -webkit-box-shadow: 0 0 0 1px #3bbf38;
+            box-shadow: 0 0 0 1px #3bbf38; }
+  .ct-form.\--green input[type="checkbox"]:checked + label:before,
+  .ct-form.\--green input[type="radio"]:checked + label:before {
+    background-color: #3bbf38;
+    border-color: #3bbf38;
+    color: #ffffff; }
+  .ct-form.\--green input[type="checkbox"]:focus + label:before,
+  .ct-form.\--green input[type="radio"]:focus + label:before {
+    border-color: #3bbf38;
+    -webkit-box-shadow: 0 0 0 1px #3bbf38;
+            box-shadow: 0 0 0 1px #3bbf38; }
+  .ct-form.\--red .ct-form-control:focus {
+    border-color: #f36c60;
+    -webkit-box-shadow: 0 0 0 1px #f36c60;
+            box-shadow: 0 0 0 1px #f36c60; }
+  .ct-form.\--red input[type="checkbox"]:checked + label:before,
+  .ct-form.\--red input[type="radio"]:checked + label:before {
+    background-color: #f36c60;
+    border-color: #f36c60;
+    color: #ffffff; }
+  .ct-form.\--red input[type="checkbox"]:focus + label:before,
+  .ct-form.\--red input[type="radio"]:focus + label:before {
+    border-color: #f36c60;
+    -webkit-box-shadow: 0 0 0 1px #f36c60;
+            box-shadow: 0 0 0 1px #f36c60; }
+  .ct-form.\--blue .ct-form-control:focus {
+    border-color: #29b6f6;
+    -webkit-box-shadow: 0 0 0 1px #29b6f6;
+            box-shadow: 0 0 0 1px #29b6f6; }
+  .ct-form.\--blue input[type="checkbox"]:checked + label:before,
+  .ct-form.\--blue input[type="radio"]:checked + label:before {
+    background-color: #29b6f6;
+    border-color: #29b6f6;
+    color: #ffffff; }
+  .ct-form.\--blue input[type="checkbox"]:focus + label:before,
+  .ct-form.\--blue input[type="radio"]:focus + label:before {
+    border-color: #29b6f6;
+    -webkit-box-shadow: 0 0 0 1px #29b6f6;
+            box-shadow: 0 0 0 1px #29b6f6; }
+  .ct-form form {
+    margin: 0 0 2em 0; }
+  .ct-form label {
+    display: block;
+    font-size: 0.9em;
+    font-weight: normal;
+    margin: 0 0 1em 0; }
+  .ct-form .ct-form-control {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border-radius: 4px;
+    border: solid 1px;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%; }
+  .ct-form .ct-form-control:invalid {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .ct-form .ct-select-wrapper {
+    text-decoration: none;
+    display: block;
+    position: relative; }
+  .ct-form .ct-select-wrapper:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: octicons;
+    font-weight: normal;
+    text-transform: none !important; }
+  .ct-form .ct-select-wrapper:before {
+    content: '\f03a';
+    display: block;
+    height: 2.75em;
+    line-height: 2.75em;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 2.75em; }
+  .ct-form .ct-select-wrapper select::-ms-expand {
+    display: none; }
+  .ct-form .ct-form-control {
+    height: 2.75em; }
+    .ct-form .ct-form-control.\--textarea {
+      height: auto;
+      padding: 0.75em 1em; }
+  .ct-form input[type="checkbox"],
+  .ct-form input[type="radio"] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    display: block;
+    float: left;
+    margin-right: -2em;
+    opacity: 0;
+    width: 1em;
+    z-index: -1; }
+  .ct-form input[type="checkbox"] + label,
+  .ct-form input[type="radio"] + label {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: normal;
+    padding-left: 2.4em;
+    padding-right: 0.75em;
+    position: relative; }
+  .ct-form input[type="checkbox"] + label:before,
+  .ct-form input[type="radio"] + label:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: octicons;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important; }
+  .ct-form input[type="checkbox"] + label:before,
+  .ct-form input[type="radio"] + label:before {
+    border-radius: 4px;
+    border: solid 1px;
+    content: '';
+    display: inline-block;
+    height: 1.5em;
+    left: 0;
+    line-height: 1.58125em;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 1.5em; }
+  .ct-form input[type="checkbox"]:checked + label:before,
+  .ct-form input[type="radio"]:checked + label:before {
+    content: '\f03a'; }
+  .ct-form input[type="checkbox"] + label:before {
+    border-radius: 4px; }
+  .ct-form input[type="radio"] + label:before {
+    border-radius: 100%; }
+  .ct-form ::-webkit-input-placeholder {
+    opacity: 1.0; }
+  .ct-form :-moz-placeholder {
+    opacity: 1.0; }
+  .ct-form ::-moz-placeholder {
+    opacity: 1.0; }
+  .ct-form :-ms-input-placeholder {
+    opacity: 1.0; }
+  .ct-form .ct-formerize-placeholder {
+    opacity: 1.0; }
+  .ct-form label {
+    color: #707070; }
+  .ct-form .ct-form-control {
+    background: rgba(144, 144, 144, 0.075);
+    border-color: rgba(144, 144, 144, 0.2); }
+  .ct-form .ct-form-control:focus {
+    border-color: #4dbea0;
+    -webkit-box-shadow: 0 0 0 1px #4dbea0;
+            box-shadow: 0 0 0 1px #4dbea0; }
+  .ct-form .ct-select-wrapper:before {
+    color: rgba(144, 144, 144, 0.2); }
+  .ct-form input[type="checkbox"] + label,
+  .ct-form input[type="radio"] + label {
+    color: #999999; }
+  .ct-form input[type="checkbox"] + label:before,
+  .ct-form input[type="radio"] + label:before {
+    background: rgba(144, 144, 144, 0.075);
+    border-color: rgba(144, 144, 144, 0.2); }
+  .ct-form input[type="checkbox"]:checked + label:before,
+  .ct-form input[type="radio"]:checked + label:before {
+    background-color: #4dbea0;
+    border-color: #4dbea0;
+    color: #ffffff; }
+  .ct-form input[type="checkbox"]:focus + label:before,
+  .ct-form input[type="radio"]:focus + label:before {
+    border-color: #4dbea0;
+    -webkit-box-shadow: 0 0 0 1px #4dbea0;
+            box-shadow: 0 0 0 1px #4dbea0; }
+  .ct-form ::-webkit-input-placeholder {
+    color: #999999 !important; }
+  .ct-form :-moz-placeholder {
+    color: #999999 !important; }
+  .ct-form ::-moz-placeholder {
+    color: #999999 !important; }
+  .ct-form :-ms-input-placeholder {
+    color: #999999 !important; }
+  .ct-form .ct-formerize-placeholder {
+    color: #999999 !important; }
 
 .ct-h1 {
   font-size: 36px;

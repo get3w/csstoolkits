@@ -1,5 +1,4 @@
 //float
-
 .ct-fl {
     float: left;
     display: inline;
@@ -11,8 +10,9 @@
 }
 
 @mixin fl() {
-	float: left;
+    float: left;
 }
+
 @mixin fr() {
-	float: right;
+    float: right;
 }
