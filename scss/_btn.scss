@@ -15,7 +15,7 @@
     @include border-radius(2px);
     i {
         font-size: $font-size-base;
-        @include mr-xs();
+        margin-right: 5px;
     }
     &:hover,
     &:focus,
@@ -62,8 +62,9 @@
     }
     &.\--small {
         font-size: $font-size-sm;
+        padding-left: 15px;
+        padding-right: 15px;
         @include height(35px);
-        @include plr();
     }
     &.\--mini {
         padding: 0;
@@ -90,10 +91,10 @@
 }
 
 .ct-btn + .ct-btn {
-    @include ml-xs();
+    margin-left: 5px;
 }
 
 .ct-btn.\--block + .ct-btn.\--block {
-    @include mt-sm();
+    margin-top: 10px;
     margin-left: 0;
 }

@@ -1,0 +1,312 @@
+// Extra small margin  5px  https://github.com/twbs/bootstrap/blob/v4-dev/scss/_utilities-spacing.scss
+.ct-ma-0 {
+    margin: 0 !important;
+}
+
+.ct-mt-0 {
+    margin-top: 0 !important;
+}
+
+.ct-mr-0 {
+    margin-right: 0 !important;
+}
+
+.ct-mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.ct-ml-0 {
+    margin-left: 0 !important;
+}
+
+.ct-mx-0 {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.ct-my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.ct-ma-xs {
+    margin: $number-xs !important;
+}
+
+.ct-mt-xs {
+    margin-top: $number-xs !important;
+}
+
+.ct-mr-xs {
+    margin-right: $number-xs !important;
+}
+
+.ct-mb-xs {
+    margin-bottom: $number-xs !important;
+}
+
+.ct-ml-xs {
+    margin-left: $number-xs !important;
+}
+
+.ct-mx-xs {
+    margin-right: $number-xs !important;
+    margin-left: $number-xs !important;
+}
+
+.ct-my-xs {
+    margin-top: $number-xs !important;
+    margin-bottom: $number-xs !important;
+}
+
+// Small margin  10px
+.ct-ma-sm {
+    margin: $number-sm !important;
+}
+
+.ct-mt-sm {
+    margin-top: $number-sm !important;
+}
+
+.ct-mr-sm {
+    margin-right: $number-sm !important;
+}
+
+.ct-mb-sm {
+    margin-bottom: $number-sm !important;
+}
+
+.ct-ml-sm {
+    margin-left: $number-sm !important;
+}
+
+.ct-my-sm {
+    margin-top: $number-sm !important;
+    margin-bottom: $number-sm !important;
+}
+
+.ct-mx-sm {
+    margin-bottom: $number-sm !important;
+    margin-left: $number-sm !important;
+}
+
+// Default size
+.ct-ma {
+    margin: $number-md !important;
+}
+
+.ct-mt {
+    margin-top: $number-md !important;
+}
+
+.ct-mr {
+    margin-right: $number-md !important;
+}
+
+.ct-mb {
+    margin-bottom: $number-md !important;
+}
+
+.ct-ml {
+    margin-left: $number-md !important;
+}
+
+.ct-my {
+    margin-top: $number-md !important;
+    margin-bottom: $number-md !important;
+}
+
+.ct-mx {
+    margin-right: $number-md !important;
+    margin-left: $number-md !important;
+}
+
+.ct-mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+// Large margin  20px
+.ct-ma-lg {
+    margin: $number-lg !important;
+}
+
+.ct-mt-lg {
+    margin-top: $number-lg !important;
+}
+
+.ct-mr-lg {
+    margin-right: $number-lg !important;
+}
+
+.ct-mb-lg {
+    margin-bottom: $number-lg !important;
+}
+
+.ct-ml-lg {
+    margin-left: $number-lg !important;
+}
+
+.ct-my-lg {
+    margin-top: $number-lg !important;
+    margin-bottom: $number-lg !important;
+}
+
+.ct-mx-lg {
+    margin-right: $number-lg !important;
+    margin-left: $number-lg !important;
+}
+
+//Padding
+.ct-pa-0 {
+    padding: 0 !important;
+}
+
+.ct-pt-0 {
+    padding-top: 0 !important;
+}
+
+.ct-pr-0 {
+    padding-right: 0 !important;
+}
+
+.ct-pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.ct-pl-0 {
+    padding-left: 0 !important;
+}
+
+.ct-px-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.ct-py-0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.ct-pa-xs {
+    padding: $number-xs !important;
+}
+
+.ct-pt-xs {
+    padding-top: $number-xs !important;
+}
+
+.ct-pr-xs {
+    padding-right: $number-xs !important;
+}
+
+.ct-pb-xs {
+    padding-bottom: $number-xs !important;
+}
+
+.ct-pl-xs {
+    padding-left: $number-xs !important;
+}
+
+.ct-py-xs {
+    padding-top: $number-xs !important;
+    padding-bottom: $number-xs !important;
+}
+
+.ct-px-xs {
+    padding-left: $number-xs !important;
+    padding-right: $number-xs !important;
+}
+
+// Small padding 10px
+.ct-pa-sm {
+    padding: $number-sm !important;
+}
+
+.ct-pt-sm {
+    padding-top: $number-sm !important;
+}
+
+.ct-pr-sm {
+    padding-right: $number-sm !important;
+}
+
+.ct-pb-sm {
+    padding-bottom: $number-sm !important;
+}
+
+.ct-pl-sm {
+    padding-left: $number-sm !important;
+}
+
+.ct-py-sm {
+    padding-top: $number-sm !important;
+    padding-bottom: $number-sm !important;
+}
+
+.ct-px-sm {
+    padding-left: $number-sm !important;
+    padding-right: $number-sm !important;
+}
+
+// Default size
+.ct-pa {
+    padding: $number-md !important;
+}
+
+.ct-pt {
+    padding-top: $number-md !important;
+}
+
+.ct-pr {
+    padding-right: $number-md !important;
+}
+
+.ct-pb {
+    padding-bottom: $number-md !important;
+}
+
+.ct-pl {
+    padding-left: $number-md !important;
+}
+
+.ct-py {
+    padding-top: $number-md !important;
+    padding-bottom: $number-md !important;
+}
+
+.ct-px {
+    padding-left: $number-md !important;
+    padding-right: $number-md !important;
+}
+
+// Large padding 20px
+.ct-pa-lg {
+    padding: $number-lg !important;
+}
+
+.ct-pt-lg {
+    padding-top: $number-lg !important;
+}
+
+.ct-pr-lg {
+    padding-right: $number-lg !important;
+}
+
+.ct-pb-lg {
+    padding-bottom: $number-lg !important;
+}
+
+.ct-pl-lg {
+    padding-left: $number-lg !important;
+}
+
+.ct-py-lg {
+    padding-top: $number-lg !important;
+    padding-bottom: $number-lg !important;
+}
+
+.ct-px-lg {
+    padding-left: $number-lg !important;
+    padding-right: $number-lg !important;
+}

@@ -1,3 +1,128 @@
+// Extra small margin  5px
+@mixin m-xs() {
+    margin: $number-xs;
+}
+
+@mixin mt-xs() {
+    margin-top: $number-xs;
+}
+
+@mixin mr-xs() {
+    margin-right: $number-xs;
+}
+
+@mixin mb-xs() {
+    margin-bottom: $number-xs;
+}
+
+@mixin ml-xs() {
+    margin-left: $number-xs;
+}
+
+@mixin mlr-xs() {
+    margin-left: $number-xs;
+    margin-right: $number-xs;
+}
+
+@mixin mtb-xs() {
+    margin-top: $number-xs;
+    margin-bottom: $number-xs;
+}
+
+//Small margin  10px
+@mixin m-sm() {
+    margin: $number-sm;
+}
+
+@mixin mt-sm() {
+    margin-top: $number-sm;
+}
+
+@mixin mr-sm() {
+    margin-right: $number-sm;
+}
+
+@mixin mb-sm() {
+    margin-bottom: $number-sm;
+}
+
+@mixin ml-sm() {
+    margin-left: $number-sm;
+}
+
+@mixin mtb-sm() {
+    margin-top: $number-sm;
+    margin-bottom: $number-sm;
+}
+
+@mixin mlr-sm() {
+    margin-left: $number-sm;
+    margin-right: $number-sm;
+}
+
+//Default size
+@mixin m() {
+    margin: $number-md;
+}
+
+@mixin mt() {
+    margin-top: $number-md;
+}
+
+@mixin mr() {
+    margin-right: $number-md;
+}
+
+@mixin mb() {
+    margin-bottom: $number-md;
+}
+
+@mixin ml() {
+    margin-left: $number-md;
+}
+
+@mixin mtb() {
+    margin-top: $number-md;
+    margin-bottom: $number-md;
+}
+
+@mixin mlr() {
+    margin-left: $number-md;
+    margin-right: $number-md;
+}
+
+//Large margin  20px
+@mixin m-lg() {
+    margin: $number-lg;
+}
+
+@mixin mt-lg() {
+    margin-top: $number-lg;
+}
+
+@mixin mr-lg() {
+    margin-right: $number-lg;
+}
+
+@mixin mb-lg() {
+    margin-bottom: $number-lg;
+}
+
+@mixin ml-lg() {
+    margin-left: $number-lg;
+}
+
+@mixin mtb-lg() {
+    margin-bottom: $number-lg;
+    margin-top: $number-lg;
+}
+
+@mixin mlr-lg() {
+    margin-left: $number-lg;
+    margin-right: $number-lg;
+}
+
+
 // Extra small padding 5px
 @mixin p-xs() {
     padding: $number-xs;

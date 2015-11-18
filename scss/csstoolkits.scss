@@ -3,43 +3,39 @@
  * Copyright 2015-2016 Get3w Inc.
  * Licensed under MIT
  */
+
 @charset "UTF-8";
 // Core variables and mixins
 @import "material-ui-color";
 @import "variables";
 @import "mixins";
-
+//font with github octicons
+@import "octicons";
 // Reset and dependencies
 @import "normalize";
-
 // Core CSS
 @import "row";
 @import "box";
-
 // Components
 @import "alert";
-@import "margin";
-@import "padding";
+@import "utilities-spacing";
 @import "border";
 @import "float";
 @import "text-align";
 @import "table";
-@import "octicons";
-
 @import "typography";
 @import "bg";
 @import "card";
-
 @import "btn";
 @import "clearfix";
-@import "utility";  // for example ct-center-block, ct-overflow and so on
+@import "utility"; // for example ct-center-block, ct-overflow and so on
 @import "border-radius";
 @import "color";
 @import "form";
 @import "heading";
 @import "hint";
 @import "list";
-
+@import "utilities-responsive";
 @import "select";
 @import "tips";
 @import "menu";
