@@ -10,14 +10,24 @@
     @include text-right();
 }
 
-.ct-top{
+.ct-top {
     @include vertical-top();
 }
 
-.ct-middle{
+.ct-middle {
     @include vertical-middle();
 }
 
-.ct-bottom{
+.ct-bottom {
     @include vertical-bottom();
 }
+
+// Valign Middle
+.ct-valign-wrapper {
+    display: flex;
+    align-items: center;
+    .ct-valign {
+        display: block;
+    }
+}
+

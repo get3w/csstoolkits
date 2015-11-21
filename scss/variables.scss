@@ -1,7 +1,7 @@
 //
 // Variables
 // --------------------------------------------------
-//== Colors
+// Colors
 //Black series
 $black: #000;
 $full-black: rgba(0, 0, 0, 1);
@@ -16,8 +16,11 @@ $full-white: rgba(255, 255, 255, 1);
 $dark-white: rgba(255, 255, 255, 0.87);
 $light-white: rgba(255, 255, 255, 0.54);
 
-// This is place to put any variable overrides as well.
+// Tables 
+$table-border-color: #d0d0d0 !default;
+$table-striped-color: #f2f2f2 !default;
 
+// This is place to put any variable overrides as well.
 $color-green: rgba(59, 191, 56, 1);
 $color-red: $red-300;
 $color-blue: $light-blue-400;
@@ -43,49 +46,61 @@ $font-size-lg: 16px;
 $button-height: 36px !default;
 $button-line-height: 36px !default;
 
-// Flowtext
-$small-screen: 600px !default;
-$medium-screen: 992px !default;
-$large-screen: 1200px !default;
-
-$range : $large-screen - $small-screen !default;
-$intervals: 20 !default;
-$interval-size: $range / $intervals !default;
-
-// Variables
 //
+// Grid breakpoints
+//
+// Define the minimum and maximum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
 
 // Grid system
-$enable-flex:               false !default;
-//
-// Define your custom responsive grid.
+$enable-flex: false !default;
+
 $grid-breakpoints: (
   // Extra small screen / phone
   xs: 0,
   // Small screen / phone
-  sm: 34em,
+  sm: 544px,
   // Medium screen / tablet
-  md: 48em,
+  md: 768px,
   // Large screen / desktop
-  lg: 62em,
+  lg: 992px,
   // Extra large screen / wide desktop
-  xl: 75em
+  xl: 1200px
 ) !default;
 
-// Number of columns in the grid.
-$grid-columns:               12 !default;
 
-// Padding between columns. Gets divided in half for the left and right.
-$grid-gutter-width:          1.5rem !default;
-
-
-// Container sizes
+// Grid containers
 //
-// Define the maximum width of `.ct-container` for different screen sizes.
-
+// Define the maximum width of `.container` for different screen sizes.
 $container-max-widths: (
-  sm: 34rem,    // 480
-  md: 45rem,    // 720
-  lg: 60rem,    // 960
-  xl: 72.25rem  // 1140
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1140px
 ) !default;
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:               12 !default;
+$grid-gutter-width:          1.875rem !default; // 30px
+
+// Media Query Ranges
+$small-screen: 768px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+// Header Styles
+$h1-fontsize: 4.2rem !default;
+$h2-fontsize: 3.56rem !default;
+$h3-fontsize: 2.92rem !default;
+$h4-fontsize: 2.28rem !default;
+$h5-fontsize: 1.64rem !default;
+$h6-fontsize: 1rem !default;
+
+// Flowtext Media Query Ranges _responsive-text.scss
+$range : $large-screen - $small-screen !default;
+$intervals: 20 !default;
+$interval-size: $range / $intervals !default;
