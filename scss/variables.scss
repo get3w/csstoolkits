@@ -28,6 +28,10 @@ $color-yellow: $yellow-700;
 $color-grey: $grey-500;
 $color-purple: rgba(110, 84, 148, 1);
 
+/*** Cards ***/
+$card-padding: 20px !default;
+$card-bg-color: #fff !default;
+$card-link-color: #ffab40 !default;
 
 //Some common values
 $number-step-length: 5px;
@@ -86,6 +90,8 @@ $container-max-widths: (
 
 $grid-columns:               12 !default;
 $grid-gutter-width:          1.875rem !default; // 30px
+$element-top-margin: $grid-gutter-width/3 !default;
+$element-bottom-margin: ($grid-gutter-width*2)/3 !default;
 
 // Media Query Ranges
 $small-screen: 768px !default;
@@ -104,3 +110,12 @@ $h6-fontsize: 1rem !default;
 $range : $large-screen - $small-screen !default;
 $intervals: 20 !default;
 $interval-size: $range / $intervals !default;
+
+/*** Collections ***/
+$collection-border-color: #e0e0e0 !default;
+$collection-bg-color: #fff !default;
+$collection-active-bg-color: $color-blue !default;
+$collection-active-color: lighten($color-blue, 55%) !default;
+$collection-hover-bg-color: #ddd !default;
+/*** Badges ***/
+$badge-bg-color: $collection-active-bg-color !default;

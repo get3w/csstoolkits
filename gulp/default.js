@@ -2,5 +2,7 @@ var gulp = require('gulp');
 
 gulp.task('default', [
     'css',
-    'min'
+    'mincss',
+    "js",
+    "minjs"
 ]);

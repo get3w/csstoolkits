@@ -3,6 +3,9 @@
  * Copyright 2015-2016 Get3w Inc.
  * Licensed under MIT
  */
+/*** Cards ***/
+/*** Collections ***/
+/*** Badges ***/
 @font-face {
   font-family: 'octicons';
   src: url("../font/octicons/octicons.eot?#iefix&v=a3a5b5edf00d5801adeb5d1357368e1c32b1bcc2") format("embedded-opentype"), url("../font/octicons/octicons.woff?v=a3a5b5edf00d5801adeb5d1357368e1c32b1bcc2") format("woff"), url("../font/octicons/octicons.ttf?v=a3a5b5edf00d5801adeb5d1357368e1c32b1bcc2") format("truetype"), url("../font/octicons/octicons.svg?v=a3a5b5edf00d5801adeb5d1357368e1c32b1bcc2#octicons") format("svg");
@@ -2021,19 +2024,58 @@ html {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
   .ct-card .__title {
-    padding: 20px 20px 0;
     font-size: 24px;
     font-weight: 300; }
+    .ct-card .__title i,
+    .ct-card .__title span {
+      line-height: inherit; }
     .ct-card .__title.\--activator {
       cursor: pointer; }
     .ct-card .__title .__close {
-      font-size: 30px;
+      font-size: inherit;
       font-weight: 300;
       height: 24px;
       margin-right: 5px;
       line-height: 24px;
       float: right;
       cursor: pointer; }
+  .ct-card.\--sm,
+  .ct-card.\--md,
+  .ct-card.\--lg {
+    position: relative; }
+    .ct-card.\--sm .__image,
+    .ct-card.\--md .__image,
+    .ct-card.\--lg .__image {
+      overflow: hidden; }
+    .ct-card.\--sm .__content,
+    .ct-card.\--md .__content,
+    .ct-card.\--lg .__content {
+      overflow: hidden; }
+    .ct-card.\--sm .__action,
+    .ct-card.\--md .__action,
+    .ct-card.\--lg .__action {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+  .ct-card.\--sm {
+    height: 300px; }
+    .ct-card.\--sm .__image {
+      height: 150px; }
+    .ct-card.\--sm .__content {
+      height: 150px; }
+  .ct-card.\--md {
+    height: 400px; }
+    .ct-card.\--md .__image {
+      height: 250px; }
+    .ct-card.\--md .__content {
+      height: 150px; }
+  .ct-card.\--lg {
+    height: 500px; }
+    .ct-card.\--lg .__image {
+      height: 330px; }
+    .ct-card.\--lg .__content {
+      height: 170px; }
   .ct-card .__image {
     position: relative; }
     .ct-card .__image img {
@@ -2053,30 +2095,35 @@ html {
     padding: 20px;
     border-radius: 0 0 2px 2px; }
     .ct-card .__content p {
-      margin: 0; }
+      margin: 0;
+      color: inherit; }
     .ct-card .__content .__title {
       line-height: 48px; }
   .ct-card .__action {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: 20px; }
     .ct-card .__action a {
-      margin-right: 20px; }
+      color: #ffab40;
+      margin-right: 20px;
+      -webkit-transition: color 0.3s ease;
+           -o-transition: color 0.3s ease;
+              transition: color 0.3s ease;
+      text-transform: uppercase; }
       .ct-card .__action a:hover {
         opacity: 0.8; }
-  .ct-card.\--small .__title {
-    padding: 10px;
-    font-size: 16px; }
-    .ct-card.\--small .__title .__close {
-      font-size: 24px;
-      font-weight: 300;
-      height: 16px;
-      line-height: 16px; }
-  .ct-card.\--small .__content {
-    padding: 10px; }
-    .ct-card.\--small .__content .__title {
-      line-height: 24px; }
-  .ct-card.\--small .__action {
-    padding: 10px; }
+  .ct-card .__reveal {
+    padding: 20px;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    overflow-y: auto;
+    top: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none; }
+    .ct-card .__reveal .__title {
+      cursor: pointer;
+      display: block; }
 
 .ct-btn {
   display: inline-block;
@@ -2090,15 +2137,23 @@ html {
   cursor: pointer;
   height: 36px;
   line-height: 36px;
+  text-decoration: none;
+  text-align: center;
   -webkit-transition: all 0.3s;
        -o-transition: all 0.3s;
           transition: all 0.3s;
-  text-decoration: none;
-  text-align: center;
   border-radius: 2px; }
-  .ct-btn i {
+  .ct-btn i,
+  .ct-btn span {
     font-size: 14px;
-    margin-right: 5px; }
+    margin-right: 5px;
+    line-height: inherit; }
+    .ct-btn i.ct-fr,
+    .ct-btn span.ct-fr {
+      margin-left: 5px; }
+  .ct-btn:hover {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
   .ct-btn:hover,
   .ct-btn:focus,
   .ct-btn.focus {
@@ -2130,33 +2185,50 @@ html {
     .ct-btn.\--blue:hover {
       background: #0895d5; }
   .ct-btn.\--large {
-    height: 45px;
-    line-height: 45px; }
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px; }
   .ct-btn.\--small {
     font-size: 12px;
     padding-left: 15px;
     padding-right: 15px;
-    height: 35px;
-    line-height: 35px; }
+    height: 36px;
+    line-height: 36px; }
   .ct-btn.\--mini {
     padding: 0;
     width: 30px;
+    text-align: center;
+    text-decoration: none;
     height: 30px;
     line-height: 30px;
+    border-radius: 50%; }
+    .ct-btn.\--mini i,
+    .ct-btn.\--mini span {
+      margin-right: 0; }
+  .ct-btn.\--radius {
+    border-radius: 30px; }
+  .ct-btn.\--circle {
+    width: 60px !important;
+    height: 60px !important;
+    height: 60px;
+    line-height: 60px;
     border-radius: 50%;
     text-align: center;
-    text-decoration: none; }
-    .ct-btn.\--mini i {
-      margin-right: 0; }
+    padding: 0; }
+    .ct-btn.\--circle i,
+    .ct-btn.\--circle span {
+      margin-right: 0 !important;
+      font-size: 26px !important; }
   .ct-btn.\--block {
     display: block;
     width: 100%;
     padding: 0; }
-  .ct-btn.\--radius {
-    border-radius: 30px; }
   .ct-btn.\--no-shadow {
     -webkit-box-shadow: 0 0 0 transparent;
             box-shadow: 0 0 0 transparent; }
+    .ct-btn.\--no-shadow:hover {
+      -webkit-box-shadow: 0 0 0 transparent;
+              box-shadow: 0 0 0 transparent; }
 
 .ct-btn + .ct-btn {
   margin-left: 5px; }
@@ -2214,6 +2286,8 @@ html {
   padding-top: 30px;
   height: 0;
   overflow: hidden; }
+  .ct-video-container.\--no-controls {
+    padding-top: 0; }
   .ct-video-container embed,
   .ct-video-container iframe,
   .ct-video-container object {
@@ -4192,7 +4266,7 @@ html {
     color: #999999 !important; }
   .ct-form :-ms-input-placeholder {
     color: #999999 !important; }
-  .ct-form .ct-formerize-placeholder {
+  .ct-form .ct-placeholder {
     color: #999999 !important; }
 
 .ct-hint,
@@ -5179,3 +5253,87 @@ html {
 
 .ct-collapse {
   display: none; }
+
+.ct-collection {
+  margin: 0.625rem 0 1.25rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative; }
+  .ct-collection .__item {
+    background-color: #fff;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0; }
+    .ct-collection .__item.\--avatar {
+      min-height: 84px;
+      padding-left: 72px;
+      position: relative; }
+      .ct-collection .__item.\--avatar .\--circle {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        overflow: hidden;
+        left: 15px;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 50%; }
+      .ct-collection .__item.\--avatar i.\--circle {
+        font-size: 18px;
+        line-height: 42px;
+        color: #fff;
+        background-color: #999;
+        text-align: center; }
+      .ct-collection .__item.\--avatar .__title {
+        font-size: 16px; }
+      .ct-collection .__item.\--avatar p {
+        margin: 0; }
+      .ct-collection .__item.\--avatar .__icon {
+        position: absolute;
+        top: 16px;
+        right: 16px; }
+    .ct-collection .__item:last-child {
+      border-bottom: none; }
+    .ct-collection .__item.active {
+      background-color: #29b6f6;
+      color: white; }
+  .ct-collection a.__item {
+    display: block;
+    -webkit-transition: all 0.25s;
+         -o-transition: all 0.25s;
+            transition: all 0.25s;
+    color: #29b6f6; }
+    .ct-collection a.__item:not(.active):hover {
+      background-color: #ddd; }
+  .ct-collection.\--header .__header {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 20px; }
+  .ct-collection.\--header .__item {
+    padding-left: 30px; }
+  .ct-collection.\--header .__item.\--avatar {
+    padding-left: 72px; }
+  .ct-collection .__icon {
+    float: right;
+    color: #29b6f6; }
+  .ct-collection .__badge {
+    min-width: 3rem;
+    padding: 0 6px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: inherit;
+    color: #29b6f6;
+    position: absolute;
+    right: 15px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box; }
+    .ct-collection .__badge.\--new {
+      font-weight: 300;
+      font-size: 0.8rem;
+      color: #fff;
+      background-color: #29b6f6;
+      border-radius: 2px; }
+    .ct-collection .__badge.\--new:after {
+      content: " new"; }

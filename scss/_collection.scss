@@ -1,0 +1,106 @@
+// Collections
+.ct-collection {
+    margin: $element-top-margin 0 $element-bottom-margin 0;
+    border: 1px solid $collection-border-color;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    .__item {
+        background-color: $collection-bg-color;
+        line-height: 1.5rem;
+        padding: 10px 20px;
+        margin: 0;
+        border-bottom: 1px solid $collection-border-color;
+        // Avatar Collection
+        &.\--avatar {
+            min-height: 84px;
+            padding-left: 72px;
+            position: relative;
+            .\--circle {
+                position: absolute;
+                width: 42px;
+                height: 42px;
+                overflow: hidden;
+                left: 15px;
+                display: inline-block;
+                vertical-align: middle;
+                border-radius: 50%;
+            }
+            i.\--circle {
+                font-size: 18px;
+                line-height: 42px;
+                color: #fff;
+                background-color: #999;
+                text-align: center;
+            }
+            .__title {
+                font-size: 16px;
+            }
+            p {
+                margin: 0;
+            }
+            .__icon {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+            }
+        }
+        &:last-child {
+            border-bottom: none;
+        }
+        &.active {
+            background-color: $collection-active-bg-color;
+            color: $collection-active-color;
+        }
+    }
+    a.__item {
+        display: block;
+        @include transition(.25s);
+        color: $collection-active-bg-color;
+        &:not(.active) {
+            &:hover {
+                background-color: $collection-hover-bg-color;
+            }
+        }
+    }
+    &.\--header {
+        .__header {
+            background-color: $collection-bg-color;
+            border-bottom: 1px solid $collection-border-color;
+            padding: 10px 20px;
+        }
+        .__item {
+            padding-left: 30px;
+        }
+        .__item.\--avatar {
+            padding-left: 72px;
+        }
+    }
+    // Made less specific to allow easier overriding
+    .__icon {
+        float: right;
+        color: $collection-active-bg-color;
+    }
+    // Badges
+    .__badge {
+        min-width: 3rem;
+        padding: 0 6px;
+        text-align: center;
+        font-size: 1rem;
+        line-height: inherit;
+        color: $color-blue;
+        position: absolute;
+        right: 15px;
+        box-sizing: border-box;
+        &.\--new {
+            font-weight: 300;
+            font-size: 0.8rem;
+            color: #fff;
+            background-color: $badge-bg-color;
+            border-radius: 2px;
+        }
+        &.\--new:after {
+            content: " new";
+        }
+    }
+}

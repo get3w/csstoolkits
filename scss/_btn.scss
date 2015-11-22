@@ -9,19 +9,27 @@
     cursor: pointer;
     height: $button-height;
     line-height: $button-line-height;
+    text-decoration: none;
+    text-align: center;
     @include transition(0.3s);
-    @include text-d-none();
-    @include text-center();
     @include border-radius(2px);
-    i {
+    i,
+    span {
         font-size: $font-size-base;
         margin-right: 5px;
+        line-height: inherit;
+        &.ct-fr {
+            margin-left: 5px;
+        }
+    }
+    &:hover {
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
     }
     &:hover,
     &:focus,
     &.focus {
         background: $grey-200;
-        @include text-d-none();
+        text-decoration: none;
     }
     &:active,
     &.active {
@@ -57,24 +65,41 @@
         }
     }
     &.\--large {
-        @include height(45px);
-        // min-width: 180px;
+        @include height(48px);
+        font-size: $font-size-lg;
     }
     &.\--small {
         font-size: $font-size-sm;
         padding-left: 15px;
         padding-right: 15px;
-        @include height(35px);
+        @include height(36px);
     }
     &.\--mini {
         padding: 0;
         width: 30px;
+        text-align: center;
+        text-decoration: none;
         @include height(30px);
         @include border-radius(50%);
-        @include text-center();
-        @include text-d-none();
-        i {
+        i,
+        span {
             margin-right: 0;
+        }
+    }
+    &.\--radius {
+        @include border-radius(30px);
+    }
+    &.\--circle {
+        width: 60px !important;
+        height: 60px !important;
+        @include height(60px);
+        @include border-radius(50%);
+        text-align: center;
+        padding: 0;
+        i,
+        span {
+            margin-right: 0 !important;
+            font-size: 26px !important;
         }
     }
     &.\--block {
@@ -82,11 +107,11 @@
         width: 100%;
         padding: 0;
     }
-    &.\--radius {
-        @include border-radius(30px);
-    }
     &.\--no-shadow {
         box-shadow: 0 0 0 transparent;
+        &:hover {
+            box-shadow: 0 0 0 transparent;
+        }
     }
 }
 

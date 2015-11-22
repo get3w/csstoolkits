@@ -34,7 +34,6 @@
     padding-bottom: 1rem;
 }
 
-
 //Media Css 
 .ct-video-container {
     position: relative;
@@ -42,6 +41,9 @@
     padding-top: 30px;
     height: 0;
     overflow: hidden;
+    &.\--no-controls {
+        padding-top: 0;
+    }
     embed,
     iframe,
     object {
@@ -54,6 +56,14 @@
 }
 
 // Transformation
-.ct-lowercase      { text-transform: lowercase !important; }
-.ct-uppercase      { text-transform: uppercase !important; }
-.ct-capitalize     { text-transform: capitalize !important; }
+.ct-lowercase {
+    text-transform: lowercase !important;
+}
+
+.ct-uppercase {
+    text-transform: uppercase !important;
+}
+
+.ct-capitalize {
+    text-transform: capitalize !important;
+}
