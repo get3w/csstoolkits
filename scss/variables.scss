@@ -124,3 +124,17 @@ $badge-bg-color: $collection-active-bg-color !default;
 $tabs-underline-color: lighten($red-300, 15%) !default;
 $tabs-text-color: $red-300 !default;
 $tabs-bg-color: #fff !default;
+
+/*** Navbar ***/
+$navbar-height: 64px !default;
+$navbar-height-mobile: 56px !default;
+$navbar-font-color: #fff !default;
+$navbar-brand-font-size: 2.1rem !default;
+
+/*** Dropdown ***/
+$dropdown-bg-color: #fff !default;
+$dropdown-hover-bg-color: #eee !default;
+$dropdown-color: $teal-400 !default;
+
+/* Progress Bar */
+$progress-bar-color: $color-blue !default;

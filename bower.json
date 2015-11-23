@@ -1,6 +1,6 @@
 {
   "name": "csstoolkits",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CSSToolkits is a CSS utility set.No conflicts with other CSS.",
   "main": "css/ct.min.css",
   "keywords": [
