@@ -119,3 +119,8 @@ $collection-active-color: lighten($color-blue, 55%) !default;
 $collection-hover-bg-color: #ddd !default;
 /*** Badges ***/
 $badge-bg-color: $collection-active-bg-color !default;
+
+/*** Tabs ***/
+$tabs-underline-color: lighten($red-300, 15%) !default;
+$tabs-text-color: $red-300 !default;
+$tabs-bg-color: #fff !default;

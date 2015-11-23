@@ -9,8 +9,7 @@
 @import "material-ui-color";
 @import "variables";
 @import "mixins";
-//font with github octicons
-@import "octicons";
+
 // Reset and dependencies
 @import "normalize";
 // Core CSS
@@ -40,3 +39,10 @@
 @import "menu";
 @import "navbar";
 @import "collection";
+@import "tabs";
+
+//Third components
+@import "octicons";
+@import "waves";
+
+
