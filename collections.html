@@ -1,0 +1,275 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="msapplication-tap-highlight" content="no"><meta name="description" content="CssToolkits is a modern responsive CSS framework based on Material Design by Google. "><title>Collections - CssToolkits</title><!-- Favicons--><link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png"><!-- Windows 8 磁贴颜色--><meta name="msapplication-TileColor" content="#FFFFFF"><!-- Windows 8 磁贴图标--><meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png"><link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32"><!--  Android 5 Chrome Color--><meta name="theme-color" content="#EE6E73"><!-- CSS--><link href="css/code.css" rel="stylesheet"><link href="dist/css/ct.min.css" rel="stylesheet"><link href="css/docs.css" rel="stylesheet"><link href="css/ghpages-csstoolkits.min.css" type="text/css" rel="stylesheet" media="screen,projection"></head><body><header><nav class="top-nav"><div class="ct-container"><div class="nav-wrapper"><a class="page-title">Collections</a></div></div></nav><div class="ct-container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav octicon octicon-three-bars ct-hide-lg-down"></a></div><ul id="nav-mobile" class="side-nav fixed"><li class="logo"><a id="logo-container" href="./index.html" class="brand-logo"><img src="css/logo.png" alt="logo" class="ct-responsive"></a></li><li class="bold"><a href="getting-started.html" class="waves-effect">Getting Started</a></li><li class="ct-px-0"><ul class="collapsible collapsible-accordion"><li class="bold"><a class="collapsible-header  waves-effect">CSS</a><div class="collapsible-body"><ul><li><a href="color.html">Color</a></li><li><a href="grid.html">Grid</a></li><li><a href="helpers.html">Helpers</a></li><li><a href="spacing.html">Spacing</a></li><li><a href="media-css.html">Media</a></li><li><a href="table.html">Table</a></li><li><a href="typography.html">Typography</a></li></ul></div></li><li class="bold"><a class="collapsible-header active waves-effect">Components</a><div class="collapsible-body"><ul><li><a href="buttons.html">Buttons</a></li><li><a href="cards.html">Cards</a></li><li class="active"><a href="collections.html">Collections</a></li><li><a href="forms.html">Forms</a></li><li><a href="box.html">Box</a></li><li><a href="alert.html">Alert</a></li><li><a href="icons.html">Icons</a></li><li><a href="navbar.html">Navbar</a></li><li><a href="pagination.html">Pagination</a></li><li><a href="progress.html">Progress</a></li></ul></div></li><li class="bold"><a class="collapsible-header  waves-effect">JavaScript</a><div class="collapsible-body"><ul><li><a href="tabs.html">Tabs</a></li><li><a href="waves.html">Waves</a></li></ul></div></li></ul></li></ul></header><main><div class="ct-container">
+    <div class="ct-ct-row">
+        <div class="ct-md-9 ct-lg-10">
+            <!--  ct-Collections ct-Section  -->
+            <div id="basic" class="ct-section scrollspy">
+                <div class="ct-row">
+                    <div class="">
+                        <p class="caption">ct-Collections allow you to group list objects together.</p>
+                        <h2 class="header">Basic</h2>
+                        <ul class="ct-collection">
+                            <li class="__item">Alvin</li>
+                            <li class="__item">Alvin</li>
+                            <li class="__item">Alvin</li>
+                            <li class="__item">Alvin</li>
+                        </ul>
+                        <pre><code class="language-markup">
+  &lt;ul class="ct-collection">
+    &lt;li class="__item">Alvin&lt;/li>
+    &lt;li class="__item">Alvin&lt;/li>
+    &lt;li class="__item">Alvin&lt;/li>
+    &lt;li class="__item">Alvin&lt;/li>
+  &lt;/ul>
+            </code></pre>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div id="links" class="ct-section scrollspy">
+                <div class="ct-row">
+                    <div class="">
+                        <h2 class="header">Links</h2>
+                        <div class="ct-collection">
+                            <a href="#!" class="__item">Alvin</a>
+                            <a href="#!" class="__item active">Alvin</a>
+                            <a href="#!" class="__item">Alvin</a>
+                            <a href="#!" class="__item">Alvin</a>
+                        </div>
+                        <pre><code class="language-markup">
+  &lt;div class="ct-collection">
+    &lt;a href="#!" class="__item">Alvin&lt;/a>
+    &lt;a href="#!" class="__item active">Alvin&lt;/a>
+    &lt;a href="#!" class="__item">Alvin&lt;/a>
+    &lt;a href="#!" class="__item">Alvin&lt;/a>
+  &lt;/div>
+            </code></pre>
+                    </div>
+                </div>
+            </div>
+            <!--  Badges Section  -->
+            <div id="badge" class="ct-section scrollspy">
+                <div class="ct-row">
+                    <div class="ct-sm-12">
+                        <p class="caption">Badges can notify you that there are new or unread messages or notifications. Add the <code class="language-markup">.--new</code> class to the badge to give it the background.</p>
+                        <h2 class="header">Badge</h2>
+                        <div class="ct-collection">
+                            <a href="#!" class="__item">Alan<span class="__badge">1</span></a>
+                            <a href="#!" class="__item">Alan<span class="--new __badge">4</span></a>
+                            <a href="#!" class="__item">Alan</a>
+                            <a href="#!" class="__item">Alan<span class="__badge">14</span></a>
+                        </div>
+                        <pre>
+<code class="language-markup">
+  &lt;div class="collection">
+    &lt;a href="#!" class="__item">Alan&lt;span class="__badge">1&lt;/span>&lt;/a>
+    &lt;a href="#!" class="__item">Alan&lt;span class="--new __badge">4&lt;/span>&lt;/a>
+    &lt;a href="#!" class="__item">Alan&lt;/a>
+    &lt;a href="#!" class="__item">Alan&lt;span class="__badge">14&lt;/span>&lt;/a>
+  &lt;/div>
+</code>
+</pre>
+                    </div>
+                </div>
+            </div>
+            <div id="headers" class="ct-section scrollspy">
+                <div class="ct-row">
+                    <div class="">
+                        <h2 class="header">Headers</h2>
+                        <ul class="ct-collection --header">
+                            <li class="__header">
+                                <h4>First Names</h4></li>
+                            <li class="__item">Alvin</li>
+                            <li class="__item">Alvin</li>
+                            <li class="__item">Alvin</li>
+                            <li class="__item">Alvin</li>
+                        </ul>
+                        <pre><code class="language-markup">
+      &lt;ul class="ct-collection --header">
+        &lt;li class="__header">&lt;h4>First Names&lt;/h4>&lt;/li>
+        &lt;li class="__item">Alvin&lt;/li>
+        &lt;li class="__item">Alvin&lt;/li>
+        &lt;li class="__item">Alvin&lt;/li>
+        &lt;li class="__item">Alvin&lt;/li>
+      &lt;/ul>
+            </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div id="secondary" class="ct-section scrollspy">
+                <div class="ct-row">
+                    <div class="">
+                        <h2 class="header">Secondary content</h2>
+                        <ul class="ct-collection --header">
+                            <li class="__header">
+                                <h4>First Names</h4></li>
+                            <li class="__item">Alvin<a href="#!" class="__icon"><i class="octicon octicon-sign-out"></i></a></li>
+                            <li class="__item">Alvin<a href="#!" class="__icon"><i class="octicon octicon-sign-out"></i></a></li>
+                            <li class="__item">Alvin<a href="#!" class="__icon"><i class="octicon octicon-sign-out"></i></a></li>
+                            <li class="__item">Alvin<a href="#!" class="__icon"><i class="octicon octicon-sign-out"></i></a></li>
+                        </ul>
+                        <pre><code class="language-markup">
+      &lt;ul class="ct-collection --header">
+        &lt;li class="__header">&lt;h4>First Names&lt;/h4>&lt;/li>
+        &lt;li class="__item">&lt;div>Alvin&lt;a href="#!" class="__icon">&lt;i class="octicon octicon-sign-out">&lt;/i>&lt;/a>&lt;/div>&lt;/li>
+        &lt;li class="__item">&lt;div>Alvin&lt;a href="#!" class="__icon">&lt;i class="octicon octicon-sign-out">&lt;/i>&lt;/a>&lt;/div>&lt;/li>
+        &lt;li class="__item">&lt;div>Alvin&lt;a href="#!" class="__icon">&lt;i class="octicon octicon-sign-out">&lt;/i>&lt;/a>&lt;/div>&lt;/li>
+        &lt;li class="__item">&lt;div>Alvin&lt;a href="#!" class="__icon">&lt;i class="octicon octicon-sign-out">&lt;/i>&lt;/a>&lt;/div>&lt;/li>
+      &lt;/ul>
+            </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div id="circle" class="ct-section scrollspy">
+                <div class="ct-row">
+                    <div class="">
+                        <h2 class="header">Avatar Content</h2>
+                        <ul class="ct-collection">
+                            <li class="__item --avatar">
+                                <img src="images/yuna.jpg" alt="" class="--circle">
+                                <span class="title">Title</span>
+                                <p>First Line
+                                    <br> Second Line
+                                </p>
+                                <a href="#!" class="__icon"><i class="octicon octicon-pencil"></i></a>
+                            </li>
+                            <li class="__item --avatar">
+                                <i class="octicon octicon-pencil --circle"></i>
+                                <span class="title">Title</span>
+                                <p>First Line
+                                    <br> Second Line
+                                </p>
+                                <a href="#!" class="__icon"><i class="octicon octicon-pencil"></i></a>
+                            </li>
+                            <li class="__item --avatar">
+                                <i class="octicon octicon-pencil --circle ct-bg-green"></i>
+                                <span class="title">Title</span>
+                                <p>First Line
+                                    <br> Second Line
+                                </p>
+                                <a href="#!" class="__icon"><i class="octicon octicon-pencil"></i></a>
+                            </li>
+                            <li class="__item --avatar">
+                                <i class="octicon octicon-pencil --circle ct-bg-red"></i>
+                                <span class="title">Title</span>
+                                <p>First Line
+                                    <br> Second Line
+                                </p>
+                                <a href="#!" class="__icon"><i class="octicon octicon-pencil"></i></a>
+                            </li>
+                        </ul>
+                        <pre><code class="language-markup">
+  &lt;ul class="ct-collection">
+    &lt;li class="__item --avatar">
+      &lt;img src="images/yuna.jpg" alt="" class="ct-circle">
+      &lt;span class="__title">Title&lt;/span>
+      &lt;p>First Line &lt;br>
+         Second Line
+      &lt;/p>
+      &lt;a href="#!" class="__icon">&lt;i class="octicon octicon-pencil">&lt;/i>&lt;/a>
+    &lt;/li>
+    &lt;li class="__item --avatar">
+      &lt;i class="octicon octicon-pencil">folder&lt;/i>
+      &lt;span class="__title">Title&lt;/span>
+      &lt;p>First Line &lt;br>
+         Second Line
+      &lt;/p>
+      &lt;a href="#!" class="__icon">&lt;i class="octicon octicon-pencil">&lt;/i>&lt;/a>
+    &lt;/li>
+    &lt;li class="__item --avatar">
+      &lt;i class="octicon octicon-pencil green">insert_chart&lt;/i>
+      &lt;span class="__title">Title&lt;/span>
+      &lt;p>First Line &lt;br>
+         Second Line
+      &lt;/p>
+      &lt;a href="#!" class="__icon">&lt;i class="octicon octicon-pencil">&lt;/i>&lt;/a>
+    &lt;/li>
+    &lt;li class="__item --avatar">
+      &lt;i class="octicon octicon-pencil red">play_arct-row&lt;/i>
+      &lt;span class="__title">Title&lt;/span>
+      &lt;p>First Line &lt;br>
+         Second Line
+      &lt;/p>
+      &lt;a href="#!" class="__icon">&lt;i class="octicon octicon-pencil">&lt;/i>&lt;/a>
+    &lt;/li>
+  &lt;/ul>
+            </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div id="dismiss" class="ct-section scrollspy">
+                <div class="ct-row">
+                    <div class="">
+                        <h2 class="header">Dismissable Content</h2>
+                        <p>You can just add the class <code class="language-markup">dismissable</code> to enable each ct-collection item to be swiped away. This is only for touch enabled devices.</p>
+                        <ul class="ct-collection">
+                            <li class="__item dismissable">Alvin<a href="#!" class="__icon"><i class="octicon octicon-sign-out"></i></a></li>
+                            <li class="__item dismissable">Alvin<a href="#!" class="__icon"><i class="octicon octicon-sign-out"></i></a></li>
+                            <li class="__item dismissable">Alvin<a href="#!" class="__icon"><i class="octicon octicon-sign-out"></i></a></li>
+                            <li class="__item dismissable">Alvin<a href="#!" class="__icon"><i class="octicon octicon-sign-out"></i></a></li>
+                        </ul>
+                        <pre><code class="language-markup">
+      &lt;ul class="ct-collection">
+        &lt;li class="__item dismissable">&lt;div>Alvin&lt;a href="#!" class="__icon">&lt;i class="octicon octicon-sign-out">&lt;/i>&lt;/a>&lt;/div>&lt;/li>
+        &lt;li class="__item dismissable">&lt;div>Alvin&lt;a href="#!" class="__icon">&lt;i class="octicon octicon-sign-out">&lt;/i>&lt;/a>&lt;/div>&lt;/li>
+        &lt;li class="__item dismissable">&lt;div>Alvin&lt;a href="#!" class="__icon">&lt;i class="octicon octicon-sign-out">&lt;/i>&lt;/a>&lt;/div>&lt;/li>
+        &lt;li class="__item dismissable">&lt;div>Alvin&lt;a href="#!" class="__icon">&lt;i class="octicon octicon-sign-out">&lt;/i>&lt;/a>&lt;/div>&lt;/li>
+      &lt;/ul>
+            </code></pre>
+                    </div>
+                </div>
+            </div>
+            <!-- End ct-collections -->
+        </div>
+        <div class="ct-hide-sm-down ct-md-3 ct-lg-2">
+            <div class="toc-wrapper">
+                <div style="height: 1px;">
+                    <ul class="ct-section table-of-contents">
+                        <li><a href="#basic">Basic</a></li>
+                        <li><a href="#links">Links</a></li>
+                        <li><a href="#badge">Badges</a></li>
+                        <li><a href="#headers">Headers</a></li>
+                        <li><a href="#secondary">Secondary Content</a></li>
+                        <li><a href="#circle">Avatar Content</a></li>
+                        <li><a href="#dismiss">Dismissable Content</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main><footer class="page-footer">
+    <div class="ct-container">
+        <div class="ct-row">
+            <div class="ct-md-4">
+                <h5 class="ct-color-white">Help CssToolkits Grow</h5>
+                <p class="ct-color-white">We are a young team, we pay all the time on this project. Any amount will help support and continue to develop in this project, and greatly appreciated.</p>
+            </div>
+            <div class="ct-md-4">
+                <h5 class="ct-color-white">Join the Discussion</h5>
+                <p class="ct-color-white">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions.</p>
+            </div>
+            <div class="ct-md-4 ct-overflow ct-color-white">
+                <h5 class="ct-color-white">Connect</h5>
+                <p class="ct-color-white">
+                    Email: ct#csstoolkits.com<br>
+                    <a href="http://github.com/get3w/csstoolkits" class="ct-color-yellow-300">Github</a>
+                    <a href="http://github.com/get3w/csstoolkits" class="ct-color-yellow-300">Twitter</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="ct-container">
+            © 2014-2015 CssToolkits, All rights reserved.
+            <a class="ct-fr ct-color-yellow" href="http://csstoolkits.com">MIT License</a>
+        </div>
+    </div>
+</footer>
+<!--  Scripts-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.timeago.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="bin/js.js"></script>
+<script src="js/init.js"></script>
+<script src="dist/js/ct.js"></script>
+</body></html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="msapplication-tap-highlight" content="no"><meta name="description" content="CssToolkits is a modern responsive CSS framework based on Material Design by Google. "><title>Helpers - CssToolkits</title><!-- Favicons--><link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png"><!-- Windows 8 磁贴颜色--><meta name="msapplication-TileColor" content="#FFFFFF"><!-- Windows 8 磁贴图标--><meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png"><link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32"><!--  Android 5 Chrome Color--><meta name="theme-color" content="#EE6E73"><!-- CSS--><link href="css/code.css" rel="stylesheet"><link href="dist/css/ct.min.css" rel="stylesheet"><link href="css/docs.css" rel="stylesheet"><link href="css/ghpages-csstoolkits.min.css" type="text/css" rel="stylesheet" media="screen,projection"></head><body><header><nav class="top-nav"><div class="ct-container"><div class="nav-wrapper"><a class="page-title">Helpers</a></div></div></nav><div class="ct-container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav octicon octicon-three-bars ct-hide-lg-down"></a></div><ul id="nav-mobile" class="side-nav fixed"><li class="logo"><a id="logo-container" href="./index.html" class="brand-logo"><img src="css/logo.png" alt="logo" class="ct-responsive"></a></li><li class="bold"><a href="getting-started.html" class="waves-effect">Getting Started</a></li><li class="ct-px-0"><ul class="collapsible collapsible-accordion"><li class="bold"><a class="collapsible-header active waves-effect">CSS</a><div class="collapsible-body"><ul><li><a href="color.html">Color</a></li><li><a href="grid.html">Grid</a></li><li class="active"><a href="helpers.html">Helpers</a></li><li><a href="spacing.html">Spacing</a></li><li><a href="media-css.html">Media</a></li><li><a href="table.html">Table</a></li><li><a href="typography.html">Typography</a></li></ul></div></li><li class="bold"><a class="collapsible-header  waves-effect">Components</a><div class="collapsible-body"><ul><li><a href="buttons.html">Buttons</a></li><li><a href="cards.html">Cards</a></li><li><a href="collections.html">Collections</a></li><li><a href="forms.html">Forms</a></li><li><a href="box.html">Box</a></li><li><a href="alert.html">Alert</a></li><li><a href="icons.html">Icons</a></li><li><a href="navbar.html">Navbar</a></li><li><a href="pagination.html">Pagination</a></li><li><a href="progress.html">Progress</a></li></ul></div></li><li class="bold"><a class="collapsible-header  waves-effect">JavaScript</a><div class="collapsible-body"><ul><li><a href="tabs.html">Tabs</a></li><li><a href="waves.html">Waves</a></li></ul></div></li></ul></li></ul></header><main><div class="ct-container">
+    <div class="ct-row">
+        <div class="ct-md-9 ct-lg-10">
+            <!--  Valign ct-Section-->
+            <div id="valign" class="ct-section scrollspy">
+                <h2 class="header">Alignment</h2>
+                <p class="caption">We have easy to use classes to help you align your content.</p>
+                <h5 class="ct-thin">Vertical Align</h5>
+                <p>You can easily vertically center things by adding the class <code class="language-markup">.ct-valign-wrapper</code> to the container holding the items you want to vertically align. </p>
+                <div class="ct-container-fluid">
+                    <div class="ct-row">
+                        <div class="ct-md-12 valign-demo ct-valign-wrapper ct-center">
+                            <h5 class="ct-valign" style="width: 100%;">.ct-valign</h5>
+                        </div>
+                    </div>
+                </div>
+                <pre><code class="language-markup">
+    &lt;div class="ct-valign-wrapper">
+    &lt;h5 class="ct-valign">This should be vertically aligned&lt;/h5>
+    &lt;/div>
+        </code></pre>
+                <br>
+                <h5 class="ct-thin">Text Align</h5>
+                <p>These classes are for horizontally aligning content. We have <code class="language-markup">.ct-left</code>, <code class="language-markup">.ct-right</code> and <code class="language-markup">.ct-center</code></p>
+                <div class="talign-demo">
+                    <br>
+                    <h5 class="ct-left">This should be left aligned</h5>
+                </div>
+                <br>
+                <div class="talign-demo">
+                    <br>
+                    <h5 class="ct-right">This should be right aligned</h5>
+                </div>
+                <br>
+                <div class="talign-demo">
+                    <br>
+                    <h5 class="ct-center">This should be center aligned</h5>
+                </div>
+                <pre><code class="language-markup">
+    &lt;div>
+      &lt;h5 class="ct-left">This should be left aligned&lt;/h5>
+    &lt;/div>
+    &lt;div>
+      &lt;h5 class="ct-right">This should be right aligned&lt;/h5>
+    &lt;/div>
+    &lt;div>
+      &lt;h5 class="ct-center">This should be center aligned&lt;/h5>
+    &lt;/div>
+        </code></pre>
+                <br>
+                <h5 class="ct-thin">Quick Floats</h5>
+                <p>Quickly float things by adding the class <code class="language-markup">.ct-fl</code> or <code class="language-markup">.ct-fr</code> to the element. <code class="language-markup">!important</code> is used to avoid specificity issues.</p>
+                <pre><code class="language-markup">
+    &lt;div class="ct-fl">...&lt;/div>
+    &lt;div class="ct-fr">...&lt;/div>
+        </code></pre>
+                <br>
+            </div>
+            <!--  End Valign ct-Section  -->
+            <div id="transformation" class="ct-section scrollspy">
+                <h2 class="header">Text transform</h2>
+                <p>Transform text in components with text capitalization classes.</p>
+                <br>
+                <div class="ct-card ct-pa-lg">
+                    <p class="ct-h4 ct-ma ct-lowercase">Lowercased text.</p>
+                    <p class="ct-h4 ct-ma ct-uppercase">Uppercased text.</p>
+                    <p class="ct-h4 ct-ma ct-capitalize">Capitalized text.</p>
+                </div>
+                <h5 class="ct-thin">Usage</h5>
+                <pre><code class="language-markup">
+    &lt;p class="ct-lowercase">Lowercased text.&lt;/p>
+    &lt;p class="ct-uppercase">Uppercased text.&lt;/p>
+    &lt;p class="ct-capitalize">Capitalized text.&lt;/p>
+        </code></pre>
+                <br>
+            </div>
+            <!--  Clearfix  -->
+            <div id="clearfix" class="ct-section scrollspy">
+                <h2 class="header">Clearfix</h2>
+                <p>Easily clear <code class="language-markup">floats</code>by adding <code class="language-markup">.ct-clearfix</code> to the parent element. Utilizes the micro clearfix as popularized by Nicolas Gallagher. Can also be used as a mixin.</p>
+                <br>
+
+                <h5 class="ct-thin">Usage</h5>
+                <pre><code class="language-markup">
+    &lt;div class="ct-clearfix">...&lt;/div>
+        </code></pre>
+                <br>
+            </div>
+            <!--  Hiding ct-Section-->
+            <div id="hiding" class="ct-section scrollspy">
+                <h2 class="header">Hiding Content</h2>
+                <p>We provide easy to use classes to hide content on specific screen sizes. </p>
+                <div class="ct-table-wrapper">
+                    <table class="ct-bordered">
+                        <thead>
+                            <tr>
+                                <th>Class Name</th>
+                                <th>Screen Range</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <code class="language-markup"><strong>.ct-show</strong></code>
+                                </td>
+                                <td>Show for all Devices</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <code class="language-markup"><strong>.ct-hide</strong></code>
+                                    <code class="language-markup"><strong>.ct-hide-xs-up</strong></code>
+                                </td>
+                                <td>Hidden for all Devices</td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-markup"><strong>.ct-hide-xs-down</strong></code></td>
+                                <td>Hidden for Extra small screen / phone down (0)</td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-markup"><strong>.ct-hide-sm-up</strong></code></td>
+                                <td>Hidden for Small screen / phone Above (544px)</td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-markup"><strong>.ct-hide-sm-down</strong></code></td>
+                                <td>Hidden for Small screen / phone Below (544px)</td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-markup"><strong>.ct-hide-md-up</strong></code></td>
+                                <td>Hidden for Medium screen / tablet Above (768px)</td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-markup"><strong>.ct-hide-md-down</strong></code></td>
+                                <td>Hidden for Medium screen / tablet Below (768px)</td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-markup"><strong>.ct-hide-lg-up</strong></code></td>
+                                <td>Hidden for Large screen / desktop Above (992px)</td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-markup"><strong>.ct-hide-lg-down</strong></code></td>
+                                <td>Hidden for Large screen / desktop Below (992px)</td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-markup"><strong>.ct-hide-xl-up</strong></code></td>
+                                <td>Hidden for Extra large screen / wide desktop Above (1200px)</td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-markup"><strong>.ct-hide-xl-down</strong></code></td>
+                                <td>Hidden for Extra large screen / wide desktop Below (1200px)</td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-markup ct-color-red"><strong>.ct-text-hide</strong></code></td>
+                                <td>Text Hidden for All Screen</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <h5 class="ct-thin">Usage</h5>
+                <pre><code class="language-markup">
+  &lt;div class="ct-hide">Hidden for mobile only&lt;/div>
+        </code></pre>
+                <br>
+            </div>
+            <!--  End Hiding ct-Section  -->
+            <!--  Formatting ct-Section-->
+            <div id="formatting" class="ct-section scrollspy">
+                <h2 class="header">Formatting</h2>
+                <p>These classes help format various content on your site.</p>
+                <h5 class="ct-thin">Overflow</h5>
+                <p>To truncate long lines of text in an ellipsis, add the class <code class="language-markup">.ct-overflow</code> to the tag which contains the text. See an example below of a header being truncated inside a card.</p>
+                <div class="ct-row">
+                    <div class="ct-sm-6 ct-sm-offset-3">
+                        <div class="ct-card ct-pa-lg">
+                            <h4 class="ct-overflow">This is an extremely long title that will be truncated</h4>
+                        </div>
+                    </div>
+                </div>
+                <pre><code class="language-markup">
+  &lt;h4 class="ct-overflow">This is an extremely long title that will be truncated&lt;/h4>
+        </code></pre>
+                <br>
+                <h5 class="ct-thin">Hover</h5>
+                <p>The <code class="language-markup">.ct-hoverable</code> is a hover class that adds an animation for box shadow as seen below. It can be used on most elements, but meant for use on cards.</p>
+                <div class="ct-card ct-hoverable">
+                    <div class="__image">
+                        <img src="images/rectangle.jpg">
+                        <span class="__title ct-color-white">Card Title</span>
+                    </div>
+                    <div class="__content">
+                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="__action">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+                <pre><code class="language-markup">
+  &lt;div class="ct-card ct-hoverable"> ct-Hoverable Card Panel&lt;/div>
+        </code></pre>
+            </div>
+            <!--  End Formatting ct-Section  -->
+        </div>
+        <div class="ct-hide-sm-down ct-md-3 ct-lg-2">
+            <div class="toc-wrapper">
+                <div style="height: 1px;">
+                    <ul class="ct-section table-of-contents">
+                        <li><a href="#valign">Alignment</a></li>
+                        <li><a href="#transformation">Transformation</a></li>
+                        <li><a href="#clearfix">Clearfix</a></li>
+                        <li><a href="#hiding">Hiding Content</a></li>
+                        <li><a href="#formatting">Formatting</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main><footer class="page-footer">
+    <div class="ct-container">
+        <div class="ct-row">
+            <div class="ct-md-4">
+                <h5 class="ct-color-white">Help CssToolkits Grow</h5>
+                <p class="ct-color-white">We are a young team, we pay all the time on this project. Any amount will help support and continue to develop in this project, and greatly appreciated.</p>
+            </div>
+            <div class="ct-md-4">
+                <h5 class="ct-color-white">Join the Discussion</h5>
+                <p class="ct-color-white">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions.</p>
+            </div>
+            <div class="ct-md-4 ct-overflow ct-color-white">
+                <h5 class="ct-color-white">Connect</h5>
+                <p class="ct-color-white">
+                    Email: ct#csstoolkits.com<br>
+                    <a href="http://github.com/get3w/csstoolkits" class="ct-color-yellow-300">Github</a>
+                    <a href="http://github.com/get3w/csstoolkits" class="ct-color-yellow-300">Twitter</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="ct-container">
+            © 2014-2015 CssToolkits, All rights reserved.
+            <a class="ct-fr ct-color-yellow" href="http://csstoolkits.com">MIT License</a>
+        </div>
+    </div>
+</footer>
+<!--  Scripts-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.timeago.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="bin/js.js"></script>
+<script src="js/init.js"></script>
+<script src="dist/js/ct.js"></script>
+</body></html>

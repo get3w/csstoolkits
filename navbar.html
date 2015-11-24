@@ -1,0 +1,363 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="msapplication-tap-highlight" content="no"><meta name="description" content="CssToolkits is a modern responsive CSS framework based on Material Design by Google. "><title>Navbar - CssToolkits</title><!-- Favicons--><link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png"><!-- Windows 8 磁贴颜色--><meta name="msapplication-TileColor" content="#FFFFFF"><!-- Windows 8 磁贴图标--><meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png"><link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32"><!--  Android 5 Chrome Color--><meta name="theme-color" content="#EE6E73"><!-- CSS--><link href="css/code.css" rel="stylesheet"><link href="dist/css/ct.min.css" rel="stylesheet"><link href="css/docs.css" rel="stylesheet"><link href="css/ghpages-csstoolkits.min.css" type="text/css" rel="stylesheet" media="screen,projection"></head><body><header><nav class="top-nav"><div class="ct-container"><div class="nav-wrapper"><a class="page-title">Navbar</a></div></div></nav><div class="ct-container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav octicon octicon-three-bars ct-hide-lg-down"></a></div><ul id="nav-mobile" class="side-nav fixed"><li class="logo"><a id="logo-container" href="./index.html" class="brand-logo"><img src="css/logo.png" alt="logo" class="ct-responsive"></a></li><li class="bold"><a href="getting-started.html" class="waves-effect">Getting Started</a></li><li class="ct-px-0"><ul class="collapsible collapsible-accordion"><li class="bold"><a class="collapsible-header  waves-effect">CSS</a><div class="collapsible-body"><ul><li><a href="color.html">Color</a></li><li><a href="grid.html">Grid</a></li><li><a href="helpers.html">Helpers</a></li><li><a href="spacing.html">Spacing</a></li><li><a href="media-css.html">Media</a></li><li><a href="table.html">Table</a></li><li><a href="typography.html">Typography</a></li></ul></div></li><li class="bold"><a class="collapsible-header active waves-effect">Components</a><div class="collapsible-body"><ul><li><a href="buttons.html">Buttons</a></li><li><a href="cards.html">Cards</a></li><li><a href="collections.html">Collections</a></li><li><a href="forms.html">Forms</a></li><li><a href="box.html">Box</a></li><li><a href="alert.html">Alert</a></li><li><a href="icons.html">Icons</a></li><li class="active"><a href="navbar.html">Navbar</a></li><li><a href="pagination.html">Pagination</a></li><li><a href="progress.html">Progress</a></li></ul></div></li><li class="bold"><a class="collapsible-header  waves-effect">JavaScript</a><div class="collapsible-body"><ul><li><a href="tabs.html">Tabs</a></li><li><a href="waves.html">Waves</a></li></ul></div></li></ul></li></ul></header><main><div class="ct-container">
+    <div class="ct-row">
+        <div class="ct-md-9 ct-lg-10">
+            <div id="right" class="ct-section scrollspy">
+                <p class="caption">The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.
+                </p>
+                <h2 class="header">Right Aligned Links</h2>
+                <p>To right align your navbar links, just add a <code class="language-markup">ct-fr</code> class to your <code class="language-markup">&lt;ul></code> that contains them.</p>
+                <nav class="ct-nav">
+                    <div class="__wrapper">
+                        <div class="ct-sm-12">
+                            <a href="#!" class="__logo">Logo</a>
+                            <ul class="ct-fr ct-hide-md-down">
+                                <li><a href="#!">Sass</a></li>
+                                <li><a href="#!">Components</a></li>
+                                <li><a href="#!">JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <br>
+                <pre><code class="language-markup">
+  &lt;nav class="ct-nav">
+      &lt;div class="__wrapper">
+          &lt;div class="ct-sm-12">
+              &lt;a href="#!" class="__logo">Logo&lt;/a>
+              &lt;ul class="ct-fr ct-hide-md-down">
+                  &lt;li>&lt;a href="#!">Sass&lt;/a>&lt;/li>
+                  &lt;li>&lt;a href="#!">Components&lt;/a>&lt;/li>
+                  &lt;li>&lt;a href="#!">JavaScript&lt;/a>&lt;/li>
+              &lt;/ul>
+          &lt;/div>
+      &lt;/div>
+  &lt;/nav>
+        </code></pre>
+            </div>
+            <div id="left" class="ct-section scrollspy">
+                <h2 class="header">Left Aligned Links</h2>
+                <p>To left align your navbar links, just add a <code class="language-markup">ct-fl</code> class to your <code class="language-markup">&lt;ul></code> that contains them.</p>
+                <nav class="ct-nav">
+                    <div class="__wrapper">
+                        <div class="ct-sm-12">
+                            <a href="#!" class="__logo --right">Logo</a>
+                            <ul class="ct-fl ct-hide-md-down">
+                                <li><a href="#!">Sass</a></li>
+                                <li><a href="#!">Components</a></li>
+                                <li><a href="#!">JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <br>
+                <pre><code class="language-markup">
+  &lt;nav class="ct-nav">
+      &lt;div class="__wrapper">
+          &lt;div class="ct-sm-12">
+              &lt;a href="#!" class="__logo --right">Logo&lt;/a>
+              &lt;ul class="ct-fl ct-hide-md-down">
+                  &lt;li>&lt;a href="#!">Sass&lt;/a>&lt;/li>
+                  &lt;li>&lt;a href="#!">Components&lt;/a>&lt;/li>
+                  &lt;li>&lt;a href="#!">JavaScript&lt;/a>&lt;/li>
+              &lt;/ul>
+          &lt;/div>
+      &lt;/div>
+  &lt;/nav>
+        </code></pre>
+            </div>
+            <div id="center" class="ct-section scrollspy">
+                <h2 class="header">Centering the logo</h2>
+                <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the <code class="language-markup">--center</code> class to your <code class="language-markup">&lt;a class="brand-logo"></code>. You will have to make sure yourself that links do not overlap if you use this.</p>
+                <nav class="ct-nav">
+                    <div class="__wrapper">
+                        <a href="#!" class="__logo --center">Logo</a>
+                        <ul class="ct-fl ct-hide-md-down">
+                            <li><a href="#!">Sass</a></li>
+                            <li><a href="#!">Components</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <br>
+                <pre><code class="language-markup">
+  &lt;nav class="ct-nav">
+      &lt;div class="__wrapper">
+          &lt;a href="#!" class="__logo --center">Logo&lt;/a>
+          &lt;ul class="ct-fl cthide-md-down">
+              &lt;li>&lt;a href="#!">Sass&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#!">Components&lt;/a>&lt;/li>
+          &lt;/ul>
+      &lt;/div>
+  &lt;/nav>
+        </code></pre>
+            </div>
+            <div id="active-label" class="ct-section scrollspy">
+                <h2 class="header">Active Items</h2>
+                <p>
+                    Add active class to your li tags to denote the current page.
+                </p>
+                <nav class="ct-nav">
+                    <div class="__wrapper">
+                        <a href="#!" class="__logo --center">Logo</a>
+                        <ul class="ct-fl ct-hide-md-down">
+                            <li><a href="#!">Sass</a></li>
+                            <li><a href="#!">Components</a></li>
+                            <li class="active"><a href="#!">JavaScript</a></li>
+                        </ul>
+                        <ul class="ct-fr ct-hide-md-down">
+                            <li><a href="#!">Sass</a></li>
+                            <li><a href="#!">Components</a></li>
+                            <li class="active"><a href="#!">JavaScript</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <br>
+                <pre><code class="language-markup">
+  &lt;nav class="ct-nav">
+      &lt;div class="__wrapper">
+          &lt;a href="#!" class="__logo --center">Logo&lt;/a>
+          &lt;ul class="ct-fl ct-hide-md-down">
+              &lt;li>&lt;a href="#!">Sass&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#!">Components&lt;/a>&lt;/li>
+              &lt;li class="active">&lt;a href="#!">JavaScript&lt;/a>&lt;/li>
+          &lt;/ul>
+          &lt;ul class="ct-fr ct-hide-md-down">
+              &lt;li>&lt;a href="#!">Sass&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#!">Components&lt;/a>&lt;/li>
+              &lt;li class="active">&lt;a href="#!">JavaScript&lt;/a>&lt;/li>
+          &lt;/ul>
+      &lt;/div>
+  &lt;/nav>
+        </code></pre>
+            </div>
+            <div id="navbar-fixed" class="ct-section scrollspy">
+                <h2 class="header">Fixed Navbar</h2>
+                <p>
+                    To make the navbar fixed, you have to add an outer wrapping div with the class <code class="language-markup">ct-navbar-fixed</code>. This will offset your other content while making your nav fixed. You can adjust the height of this outer div to change how much offset is on your content.
+                </p>
+                <pre><code class="language-markup">
+  &lt;div class="ct-navbar-fixed">
+    &lt;nav class="ct-nav">
+      &lt;div class="__wrapper">
+        &lt;a href="#!" class="__logo">Logo&lt;/a>
+        &lt;ul class="ct-fr ct-hide-md-down">
+          &lt;li>&lt;a href="#!">Sass&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#!">Components&lt;/a>&lt;/li>
+        &lt;/ul>
+      &lt;/div>
+    &lt;/nav>
+  &lt;/div>
+        </code></pre>
+            </div>
+            <div id="navbar-dropdown" class="ct-section scrollspy">
+                <h2 class="header">Navbar Dropdown Menu</h2>
+                <p>
+                    To add a navbar dropdown menu, add the <code class="language-markup">ul</code> dropdown structure into the page. Then, add an element to trigger the dropdown menu. Make sure to supply the id of the dropdown structure to the
+                    <code class="language-markup">data-activates</code> attribute of the dropdown trigger.
+                </p>
+                <!-- Dropdown Structure -->
+                <ul id="dropdown1" class="ct-dropdown">
+                    <li><a href="#!">one</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li class="ct-divider"></li>
+                    <li><a href="#!">three</a></li>
+                </ul>
+                <nav class="ct-nav">
+                    <div class="__wrapper">
+                        <a href="#!" class="__logo">Logo</a>
+                        <ul class="ct-fr ct-hide-md-down">
+                            <li><a href=".html">Sass</a></li>
+                            <li><a href=".html">Components</a></li>
+                            <!-- Dropdown Trigger -->
+                            <li><a class="ct-dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="octicon octicon-triangle-down ct-ml-xs ct-fr"></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <br>
+                <pre><code class="language-markup">
+  &lt;!-- Dropdown Structure -->
+  &lt;ul id="dropdown1" class="ct-dropdown">
+      &lt;li>&lt;a href="#!">one&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#!">two&lt;/a>&lt;/li>
+      &lt;li class="ct-divider">&lt;/li>
+      &lt;li>&lt;a href="#!">three&lt;/a>&lt;/li>
+  &lt;/ul>
+  &lt;nav class="ct-nav">
+      &lt;div class="__wrapper">
+          &lt;a href="#!" class="__logo">Logo&lt;/a>
+          &lt;ul class="ct-fr ct-hide-md-down">
+              &lt;li>&lt;a href=".html">Sass&lt;/a>&lt;/li>
+              &lt;li>&lt;a href=".html">Components&lt;/a>&lt;/li>
+              &lt;!-- Dropdown Trigger -->
+              &lt;li>&lt;a class="ct-dropdown-button" href="#!" data-activates="dropdown1">Dropdown&lt;i class="octicon octicon-triangle-down ct-ml-xs ct-fr">&lt;/i>&lt;/a>&lt;/li>
+          &lt;/ul>
+      &lt;/div>
+  &lt;/nav>
+        </code></pre>
+                <p>To activate the dropdown menu, insert this line of code into your JavaScript file, within the <code class="language-javascript">$( document ).ready(function)</code> block</p>
+                <pre><code class="language-javascript">
+$(".ct-dropdown-button").dropdown();
+        </code></pre>
+                <h5>Trigger dropdown menu on click</h5>
+                <p>
+                    By default, the dropdown menu is activated by hovering over the dropdown trigger. To activate the dropdown menu on click, pass <code class="language-javascript">{ hover: false }</code> into the above <code class="language-javascript">dropdown()</code> function
+                </p>
+            </div>
+            <div id="icons" class="ct-section scrollspy">
+                <h2 class="header">Icon Links</h2>
+                <nav class="ct-nav">
+                    <div class="__wrapper">
+                        <a href="#!" class="__logo">Logo</a>
+                        <ul class="ct-fr ct-hide-md-down">
+                            <li><a href="#!"><i class="octicon octicon-mark-github"></i></a></li>
+                            <li><a href="#!"><i class="octicon octicon-graph"></i></a></li>
+                            <li><a href="#!"><i class="octicon octicon-globe"></i></a></li>
+                            <li><a href="#!"><i class="octicon octicon-search"></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <br>
+                <p>You can add icons into links. For icon only links you don't need any additional class. Just pop the <code class="language-markup">i</code> tag in and it will work.</p>
+                <pre><code class="language-markup">
+  &lt;nav class="ct-nav">
+      &lt;div class="__wrapper">
+          &lt;a href="#!" class="__logo">Logo&lt;/a>
+          &lt;ul class="ct-fr ct-hide-md-down">
+              &lt;li>&lt;a href="#!">&lt;i class="octicon octicon-mark-github">&lt;/i>&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#!">&lt;i class="octicon octicon-graph">&lt;/i>&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#!">&lt;i class="octicon octicon-globe">&lt;/i>&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#!">&lt;i class="octicon octicon-search">&lt;/i>&lt;/a>&lt;/li>
+          &lt;/ul>
+      &lt;/div>
+  &lt;/nav>
+  </code></pre>
+                <br>
+                <nav class="ct-nav">
+                    <div class="__wrapper">
+                        <a href="#!" class="__logo">Logo</a>
+                        <ul class="ct-fr ct-hide-md-down">
+                            <li><a href="#!"><i class="octicon octicon-list-ordered ct-fl ct-mr-xs"></i>Link with Left Icon</a></li>
+                            <li><a href="#!"><i class="octicon octicon-mark-github ct-fr ct-ml-xs"></i></i>Link with Right Icon</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <br>
+                <p>For adding an icon to a text link you need to add either a <code class="language-markup">ct-fl</code> or <code class="language-markup">ct-fr</code> class to the icon depending on where you want the icon to be.</p>
+                <pre><code class="language-markup">
+  &lt;nav class="ct-nav">
+      &lt;div class="__wrapper">
+          &lt;a href="#!" class="__logo">Logo&lt;/a>
+          &lt;ul class="ct-fr ct-hide-md-down">
+              &lt;li>&lt;a href="#!">&lt;i class="octicon octicon-list-ordered ct-fl ct-mr-xs">&lt;/i>Link with Left Icon&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#!">&lt;i class="octicon octicon-mark-github ct-fr ct-ml-xs">&lt;/i>&lt;/i>Link with Right Icon&lt;/a>&lt;/li>
+          &lt;/ul>
+      &lt;/div>
+  &lt;/nav>
+  </code></pre>
+                <br>
+            </div>
+         
+            <div id="mobile-collapse" class="ct-section scrollspy">
+                <h2 class="header">Mobile Collapse Button</h2>
+                <nav class="ct-nav">
+                    <div class="__wrapper">
+                        <a href="#!" class="__logo">Logo</a>
+                        <a href="#" data-activates="mobile-demo" class="__collapse ct-ml-sm ct-dropdown-button"><i class="octicon octicon-three-bars"></i></a>
+                        <ul class="ct-fr ct-hide-md-down">
+                            <li><a href="#!">Sass</a></li>
+                            <li><a href="#!">Components</a></li>
+                            <li><a href="#!">Javascript</a></li>
+                            <li><a href="#!">Mobile</a></li>
+                        </ul>
+                        <ul class="side-nav" id="mobile-demo">
+                            <li><a href="#!">Sass</a></li>
+                            <li><a href="#!">Components</a></li>
+                            <li><a href="#!">Javascript</a></li>
+                            <li><a href="#!">Mobile</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <br>
+                <p>When your nav bar is resized, you will see that the links on the right turn into a hamburger icon <i class="octicon octicon-three-bars"></i>. Take a look at the example below to get this functionality. Add the entire <code class="language-markup">__collapse</code> and <code class="language-markup">ct-dropdown-button</code> line to your <code class="language-markup">nav</code>.</p>
+                <pre><code class="language-markup">
+  &lt;nav class="ct-nav">
+      &lt;div class="__wrapper">
+          &lt;a href="#!" class="__logo">Logo&lt;/a>
+          &lt;a href="#" data-activates="mobile-demo" class="__collapse ct-ml-sm ct-dropdown-button">&lt;i class="octicon octicon-three-bars">&lt;/i>&lt;/a>
+          &lt;ul class="ct-fr ct-hide-md-down">
+              &lt;li>&lt;a href="#!">Sass&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#!">Components&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#!">Javascript&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#!">Mobile&lt;/a>&lt;/li>
+          &lt;/ul>
+          &lt;ul class="side-nav" id="mobile-demo">
+              &lt;li>&lt;a href="#!">Sass&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#!">Components&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#!">Javascript&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#!">Mobile&lt;/a>&lt;/li>
+          &lt;/ul>
+      &lt;/div>
+  &lt;/nav>
+          </code></pre>
+                <br>
+                <h4>Initialization</h4>
+                <p>After including the button-collapse line into your navbar, all you have to do now is place this code in your page's <code class="language-javascript">$( document ).ready(function(){})</code> code. This example below assumes you have not modified the classes in the above example. In the case that you have, just change the jQuery selector in the line below to match it.</p>
+                <pre><code class="language-javascript">
+    $(".ct-button-collapse").sideNav();
+        </code></pre>
+            </div>
+        </div>
+        <div class="ct-hide-sm-down ct-md-3 ct-lg-2">
+            <div class="toc-wrapper">
+                <div style="height: 1px;">
+                    <ul class="ct-section table-of-contents">
+                        <li><a href="#right">Right Aligned</a></li>
+                        <li><a href="#left">Left Aligned</a></li>
+                        <li><a href="#center">Center Logo</a></li>
+                        <li><a href="#active-label">Active Items</a></li>
+                        <li><a href="#navbar-fixed">Fixed Navbar</a></li>
+                        <li><a href="#navbar-dropdown">Dropdown Menu</a></li>
+                        <li><a href="#icons">Icon Links</a></li>
+                   
+                        <li><a href="#mobile-collapse">Mobile Collapse</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main><footer class="page-footer">
+    <div class="ct-container">
+        <div class="ct-row">
+            <div class="ct-md-4">
+                <h5 class="ct-color-white">Help CssToolkits Grow</h5>
+                <p class="ct-color-white">We are a young team, we pay all the time on this project. Any amount will help support and continue to develop in this project, and greatly appreciated.</p>
+            </div>
+            <div class="ct-md-4">
+                <h5 class="ct-color-white">Join the Discussion</h5>
+                <p class="ct-color-white">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions.</p>
+            </div>
+            <div class="ct-md-4 ct-overflow ct-color-white">
+                <h5 class="ct-color-white">Connect</h5>
+                <p class="ct-color-white">
+                    Email: ct#csstoolkits.com<br>
+                    <a href="http://github.com/get3w/csstoolkits" class="ct-color-yellow-300">Github</a>
+                    <a href="http://github.com/get3w/csstoolkits" class="ct-color-yellow-300">Twitter</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="ct-container">
+            © 2014-2015 CssToolkits, All rights reserved.
+            <a class="ct-fr ct-color-yellow" href="http://csstoolkits.com">MIT License</a>
+        </div>
+    </div>
+</footer>
+<!--  Scripts-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.timeago.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="bin/js.js"></script>
+<script src="js/init.js"></script>
+<script src="dist/js/ct.js"></script>
+</body></html>

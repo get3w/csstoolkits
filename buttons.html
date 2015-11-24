@@ -1,0 +1,205 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="msapplication-tap-highlight" content="no"><meta name="description" content="CssToolkits is a modern responsive CSS framework based on Material Design by Google. "><title>Buttons - CssToolkits</title><!-- Favicons--><link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png"><!-- Windows 8 磁贴颜色--><meta name="msapplication-TileColor" content="#FFFFFF"><!-- Windows 8 磁贴图标--><meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png"><link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32"><!--  Android 5 Chrome Color--><meta name="theme-color" content="#EE6E73"><!-- CSS--><link href="css/code.css" rel="stylesheet"><link href="dist/css/ct.min.css" rel="stylesheet"><link href="css/docs.css" rel="stylesheet"><link href="css/ghpages-csstoolkits.min.css" type="text/css" rel="stylesheet" media="screen,projection"></head><body><header><nav class="top-nav"><div class="ct-container"><div class="nav-wrapper"><a class="page-title">Buttons</a></div></div></nav><div class="ct-container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav octicon octicon-three-bars ct-hide-lg-down"></a></div><ul id="nav-mobile" class="side-nav fixed"><li class="logo"><a id="logo-container" href="./index.html" class="brand-logo"><img src="css/logo.png" alt="logo" class="ct-responsive"></a></li><li class="bold"><a href="getting-started.html" class="waves-effect">Getting Started</a></li><li class="ct-px-0"><ul class="collapsible collapsible-accordion"><li class="bold"><a class="collapsible-header  waves-effect">CSS</a><div class="collapsible-body"><ul><li><a href="color.html">Color</a></li><li><a href="grid.html">Grid</a></li><li><a href="helpers.html">Helpers</a></li><li><a href="spacing.html">Spacing</a></li><li><a href="media-css.html">Media</a></li><li><a href="table.html">Table</a></li><li><a href="typography.html">Typography</a></li></ul></div></li><li class="bold"><a class="collapsible-header active waves-effect">Components</a><div class="collapsible-body"><ul><li class="active"><a href="buttons.html">Buttons</a></li><li><a href="cards.html">Cards</a></li><li><a href="collections.html">Collections</a></li><li><a href="forms.html">Forms</a></li><li><a href="box.html">Box</a></li><li><a href="alert.html">Alert</a></li><li><a href="icons.html">Icons</a></li><li><a href="navbar.html">Navbar</a></li><li><a href="pagination.html">Pagination</a></li><li><a href="progress.html">Progress</a></li></ul></div></li><li class="bold"><a class="collapsible-header  waves-effect">JavaScript</a><div class="collapsible-body"><ul><li><a href="tabs.html">Tabs</a></li><li><a href="waves.html">Waves</a></li></ul></div></li></ul></li></ul></header><main><div class="ct-container">
+    <div class="ct-row">
+        <div class="ct-md-9 ct-lg-10">
+            <div id="raised" class="ct-section scrollspy">
+                <h2 class="header">Raised</h2>
+                <a class="ct-btn ct-uppercase --blue">button</a>
+                <a class="ct-btn ct-uppercase --blue"><span class="octicon octicon-cloud-download ct-fl"></span>button</a>
+                <a class="ct-btn ct-uppercase --blue"><span class="octicon octicon-cloud-upload ct-fr"></span>button</a>
+                <br>
+                <br>
+                <pre><code class="language-markup">
+    &lt;a class="ct-btn">Button&lt;/a>
+    &lt;a class="ct-btn">&lt;i class="octicon octicon-cloud-download ct-fl">&lt;/i>button&lt;/a>
+    &lt;a class="ct-btn">&lt;i class="octicon octicon-cloud-upload ct-fr">&lt;/i>button&lt;/a>
+        </code></pre>
+            </div>
+            <div id="shapes" class="ct-section scrollspy">
+                <h2 class="header">Shapes</h2>
+                <h4 class="ct-thin">Circle</h4>
+                <p>If you want a big circle button, you can add class <code class="language-markup">.--circle</code></p>
+                <a class="ct-btn --circle --blue"><span class="octicon octicon-gist-secret"></span></a>
+                <br>
+                <br>
+                <div class="ct-clearfix">
+                    <pre><code class="language-markup">
+    &lt;a class="ct-btn --circle --blue">&lt;span class="octicon octicon-gist-secret">&lt;/span>&lt;/a>
+        </code></pre>
+                </div>
+                <br>
+                <br>
+                <h4 class="ct-thin">Mini</h4>
+                <p>If you want a mini circle button, you can add class <code class="language-markup">.--mini</code></p>
+                <a class="ct-btn --mini --blue"><span class="octicon octicon-gist-secret"></span></a>
+                <br>
+                <br>
+                <div class="ct-clearfix">
+                    <pre><code class="language-markup">
+    &lt;a class="ct-btn --mini">&lt;span class="octicon octicon-gist-secret">&lt;/span>&lt;/a>
+        </code></pre>
+                </div>
+                <br>
+                <h4 class="ct-thin">Radius</h4>
+                <p>If you want a biger radius angle button, you can add class <code class="language-markup">.--radius</code></p>
+                <a class="ct-btn --radius --blue">Button</a>
+                <br>
+                <br>
+                <div class="ct-clearfix">
+                    <pre><code class="language-markup">
+    &lt;a class="ct-btn --radius">Button&lt;/a>
+        </code></pre>
+                </div>
+                <br>
+                <br>
+                <h4 class="ct-thin">Small</h4>
+                <p>If you want a small padding-x button, you can add class <code class="language-markup">.--small</code>. This class only narrowed the original <code class="language-markup">padding-left</code> and <code class="language-markup">padding-right</code> Other settings unchanged</p>
+                <a class="ct-btn --small --blue">Button</a>
+                <br>
+                <br>
+                <div class="ct-clearfix">
+                    <pre><code class="language-markup">
+    &lt;a class="ct-btn --small">Button&lt;/a>
+        </code></pre>
+                </div>
+                <br>
+                <h4 class="ct-thin">Large</h4>
+                <p>This button has a larger height for buttons that need more attention.</p>
+                <a class="ct-btn ct-uppercase --large --blue">Button</a>
+                <a class="ct-btn ct-uppercase --large --blue"><span class="octicon octicon-cloud-download ct-fl"></span>button</a>
+                <a class="ct-btn ct-uppercase --large --blue"><span class="octicon octicon-cloud-upload ct-fr"></span>button</a>
+                <pre><code class="language-markup">
+    &lt;a class="btn-large">Button&lt;/a>
+    &lt;a class="btn-large">&lt;span class="octicon octicon-cloud-download ct-fl">&lt;/span>button&lt;/a>
+    &lt;a class="btn-large">&lt;span class="octicon octicon-cloud-upload ct-fr">&lt;/span>button&lt;/a>
+        </code></pre>
+                <br>
+                <br>
+                <h4 class="ct-thin">No shadow</h4>
+                <p>If you want a no shadow button, you can add class <code class="language-markup">.--no-shadow</code>.</p>
+                <a class="ct-btn --large --no-shadow --blue">Button</a>
+                <br>
+                <br>
+                <div class="ct-clearfix">
+                    <pre><code class="language-markup">
+    &lt;a class="ct-btn --no-shadow">Button&lt;/a>
+        </code></pre>
+                </div>
+                <br>
+                <h5 class="ct-thin">ColorFull Button</h5>
+                <p>You can set a different back color and font color by color category to a button[<a href="./color.html">Color</a>].  Of course, we set up some basic colors.<code class="language-markup">.--red</code><code class="language-markup">.--blue</code><code class="language-markup">.--green</code>. Grey is default color.</p>
+                <a class="ct-btn --large --no-shadow">Button</a>
+                <a class="ct-btn --large --no-shadow --blue">Button</a>
+                <a class="ct-btn --large --no-shadow --red">Button</a>
+                <a class="ct-btn --large --no-shadow --green">Button</a>
+                <br>
+                <br>
+                <div class="ct-clearfix">
+                    <pre><code class="language-markup">
+    &lt;a class="ct-btn --large --no-shadow">Button&lt;/a>
+    &lt;a class="ct-btn --large --no-shadow --blue">Button&lt;/a>
+    &lt;a class="ct-btn --large --no-shadow --red">Button&lt;/a>
+    &lt;a class="ct-btn --large --no-shadow --green">Button&lt;/a>
+        </code></pre>
+                </div>
+            </div>
+            <div id="block" class="ct-section scrollspy">
+                <h2 class="header">Block Button</h2>
+                <p>If you want a 100% width buttons, you can add class <code class="language-markup">.--block</code> in the buttons.</p>
+                <a class="ct-btn --block --blue">BUTTON</a>
+                <br>
+                <pre><code class="language-markup">
+    &lt;a class="ct-btn --block --blue">BUTTON&lt;/a>
+        </code></pre>
+                <br>
+                <p>You can write multiple buttons attached, we've added the optimized code <code class="language-markup">.ct-btn + .ct-btn { margin-left: 5px;}</code>
+                    <br> <code class="language-markup">.ct-btn.\--block + .ct-btn.\--block {margin-top: 10px;margin-left: 0;}</code>.</p>
+                <div class="ct-section">
+                    <a class="ct-btn --block --blue">BUTTON </a>
+                    <a class="ct-btn --block --blue">BUTTON </a>
+                    <div class="ct-my">
+                        <a class="ct-btn --blue">BUTTON </a>
+                        <a class="ct-btn --blue">BUTTON </a>
+                        <a class="ct-btn --blue">BUTTON </a>
+                    </div>
+                </div>
+            </div>
+            <div id="submit" class="ct-section scrollspy">
+                <h2 class="header">Submit Button</h2>
+                <p>When you use a button to submit a form, instead of using a input tag, use a button tag with a type submit</p>
+                <button class="ct-btn ct-uppercase --blue" type="submit" name="action">Submit
+                    <span class="octicon octicon-rocket"></span>
+                </button>
+                <pre><code class="language-markup">
+    &lt;button class="ct-btn --blue" type="submit" name="action">Submit
+        &lt;span class="octicon octicon-rocket">&lt;/span>
+    &lt;/button>
+        </code></pre>
+            </div>
+            <div id="disabled" class="ct-section scrollspy">
+                <h2 class="header">Disabled</h2>
+                <p>This style can be applied to all button types</p>
+                <a class="ct-btn --blue --large disabled">Button</a>
+                <a class="ct-btn --blue disabled">Button</a>
+                <a class="ct-btn --blue --radius disabled">Button</a>
+                <a class="ct-btn --blue --small disabled">Button</a>
+                <a class="ct-btn --blue --circle disabled">Button</a>
+                <a class="ct-btn --blue --mini disabled"><i class="material-icons">add</i></a>
+                <pre><code class="language-markup">
+&lt;a class="btn-large disabled">Button&lt;/a>
+&lt;a class="btn disabled">Button&lt;/a>
+&lt;a class="btn-flat disabled">Button&lt;/a>
+&lt;a class="btn-floating disabled">&lt;i class="material-icons">add&lt;/i>&lt;/a>
+        </code></pre>
+            </div>
+        </div>
+        <div class="ct-hide-sm-down ct-md-3 ct-lg-2">
+            <div class="toc-wrapper">
+                <div style="height: 1px;">
+                    <ul class="ct-section table-of-contents">
+                        <li><a href="#raised">Raised</a></li>
+                        <li><a href="#shapes">Shapes</a></li>
+                        <li><a href="#block">Block</a></li>
+                        <li><a href="#submit">Submit</a></li>
+                        <li><a href="#disabled">Disabled</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main><footer class="page-footer">
+    <div class="ct-container">
+        <div class="ct-row">
+            <div class="ct-md-4">
+                <h5 class="ct-color-white">Help CssToolkits Grow</h5>
+                <p class="ct-color-white">We are a young team, we pay all the time on this project. Any amount will help support and continue to develop in this project, and greatly appreciated.</p>
+            </div>
+            <div class="ct-md-4">
+                <h5 class="ct-color-white">Join the Discussion</h5>
+                <p class="ct-color-white">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions.</p>
+            </div>
+            <div class="ct-md-4 ct-overflow ct-color-white">
+                <h5 class="ct-color-white">Connect</h5>
+                <p class="ct-color-white">
+                    Email: ct#csstoolkits.com<br>
+                    <a href="http://github.com/get3w/csstoolkits" class="ct-color-yellow-300">Github</a>
+                    <a href="http://github.com/get3w/csstoolkits" class="ct-color-yellow-300">Twitter</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="ct-container">
+            © 2014-2015 CssToolkits, All rights reserved.
+            <a class="ct-fr ct-color-yellow" href="http://csstoolkits.com">MIT License</a>
+        </div>
+    </div>
+</footer>
+<!--  Scripts-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.timeago.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="bin/js.js"></script>
+<script src="js/init.js"></script>
+<script src="dist/js/ct.js"></script>
+</body></html>

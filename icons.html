@@ -1,0 +1,894 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="msapplication-tap-highlight" content="no"><meta name="description" content="CssToolkits is a modern responsive CSS framework based on Material Design by Google. "><title>Icons - CssToolkits</title><!-- Favicons--><link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png"><!-- Windows 8 磁贴颜色--><meta name="msapplication-TileColor" content="#FFFFFF"><!-- Windows 8 磁贴图标--><meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png"><link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32"><!--  Android 5 Chrome Color--><meta name="theme-color" content="#EE6E73"><!-- CSS--><link href="css/code.css" rel="stylesheet"><link href="dist/css/ct.min.css" rel="stylesheet"><link href="css/docs.css" rel="stylesheet"><link href="css/ghpages-csstoolkits.min.css" type="text/css" rel="stylesheet" media="screen,projection"></head><body><header><nav class="top-nav"><div class="ct-container"><div class="nav-wrapper"><a class="page-title">Icons</a></div></div></nav><div class="ct-container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav octicon octicon-three-bars ct-hide-lg-down"></a></div><ul id="nav-mobile" class="side-nav fixed"><li class="logo"><a id="logo-container" href="./index.html" class="brand-logo"><img src="css/logo.png" alt="logo" class="ct-responsive"></a></li><li class="bold"><a href="getting-started.html" class="waves-effect">Getting Started</a></li><li class="ct-px-0"><ul class="collapsible collapsible-accordion"><li class="bold"><a class="collapsible-header  waves-effect">CSS</a><div class="collapsible-body"><ul><li><a href="color.html">Color</a></li><li><a href="grid.html">Grid</a></li><li><a href="helpers.html">Helpers</a></li><li><a href="spacing.html">Spacing</a></li><li><a href="media-css.html">Media</a></li><li><a href="table.html">Table</a></li><li><a href="typography.html">Typography</a></li></ul></div></li><li class="bold"><a class="collapsible-header active waves-effect">Components</a><div class="collapsible-body"><ul><li><a href="buttons.html">Buttons</a></li><li><a href="cards.html">Cards</a></li><li><a href="collections.html">Collections</a></li><li><a href="forms.html">Forms</a></li><li><a href="box.html">Box</a></li><li><a href="alert.html">Alert</a></li><li class="active"><a href="icons.html">Icons</a></li><li><a href="navbar.html">Navbar</a></li><li><a href="pagination.html">Pagination</a></li><li><a href="progress.html">Progress</a></li></ul></div></li><li class="bold"><a class="collapsible-header  waves-effect">JavaScript</a><div class="collapsible-body"><ul><li><a href="tabs.html">Tabs</a></li><li><a href="waves.html">Waves</a></li></ul></div></li></ul></li></ul></header><main><div class="ct-container">
+    <div class="ct-row">
+        <div class="ct-md-9 ct-lg-10">
+            <div id="usage" class="ct-row scrollspy">
+                <p class="caption">We have included 150 Octicons Icons courtesy of Github. You can download them directly from the <a href="https://octicons.github.com/">Github Octicons</a>.</p>
+                <h4>Usage</h4>
+                <p>To be able to use these icons, you must include this line in the <code class="language-markup">&lt;head></code>portion of your HTML code. or download it in your projects.</p>
+                <pre><code class="language-markup">
+  &lt;link href="//cdn.bootcss.com/octicons/3.3.0/octicons.min.css" rel="stylesheet">
+  </code></pre>
+                <p>To use these icons, just place the name of the icon into the class of an span tag</p>
+                <pre><code class="language-markup">
+  &lt;span class="octicon octicon-arrow-right">&lt;/span>
+            </code></pre>
+                <!-- Icon Listing -->
+                <div class="octicons-wrapper">
+                    <ul class="icon-list">
+                        <li data-name="octicon-alert">
+                            <a href="//octicons.github.com/icon/alert" data-clipboard-text="">
+                                <span class="mega-octicon octicon-alert" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-arrow-down">
+                            <a href="//octicons.github.com/icon/arrow-down" data-clipboard-text="">
+                                <span class="mega-octicon octicon-arrow-down" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-arrow-left">
+                            <a href="//octicons.github.com/icon/arrow-left" data-clipboard-text="">
+                                <span class="mega-octicon octicon-arrow-left" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-arrow-right">
+                            <a href="//octicons.github.com/icon/arrow-right" data-clipboard-text="">
+                                <span class="mega-octicon octicon-arrow-right" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-arrow-small-down">
+                            <a href="//octicons.github.com/icon/arrow-small-down" data-clipboard-text="">
+                                <span class="mega-octicon octicon-arrow-small-down" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-arrow-small-left">
+                            <a href="//octicons.github.com/icon/arrow-small-left" data-clipboard-text="">
+                                <span class="mega-octicon octicon-arrow-small-left" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-arrow-small-right">
+                            <a href="//octicons.github.com/icon/arrow-small-right" data-clipboard-text="">
+                                <span class="mega-octicon octicon-arrow-small-right" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-arrow-small-up">
+                            <a href="//octicons.github.com/icon/arrow-small-up" data-clipboard-text="">
+                                <span class="mega-octicon octicon-arrow-small-up" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-arrow-up">
+                            <a href="//octicons.github.com/icon/arrow-up" data-clipboard-text="">
+                                <span class="mega-octicon octicon-arrow-up" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-beaker">
+                            <a href="//octicons.github.com/icon/beaker" data-clipboard-text="">
+                                <span class="mega-octicon octicon-beaker" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-bell">
+                            <a href="//octicons.github.com/icon/bell" data-clipboard-text="">
+                                <span class="mega-octicon octicon-bell" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-bold">
+                            <a href="//octicons.github.com/icon/bold" data-clipboard-text="">
+                                <span class="mega-octicon octicon-bold" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-book">
+                            <a href="//octicons.github.com/icon/book" data-clipboard-text="">
+                                <span class="mega-octicon octicon-book" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-bookmark">
+                            <a href="//octicons.github.com/icon/bookmark" data-clipboard-text="">
+                                <span class="mega-octicon octicon-bookmark" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-briefcase">
+                            <a href="//octicons.github.com/icon/briefcase" data-clipboard-text="">
+                                <span class="mega-octicon octicon-briefcase" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-broadcast">
+                            <a href="//octicons.github.com/icon/broadcast" data-clipboard-text="">
+                                <span class="mega-octicon octicon-broadcast" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-browser">
+                            <a href="//octicons.github.com/icon/browser" data-clipboard-text="">
+                                <span class="mega-octicon octicon-browser" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-bug">
+                            <a href="//octicons.github.com/icon/bug" data-clipboard-text="">
+                                <span class="mega-octicon octicon-bug" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-calendar">
+                            <a href="//octicons.github.com/icon/calendar" data-clipboard-text="">
+                                <span class="mega-octicon octicon-calendar" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-check">
+                            <a href="//octicons.github.com/icon/check" data-clipboard-text="">
+                                <span class="mega-octicon octicon-check" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-checklist">
+                            <a href="//octicons.github.com/icon/checklist" data-clipboard-text="">
+                                <span class="mega-octicon octicon-checklist" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-chevron-down">
+                            <a href="//octicons.github.com/icon/chevron-down" data-clipboard-text="">
+                                <span class="mega-octicon octicon-chevron-down" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-chevron-left">
+                            <a href="//octicons.github.com/icon/chevron-left" data-clipboard-text="">
+                                <span class="mega-octicon octicon-chevron-left" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-chevron-right">
+                            <a href="//octicons.github.com/icon/chevron-right" data-clipboard-text="">
+                                <span class="mega-octicon octicon-chevron-right" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-chevron-up">
+                            <a href="//octicons.github.com/icon/chevron-up" data-clipboard-text="">
+                                <span class="mega-octicon octicon-chevron-up" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-circle-slash">
+                            <a href="//octicons.github.com/icon/circle-slash" data-clipboard-text="">
+                                <span class="mega-octicon octicon-circle-slash" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-circuit-board">
+                            <a href="//octicons.github.com/icon/circuit-board" data-clipboard-text="">
+                                <span class="mega-octicon octicon-circuit-board" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-clippy">
+                            <a href="//octicons.github.com/icon/clippy" data-clipboard-text="">
+                                <span class="mega-octicon octicon-clippy" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-clock">
+                            <a href="//octicons.github.com/icon/clock" data-clipboard-text="">
+                                <span class="mega-octicon octicon-clock" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-cloud-download">
+                            <a href="//octicons.github.com/icon/cloud-download" data-clipboard-text="">
+                                <span class="mega-octicon octicon-cloud-download" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-cloud-upload">
+                            <a href="//octicons.github.com/icon/cloud-upload" data-clipboard-text="">
+                                <span class="mega-octicon octicon-cloud-upload" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-code">
+                            <a href="//octicons.github.com/icon/code" data-clipboard-text="">
+                                <span class="mega-octicon octicon-code" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-color-mode">
+                            <a href="//octicons.github.com/icon/color-mode" data-clipboard-text="">
+                                <span class="mega-octicon octicon-color-mode" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-comment">
+                            <a href="//octicons.github.com/icon/comment" data-clipboard-text="">
+                                <span class="mega-octicon octicon-comment" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-comment-discussion">
+                            <a href="//octicons.github.com/icon/comment-discussion" data-clipboard-text="">
+                                <span class="mega-octicon octicon-comment-discussion" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-credit-card">
+                            <a href="//octicons.github.com/icon/credit-card" data-clipboard-text="">
+                                <span class="mega-octicon octicon-credit-card" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-dash">
+                            <a href="//octicons.github.com/icon/dash" data-clipboard-text="">
+                                <span class="mega-octicon octicon-dash" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-dashboard">
+                            <a href="//octicons.github.com/icon/dashboard" data-clipboard-text="">
+                                <span class="mega-octicon octicon-dashboard" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-database">
+                            <a href="//octicons.github.com/icon/database" data-clipboard-text="">
+                                <span class="mega-octicon octicon-database" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-desktop-download">
+                            <a href="//octicons.github.com/icon/desktop-download" data-clipboard-text="">
+                                <span class="mega-octicon octicon-desktop-download" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-device-camera">
+                            <a href="//octicons.github.com/icon/device-camera" data-clipboard-text="">
+                                <span class="mega-octicon octicon-device-camera" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-device-camera-video">
+                            <a href="//octicons.github.com/icon/device-camera-video" data-clipboard-text="">
+                                <span class="mega-octicon octicon-device-camera-video" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-device-desktop">
+                            <a href="//octicons.github.com/icon/device-desktop" data-clipboard-text="">
+                                <span class="mega-octicon octicon-device-desktop" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-device-mobile">
+                            <a href="//octicons.github.com/icon/device-mobile" data-clipboard-text="">
+                                <span class="mega-octicon octicon-device-mobile" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-diff">
+                            <a href="//octicons.github.com/icon/diff" data-clipboard-text="">
+                                <span class="mega-octicon octicon-diff" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-diff-added">
+                            <a href="//octicons.github.com/icon/diff-added" data-clipboard-text="">
+                                <span class="mega-octicon octicon-diff-added" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-diff-ignored">
+                            <a href="//octicons.github.com/icon/diff-ignored" data-clipboard-text="">
+                                <span class="mega-octicon octicon-diff-ignored" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-diff-modified">
+                            <a href="//octicons.github.com/icon/diff-modified" data-clipboard-text="">
+                                <span class="mega-octicon octicon-diff-modified" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-diff-removed">
+                            <a href="//octicons.github.com/icon/diff-removed" data-clipboard-text="">
+                                <span class="mega-octicon octicon-diff-removed" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-diff-renamed">
+                            <a href="//octicons.github.com/icon/diff-renamed" data-clipboard-text="">
+                                <span class="mega-octicon octicon-diff-renamed" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-ellipsis">
+                            <a href="//octicons.github.com/icon/ellipsis" data-clipboard-text="">
+                                <span class="mega-octicon octicon-ellipsis" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-eye">
+                            <a href="//octicons.github.com/icon/eye" data-clipboard-text="">
+                                <span class="mega-octicon octicon-eye" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-file-binary">
+                            <a href="//octicons.github.com/icon/file-binary" data-clipboard-text="">
+                                <span class="mega-octicon octicon-file-binary" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-file-code">
+                            <a href="//octicons.github.com/icon/file-code" data-clipboard-text="">
+                                <span class="mega-octicon octicon-file-code" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-file-directory">
+                            <a href="//octicons.github.com/icon/file-directory" data-clipboard-text="">
+                                <span class="mega-octicon octicon-file-directory" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-file-media">
+                            <a href="//octicons.github.com/icon/file-media" data-clipboard-text="">
+                                <span class="mega-octicon octicon-file-media" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-file-pdf">
+                            <a href="//octicons.github.com/icon/file-pdf" data-clipboard-text="">
+                                <span class="mega-octicon octicon-file-pdf" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-file-submodule">
+                            <a href="//octicons.github.com/icon/file-submodule" data-clipboard-text="">
+                                <span class="mega-octicon octicon-file-submodule" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-file-symlink-directory">
+                            <a href="//octicons.github.com/icon/file-symlink-directory" data-clipboard-text="">
+                                <span class="mega-octicon octicon-file-symlink-directory" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-file-symlink-file">
+                            <a href="//octicons.github.com/icon/file-symlink-file" data-clipboard-text="">
+                                <span class="mega-octicon octicon-file-symlink-file" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-file-text">
+                            <a href="//octicons.github.com/icon/file-text" data-clipboard-text="">
+                                <span class="mega-octicon octicon-file-text" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-file-zip">
+                            <a href="//octicons.github.com/icon/file-zip" data-clipboard-text="">
+                                <span class="mega-octicon octicon-file-zip" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-flame">
+                            <a href="//octicons.github.com/icon/flame" data-clipboard-text="">
+                                <span class="mega-octicon octicon-flame" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-fold">
+                            <a href="//octicons.github.com/icon/fold" data-clipboard-text="">
+                                <span class="mega-octicon octicon-fold" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-gear">
+                            <a href="//octicons.github.com/icon/gear" data-clipboard-text="">
+                                <span class="mega-octicon octicon-gear" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-gift">
+                            <a href="//octicons.github.com/icon/gift" data-clipboard-text="">
+                                <span class="mega-octicon octicon-gift" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-gist">
+                            <a href="//octicons.github.com/icon/gist" data-clipboard-text="">
+                                <span class="mega-octicon octicon-gist" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-gist-secret">
+                            <a href="//octicons.github.com/icon/gist-secret" data-clipboard-text="">
+                                <span class="mega-octicon octicon-gist-secret" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-git-branch">
+                            <a href="//octicons.github.com/icon/git-branch" data-clipboard-text="">
+                                <span class="mega-octicon octicon-git-branch" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-git-commit">
+                            <a href="//octicons.github.com/icon/git-commit" data-clipboard-text="">
+                                <span class="mega-octicon octicon-git-commit" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-git-compare">
+                            <a href="//octicons.github.com/icon/git-compare" data-clipboard-text="">
+                                <span class="mega-octicon octicon-git-compare" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-git-merge">
+                            <a href="//octicons.github.com/icon/git-merge" data-clipboard-text="">
+                                <span class="mega-octicon octicon-git-merge" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-git-pull-request">
+                            <a href="//octicons.github.com/icon/git-pull-request" data-clipboard-text="">
+                                <span class="mega-octicon octicon-git-pull-request" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-globe">
+                            <a href="//octicons.github.com/icon/globe" data-clipboard-text="">
+                                <span class="mega-octicon octicon-globe" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-graph">
+                            <a href="//octicons.github.com/icon/graph" data-clipboard-text="">
+                                <span class="mega-octicon octicon-graph" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-heart">
+                            <a href="//octicons.github.com/icon/heart" data-clipboard-text="♥">
+                                <span class="mega-octicon octicon-heart" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-history">
+                            <a href="//octicons.github.com/icon/history" data-clipboard-text="">
+                                <span class="mega-octicon octicon-history" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-home">
+                            <a href="//octicons.github.com/icon/home" data-clipboard-text="">
+                                <span class="mega-octicon octicon-home" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-horizontal-rule">
+                            <a href="//octicons.github.com/icon/horizontal-rule" data-clipboard-text="">
+                                <span class="mega-octicon octicon-horizontal-rule" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-hubot">
+                            <a href="//octicons.github.com/icon/hubot" data-clipboard-text="">
+                                <span class="mega-octicon octicon-hubot" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-inbox">
+                            <a href="//octicons.github.com/icon/inbox" data-clipboard-text="">
+                                <span class="mega-octicon octicon-inbox" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-info">
+                            <a href="//octicons.github.com/icon/info" data-clipboard-text="">
+                                <span class="mega-octicon octicon-info" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-issue-closed">
+                            <a href="//octicons.github.com/icon/issue-closed" data-clipboard-text="">
+                                <span class="mega-octicon octicon-issue-closed" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-issue-opened">
+                            <a href="//octicons.github.com/icon/issue-opened" data-clipboard-text="">
+                                <span class="mega-octicon octicon-issue-opened" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-issue-reopened">
+                            <a href="//octicons.github.com/icon/issue-reopened" data-clipboard-text="">
+                                <span class="mega-octicon octicon-issue-reopened" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-italic">
+                            <a href="//octicons.github.com/icon/italic" data-clipboard-text="">
+                                <span class="mega-octicon octicon-italic" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-jersey">
+                            <a href="//octicons.github.com/icon/jersey" data-clipboard-text="">
+                                <span class="mega-octicon octicon-jersey" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-key">
+                            <a href="//octicons.github.com/icon/key" data-clipboard-text="">
+                                <span class="mega-octicon octicon-key" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-keyboard">
+                            <a href="//octicons.github.com/icon/keyboard" data-clipboard-text="">
+                                <span class="mega-octicon octicon-keyboard" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-law">
+                            <a href="//octicons.github.com/icon/law" data-clipboard-text="">
+                                <span class="mega-octicon octicon-law" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-light-bulb">
+                            <a href="//octicons.github.com/icon/light-bulb" data-clipboard-text="">
+                                <span class="mega-octicon octicon-light-bulb" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-link">
+                            <a href="//octicons.github.com/icon/link" data-clipboard-text="">
+                                <span class="mega-octicon octicon-link" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-link-external">
+                            <a href="//octicons.github.com/icon/link-external" data-clipboard-text="">
+                                <span class="mega-octicon octicon-link-external" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-list-ordered">
+                            <a href="//octicons.github.com/icon/list-ordered" data-clipboard-text="">
+                                <span class="mega-octicon octicon-list-ordered" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-list-unordered">
+                            <a href="//octicons.github.com/icon/list-unordered" data-clipboard-text="">
+                                <span class="mega-octicon octicon-list-unordered" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-location">
+                            <a href="//octicons.github.com/icon/location" data-clipboard-text="">
+                                <span class="mega-octicon octicon-location" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-lock">
+                            <a href="//octicons.github.com/icon/lock" data-clipboard-text="">
+                                <span class="mega-octicon octicon-lock" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <!-- <li data-name="octicon-logo-gist">
+                            <a href="//octicons.github.com/icon/logo-gist" data-clipboard-text="">
+                                <span class="mega-octicon octicon-logo-gist" style="min-width: 110px;"></span>
+                            </a>
+                        </li> -->
+                        <li data-name="octicon-logo-github">
+                            <a href="//octicons.github.com/icon/logo-github" data-clipboard-text="">
+                                <span class="mega-octicon octicon-logo-github" style="min-width: 110px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-mail">
+                            <a href="//octicons.github.com/icon/mail" data-clipboard-text="">
+                                <span class="mega-octicon octicon-mail" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-mail-read">
+                            <a href="//octicons.github.com/icon/mail-read" data-clipboard-text="">
+                                <span class="mega-octicon octicon-mail-read" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-mail-reply">
+                            <a href="//octicons.github.com/icon/mail-reply" data-clipboard-text="">
+                                <span class="mega-octicon octicon-mail-reply" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-mark-github">
+                            <a href="//octicons.github.com/icon/mark-github" data-clipboard-text="">
+                                <span class="mega-octicon octicon-mark-github" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-markdown">
+                            <a href="//octicons.github.com/icon/markdown" data-clipboard-text="">
+                                <span class="mega-octicon octicon-markdown" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-megaphone">
+                            <a href="//octicons.github.com/icon/megaphone" data-clipboard-text="">
+                                <span class="mega-octicon octicon-megaphone" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-mention">
+                            <a href="//octicons.github.com/icon/mention" data-clipboard-text="">
+                                <span class="mega-octicon octicon-mention" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-milestone">
+                            <a href="//octicons.github.com/icon/milestone" data-clipboard-text="">
+                                <span class="mega-octicon octicon-milestone" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-mirror">
+                            <a href="//octicons.github.com/icon/mirror" data-clipboard-text="">
+                                <span class="mega-octicon octicon-mirror" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-mortar-board">
+                            <a href="//octicons.github.com/icon/mortar-board" data-clipboard-text="">
+                                <span class="mega-octicon octicon-mortar-board" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-mute">
+                            <a href="//octicons.github.com/icon/mute" data-clipboard-text="">
+                                <span class="mega-octicon octicon-mute" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-no-newline">
+                            <a href="//octicons.github.com/icon/no-newline" data-clipboard-text="">
+                                <span class="mega-octicon octicon-no-newline" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-octoface">
+                            <a href="//octicons.github.com/icon/octoface" data-clipboard-text="">
+                                <span class="mega-octicon octicon-octoface" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-organization">
+                            <a href="//octicons.github.com/icon/organization" data-clipboard-text="">
+                                <span class="mega-octicon octicon-organization" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-package">
+                            <a href="//octicons.github.com/icon/package" data-clipboard-text="">
+                                <span class="mega-octicon octicon-package" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-paintcan">
+                            <a href="//octicons.github.com/icon/paintcan" data-clipboard-text="">
+                                <span class="mega-octicon octicon-paintcan" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-pencil">
+                            <a href="//octicons.github.com/icon/pencil" data-clipboard-text="">
+                                <span class="mega-octicon octicon-pencil" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-person">
+                            <a href="//octicons.github.com/icon/person" data-clipboard-text="">
+                                <span class="mega-octicon octicon-person" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-pin">
+                            <a href="//octicons.github.com/icon/pin" data-clipboard-text="">
+                                <span class="mega-octicon octicon-pin" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-plug">
+                            <a href="//octicons.github.com/icon/plug" data-clipboard-text="">
+                                <span class="mega-octicon octicon-plug" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-plus">
+                            <a href="//octicons.github.com/icon/plus" data-clipboard-text="">
+                                <span class="mega-octicon octicon-plus" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-primitive-dot">
+                            <a href="//octicons.github.com/icon/primitive-dot" data-clipboard-text="">
+                                <span class="mega-octicon octicon-primitive-dot" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-primitive-square">
+                            <a href="//octicons.github.com/icon/primitive-square" data-clipboard-text="">
+                                <span class="mega-octicon octicon-primitive-square" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-pulse">
+                            <a href="//octicons.github.com/icon/pulse" data-clipboard-text="">
+                                <span class="mega-octicon octicon-pulse" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-question">
+                            <a href="//octicons.github.com/icon/question" data-clipboard-text="">
+                                <span class="mega-octicon octicon-question" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-quote">
+                            <a href="//octicons.github.com/icon/quote" data-clipboard-text="">
+                                <span class="mega-octicon octicon-quote" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-radio-tower">
+                            <a href="//octicons.github.com/icon/radio-tower" data-clipboard-text="">
+                                <span class="mega-octicon octicon-radio-tower" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-repo">
+                            <a href="//octicons.github.com/icon/repo" data-clipboard-text="">
+                                <span class="mega-octicon octicon-repo" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-repo-clone">
+                            <a href="//octicons.github.com/icon/repo-clone" data-clipboard-text="">
+                                <span class="mega-octicon octicon-repo-clone" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-repo-force-push">
+                            <a href="//octicons.github.com/icon/repo-force-push" data-clipboard-text="">
+                                <span class="mega-octicon octicon-repo-force-push" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-repo-forked">
+                            <a href="//octicons.github.com/icon/repo-forked" data-clipboard-text="">
+                                <span class="mega-octicon octicon-repo-forked" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-repo-pull">
+                            <a href="//octicons.github.com/icon/repo-pull" data-clipboard-text="">
+                                <span class="mega-octicon octicon-repo-pull" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-repo-push">
+                            <a href="//octicons.github.com/icon/repo-push" data-clipboard-text="">
+                                <span class="mega-octicon octicon-repo-push" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-rocket">
+                            <a href="//octicons.github.com/icon/rocket" data-clipboard-text="">
+                                <span class="mega-octicon octicon-rocket" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-rss">
+                            <a href="//octicons.github.com/icon/rss" data-clipboard-text="">
+                                <span class="mega-octicon octicon-rss" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-ruby">
+                            <a href="//octicons.github.com/icon/ruby" data-clipboard-text="">
+                                <span class="mega-octicon octicon-ruby" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-search">
+                            <a href="//octicons.github.com/icon/search" data-clipboard-text="">
+                                <span class="mega-octicon octicon-search" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-server">
+                            <a href="//octicons.github.com/icon/server" data-clipboard-text="">
+                                <span class="mega-octicon octicon-server" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-settings">
+                            <a href="//octicons.github.com/icon/settings" data-clipboard-text="">
+                                <span class="mega-octicon octicon-settings" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-shield">
+                            <a href="//octicons.github.com/icon/shield" data-clipboard-text="">
+                                <span class="mega-octicon octicon-shield" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-sign-in">
+                            <a href="//octicons.github.com/icon/sign-in" data-clipboard-text="">
+                                <span class="mega-octicon octicon-sign-in" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-sign-out">
+                            <a href="//octicons.github.com/icon/sign-out" data-clipboard-text="">
+                                <span class="mega-octicon octicon-sign-out" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-squirrel">
+                            <a href="//octicons.github.com/icon/squirrel" data-clipboard-text="">
+                                <span class="mega-octicon octicon-squirrel" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-star">
+                            <a href="//octicons.github.com/icon/star" data-clipboard-text="">
+                                <span class="mega-octicon octicon-star" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-stop">
+                            <a href="//octicons.github.com/icon/stop" data-clipboard-text="">
+                                <span class="mega-octicon octicon-stop" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-sync">
+                            <a href="//octicons.github.com/icon/sync" data-clipboard-text="">
+                                <span class="mega-octicon octicon-sync" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-tag">
+                            <a href="//octicons.github.com/icon/tag" data-clipboard-text="">
+                                <span class="mega-octicon octicon-tag" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-tasklist">
+                            <a href="//octicons.github.com/icon/tasklist" data-clipboard-text="">
+                                <span class="mega-octicon octicon-tasklist" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-telescope">
+                            <a href="//octicons.github.com/icon/telescope" data-clipboard-text="">
+                                <span class="mega-octicon octicon-telescope" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-terminal">
+                            <a href="//octicons.github.com/icon/terminal" data-clipboard-text="">
+                                <span class="mega-octicon octicon-terminal" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-text-size">
+                            <a href="//octicons.github.com/icon/text-size" data-clipboard-text="">
+                                <span class="mega-octicon octicon-text-size" style="min-width: 110px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-three-bars">
+                            <a href="//octicons.github.com/icon/three-bars" data-clipboard-text="">
+                                <span class="mega-octicon octicon-three-bars" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-thumbsdown">
+                            <a href="//octicons.github.com/icon/thumbsdown" data-clipboard-text="">
+                                <span class="mega-octicon octicon-thumbsdown" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-thumbsup">
+                            <a href="//octicons.github.com/icon/thumbsup" data-clipboard-text="">
+                                <span class="mega-octicon octicon-thumbsup" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-tools">
+                            <a href="//octicons.github.com/icon/tools" data-clipboard-text="">
+                                <span class="mega-octicon octicon-tools" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-trashcan">
+                            <a href="//octicons.github.com/icon/trashcan" data-clipboard-text="">
+                                <span class="mega-octicon octicon-trashcan" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-triangle-down">
+                            <a href="//octicons.github.com/icon/triangle-down" data-clipboard-text="">
+                                <span class="mega-octicon octicon-triangle-down" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-triangle-left">
+                            <a href="//octicons.github.com/icon/triangle-left" data-clipboard-text="">
+                                <span class="mega-octicon octicon-triangle-left" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-triangle-right">
+                            <a href="//octicons.github.com/icon/triangle-right" data-clipboard-text="">
+                                <span class="mega-octicon octicon-triangle-right" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-triangle-up">
+                            <a href="//octicons.github.com/icon/triangle-up" data-clipboard-text="">
+                                <span class="mega-octicon octicon-triangle-up" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-unfold">
+                            <a href="//octicons.github.com/icon/unfold" data-clipboard-text="">
+                                <span class="mega-octicon octicon-unfold" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-unmute">
+                            <a href="//octicons.github.com/icon/unmute" data-clipboard-text="">
+                                <span class="mega-octicon octicon-unmute" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-versions">
+                            <a href="//octicons.github.com/icon/versions" data-clipboard-text="">
+                                <span class="mega-octicon octicon-versions" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-watch">
+                            <a href="//octicons.github.com/icon/watch" data-clipboard-text="">
+                                <span class="mega-octicon octicon-watch" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-x">
+                            <a href="//octicons.github.com/icon/x" data-clipboard-text="">
+                                <span class="mega-octicon octicon-x" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                        <li data-name="octicon-zap">
+                            <a href="//octicons.github.com/icon/zap" data-clipboard-text="⚡">
+                                <span class="mega-octicon octicon-zap" style="min-width: 32px;"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ct-hide-sm ct-md-3 ct-lg-2">
+            <div class="toc-wrapper">
+                <div style="height: 1px;">
+                    <ul class="section table-of-contents">
+                        <li><a href="#usage">Usage</a></li>
+                        <li><a href="http://www.google.com/design/icons/">Search Google's Icons</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main><footer class="page-footer">
+    <div class="ct-container">
+        <div class="ct-row">
+            <div class="ct-md-4">
+                <h5 class="ct-color-white">Help CssToolkits Grow</h5>
+                <p class="ct-color-white">We are a young team, we pay all the time on this project. Any amount will help support and continue to develop in this project, and greatly appreciated.</p>
+            </div>
+            <div class="ct-md-4">
+                <h5 class="ct-color-white">Join the Discussion</h5>
+                <p class="ct-color-white">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions.</p>
+            </div>
+            <div class="ct-md-4 ct-overflow ct-color-white">
+                <h5 class="ct-color-white">Connect</h5>
+                <p class="ct-color-white">
+                    Email: ct#csstoolkits.com<br>
+                    <a href="http://github.com/get3w/csstoolkits" class="ct-color-yellow-300">Github</a>
+                    <a href="http://github.com/get3w/csstoolkits" class="ct-color-yellow-300">Twitter</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="ct-container">
+            © 2014-2015 CssToolkits, All rights reserved.
+            <a class="ct-fr ct-color-yellow" href="http://csstoolkits.com">MIT License</a>
+        </div>
+    </div>
+</footer>
+<!--  Scripts-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.timeago.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="bin/js.js"></script>
+<script src="js/init.js"></script>
+<script src="dist/js/ct.js"></script>
+</body></html>
