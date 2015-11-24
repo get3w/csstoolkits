@@ -3548,7 +3548,8 @@ html {
     display: inline-block; }
   .ct-form.\--inline .__form-control {
     width: auto; }
-  .ct-form.\--green .__form-control:focus {
+  .ct-form.\--green .__form-control:focus,
+  .ct-form.\--green .__form-control.active {
     border-color: #3bbf38;
     -webkit-box-shadow: 0 0 0 1px #3bbf38;
             box-shadow: 0 0 0 1px #3bbf38; }
@@ -3562,7 +3563,8 @@ html {
     border-color: #3bbf38;
     -webkit-box-shadow: 0 0 0 1px #3bbf38;
             box-shadow: 0 0 0 1px #3bbf38; }
-  .ct-form.\--red .__form-control:focus {
+  .ct-form.\--red .__form-control:focus,
+  .ct-form.\--red .__form-control.active {
     border-color: #f36c60;
     -webkit-box-shadow: 0 0 0 1px #f36c60;
             box-shadow: 0 0 0 1px #f36c60; }
@@ -3576,7 +3578,8 @@ html {
     border-color: #f36c60;
     -webkit-box-shadow: 0 0 0 1px #f36c60;
             box-shadow: 0 0 0 1px #f36c60; }
-  .ct-form.\--blue .__form-control:focus {
+  .ct-form.\--blue .__form-control:focus,
+  .ct-form.\--blue .__form-control.active {
     border-color: #29b6f6;
     -webkit-box-shadow: 0 0 0 1px #29b6f6;
             box-shadow: 0 0 0 1px #29b6f6; }
@@ -3705,7 +3708,7 @@ html {
   .ct-form .__form-control {
     background: rgba(144, 144, 144, 0.075);
     border-color: rgba(144, 144, 144, 0.2); }
-  .ct-form .__form-control:focus {
+  .ct-form .__form-control:focus, .ct-form .__form-control.active {
     border-color: #4dbea0;
     -webkit-box-shadow: 0 0 0 1px #4dbea0;
             box-shadow: 0 0 0 1px #4dbea0; }

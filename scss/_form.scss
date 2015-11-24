@@ -138,7 +138,8 @@
         }
     }
     &.\--green {
-        .__form-control:focus {
+        .__form-control:focus,
+        .__form-control.active {
             border-color: $color-green;
             box-shadow: 0 0 0 1px $color-green;
         }
@@ -155,7 +156,8 @@
         }
     }
     &.\--red {
-        .__form-control:focus {
+        .__form-control:focus,
+        .__form-control.active {
             border-color: $color-red;
             box-shadow: 0 0 0 1px $color-red;
         }
@@ -172,7 +174,8 @@
         }
     }
     &.\--blue {
-        .__form-control:focus {
+        .__form-control:focus,
+        .__form-control.active {
             border-color: $color-blue;
             box-shadow: 0 0 0 1px $color-blue;
         }
@@ -324,7 +327,7 @@
         background: rgba(144, 144, 144, 0.075);
         border-color: rgba(144, 144, 144, 0.2);
     }
-    .__form-control:focus {
+    .__form-control:focus,.__form-control.active {
         border-color: #4dbea0;
         box-shadow: 0 0 0 1px #4dbea0;
     }
