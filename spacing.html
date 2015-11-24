@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="msapplication-tap-highlight" content="no"><meta name="description" content="CssToolkits is a modern responsive CSS framework based on Material Design by Google. "><title>Spacing - CssToolkits</title><!-- Favicons--><link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png"><!-- Windows 8 磁贴颜色--><meta name="msapplication-TileColor" content="#FFFFFF"><!-- Windows 8 磁贴图标--><meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png"><link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32"><!--  Android 5 Chrome Color--><meta name="theme-color" content="#EE6E73"><!-- CSS--><link href="css/code.css" rel="stylesheet"><link href="dist/css/ct.min.css" rel="stylesheet"><link href="css/docs.css" rel="stylesheet"><link href="css/ghpages-csstoolkits.min.css" type="text/css" rel="stylesheet" media="screen,projection"></head><body><header><nav class="top-nav"><div class="ct-container"><div class="nav-wrapper"><a class="page-title">Spacing</a></div></div></nav><div class="ct-container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav octicon octicon-three-bars ct-hide-lg-down"></a></div><ul id="nav-mobile" class="side-nav fixed"><li class="logo"><a id="logo-container" href="./index.html" class="brand-logo"><img src="css/logo.png" alt="logo" class="ct-responsive"></a></li><li class="bold"><a href="getting-started.html" class="waves-effect">Getting Started</a></li><li class="ct-px-0"><ul class="collapsible collapsible-accordion"><li class="bold"><a class="collapsible-header active waves-effect">CSS</a><div class="collapsible-body"><ul><li><a href="color.html">Color</a></li><li><a href="grid.html">Grid</a></li><li><a href="helpers.html">Helpers</a></li><li class="active"><a href="spacing.html">Spacing</a></li><li><a href="media-css.html">Media</a></li><li><a href="table.html">Table</a></li><li><a href="typography.html">Typography</a></li></ul></div></li><li class="bold"><a class="collapsible-header  waves-effect">Components</a><div class="collapsible-body"><ul><li><a href="buttons.html">Buttons</a></li><li><a href="cards.html">Cards</a></li><li><a href="collections.html">Collections</a></li><li><a href="forms.html">Forms</a></li><li><a href="box.html">Box</a></li><li><a href="alert.html">Alert</a></li><li><a href="icons.html">Icons</a></li><li><a href="navbar.html">Navbar</a></li><li><a href="pagination.html">Pagination</a></li><li><a href="progress.html">Progress</a></li></ul></div></li><li class="bold"><a class="collapsible-header  waves-effect">JavaScript</a><div class="collapsible-body"><ul><li><a href="tabs.html">Tabs</a></li><li><a href="waves.html">Waves</a></li></ul></div></li></ul></li></ul></header><main><div class="ct-container">
+    <div class="ct-row">
+        <div class="ct-md-9 ct-lg-10">
+            <div class="ct-section scrollspy">
+                <div class="ct-row">
+                    <div class="ct-sm-12">
+                        <h2 class="header">Spacing</h2>
+                        <h4 id="margin" class="ct-thin">Margin</h4>
+                        <pre><code class="language-css">
+    //0px                       
+    .ct-ma-0{margin:0!important}
+    .ct-mt-0{margin-top:0!important}
+    .ct-mr-0{margin-right:0!important}
+    .ct-mb-0{margin-bottom:0!important}
+    .ct-ml-0{margin-left:0!important}
+    .ct-mx-0{margin-right:0!important;margin-left:0!important}
+    .ct-my-0{margin-top:0!important;margin-bottom:0!important}
+
+    //5px
+    .ct-ma-xs{margin:$number-xs!important}
+    .ct-mt-xs{margin-top:$number-xs!important}
+    .ct-mr-xs{margin-right:$number-xs!important}
+    .ct-mb-xs{margin-bottom:$number-xs!important}
+    .ct-ml-xs{margin-left:$number-xs!important}
+    .ct-mx-xs{margin-right:$number-xs!important;margin-left:$number-xs!important}
+    .ct-my-xs{margin-top:$number-xs!important;margin-bottom:$number-xs!important}
+
+    //10px
+    .ct-ma-sm{margin:$number-sm!important}
+    .ct-mt-sm{margin-top:$number-sm!important}
+    .ct-mr-sm{margin-right:$number-sm!important}
+    .ct-mb-sm{margin-bottom:$number-sm!important}
+    .ct-ml-sm{margin-left:$number-sm!important}
+    .ct-my-sm{margin-top:$number-sm!important;margin-bottom:$number-sm!important}
+    .ct-mx-sm{margin-bottom:$number-sm!important;margin-left:$number-sm!important}
+
+    //15px
+    .ct-ma{margin:$number-md!important}
+    .ct-mt{margin-top:$number-md!important}
+    .ct-mr{margin-right:$number-md!important}
+    .ct-mb{margin-bottom:$number-md!important}
+    .ct-ml{margin-left:$number-md!important}
+    .ct-my{margin-top:$number-md!important;margin-bottom:$number-md!important}
+    .ct-mx{margin-right:$number-md!important;margin-left:$number-md!important}
+    .ct-mx-auto{margin-right:auto!important;margin-left:auto!important}
+
+    //20px
+    .ct-ma-lg{margin:$number-lg!important}
+    .ct-mt-lg{margin-top:$number-lg!important}
+    .ct-mr-lg{margin-right:$number-lg!important}
+    .ct-mb-lg{margin-bottom:$number-lg!important}
+    .ct-ml-lg{margin-left:$number-lg!important}
+    .ct-my-lg{margin-top:$number-lg!important;margin-bottom:$number-lg!important}
+    .ct-mx-lg{margin-right:$number-lg!important;margin-left:$number-lg!important}
+            </code></pre>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <h4 id="padding" class="ct-thin">Padding</h4>
+                        <pre><code class="language-css" style="color: grey;">
+    //0px                       
+    .ct-pa-0{padding:0!important}
+    .ct-pt-0{padding-top:0!important}
+    .ct-pr-0{padding-right:0!important}
+    .ct-pb-0{padding-bottom:0!important}
+    .ct-pl-0{padding-left:0!important}
+    .ct-px-0{padding-right:0!important;padding-left:0!important}
+    .ct-py-0{padding-top:0!important;padding-bottom:0!important}
+
+    //5px
+    .ct-pa-xs{padding:$number-xs!important}
+    .ct-pt-xs{padding-top:$number-xs!important}
+    .ct-pr-xs{padding-right:$number-xs!important}
+    .ct-pb-xs{padding-bottom:$number-xs!important}
+    .ct-pl-xs{padding-left:$number-xs!important}
+    .ct-px-xs{padding-right:$number-xs!important;padding-left:$number-xs!important}
+    .ct-py-xs{padding-top:$number-xs!important;padding-bottom:$number-xs!important}
+
+    //10px
+    .ct-pa-sm{padding:$number-sm!important}
+    .ct-pt-sm{padding-top:$number-sm!important}
+    .ct-pr-sm{padding-right:$number-sm!important}
+    .ct-pb-sm{padding-bottom:$number-sm!important}
+    .ct-pl-sm{padding-left:$number-sm!important}
+    .ct-py-sm{padding-top:$number-sm!important;padding-bottom:$number-sm!important}
+    .ct-px-sm{padding-bottom:$number-sm!important;padding-left:$number-sm!important}
+
+    //15px
+    .ct-pa{padding:$number-md!important}
+    .ct-pt{padding-top:$number-md!important}
+    .ct-pr{padding-right:$number-md!important}
+    .ct-pb{padding-bottom:$number-md!important}
+    .ct-pl{padding-left:$number-md!important}
+    .ct-py{padding-top:$number-md!important;padding-bottom:$number-md!important}
+    .ct-px{padding-right:$number-md!important;padding-left:$number-md!important}
+
+    //20px
+    .ct-pa-lg{padding:$number-lg!important}
+    .ct-pt-lg{padding-top:$number-lg!important}
+    .ct-pr-lg{padding-right:$number-lg!important}
+    .ct-pb-lg{padding-bottom:$number-lg!important}
+    .ct-pl-lg{padding-left:$number-lg!important}
+    .ct-py-lg{padding-top:$number-lg!important;padding-bottom:$number-lg!important}
+    .ct-px-lg{padding-right:$number-lg!important;padding-left:$number-lg!important}
+            </code></pre>
+                    </div>
+                </div>
+            </div>
+            <!-- End badges -->
+        </div>
+        <div class="ct-hide-sm ct-md-3 ct-lg-2">
+            <div class="toc-wrapper">
+                <div style="height: 1px;">
+                    <ul class="section table-of-contents">
+                        <li><a href="#margin">Margin</a></li>
+                        <li><a href="#padding">Padding</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main><footer class="page-footer">
+    <div class="ct-container">
+        <div class="ct-row">
+            <div class="ct-md-4">
+                <h5 class="ct-color-white">Help CssToolkits Grow</h5>
+                <p class="ct-color-white">We are a young team, we pay all the time on this project. Any amount will help support and continue to develop in this project, and greatly appreciated.</p>
+            </div>
+            <div class="ct-md-4">
+                <h5 class="ct-color-white">Join the Discussion</h5>
+                <p class="ct-color-white">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions.</p>
+            </div>
+            <div class="ct-md-4 ct-overflow ct-color-white">
+                <h5 class="ct-color-white">Connect</h5>
+                <p class="ct-color-white">
+                    Email: ct#csstoolkits.com<br>
+                    <a href="http://github.com/get3w/csstoolkits" class="ct-color-yellow-300">Github</a>
+                    <a href="http://github.com/get3w/csstoolkits" class="ct-color-yellow-300">Twitter</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="ct-container">
+            © 2014-2015 CssToolkits, All rights reserved.
+            <a class="ct-fr ct-color-yellow" href="http://csstoolkits.com">MIT License</a>
+        </div>
+    </div>
+</footer>
+<!--  Scripts-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.timeago.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="bin/js.js"></script>
+<script src="js/init.js"></script>
+<script src="dist/js/ct.js"></script>
+</body></html>

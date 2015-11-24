@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="msapplication-tap-highlight" content="no"><meta name="description" content="CssToolkits is a modern responsive CSS framework based on Material Design by Google. "><title>Typography - CssToolkits</title><!-- Favicons--><link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png"><!-- Windows 8 磁贴颜色--><meta name="msapplication-TileColor" content="#FFFFFF"><!-- Windows 8 磁贴图标--><meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png"><link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32"><!--  Android 5 Chrome Color--><meta name="theme-color" content="#EE6E73"><!-- CSS--><link href="css/code.css" rel="stylesheet"><link href="dist/css/ct.min.css" rel="stylesheet"><link href="css/docs.css" rel="stylesheet"><link href="css/ghpages-csstoolkits.min.css" type="text/css" rel="stylesheet" media="screen,projection"></head><body><header><nav class="top-nav"><div class="ct-container"><div class="nav-wrapper"><a class="page-title">Typography</a></div></div></nav><div class="ct-container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav octicon octicon-three-bars ct-hide-lg-down"></a></div><ul id="nav-mobile" class="side-nav fixed"><li class="logo"><a id="logo-container" href="./index.html" class="brand-logo"><img src="css/logo.png" alt="logo" class="ct-responsive"></a></li><li class="bold"><a href="getting-started.html" class="waves-effect">Getting Started</a></li><li class="ct-px-0"><ul class="collapsible collapsible-accordion"><li class="bold"><a class="collapsible-header active waves-effect">CSS</a><div class="collapsible-body"><ul><li><a href="color.html">Color</a></li><li><a href="grid.html">Grid</a></li><li><a href="helpers.html">Helpers</a></li><li><a href="spacing.html">Spacing</a></li><li><a href="media-css.html">Media</a></li><li><a href="table.html">Table</a></li><li class="active"><a href="typography.html">Typography</a></li></ul></div></li><li class="bold"><a class="collapsible-header  waves-effect">Components</a><div class="collapsible-body"><ul><li><a href="buttons.html">Buttons</a></li><li><a href="cards.html">Cards</a></li><li><a href="collections.html">Collections</a></li><li><a href="forms.html">Forms</a></li><li><a href="box.html">Box</a></li><li><a href="alert.html">Alert</a></li><li><a href="icons.html">Icons</a></li><li><a href="navbar.html">Navbar</a></li><li><a href="pagination.html">Pagination</a></li><li><a href="progress.html">Progress</a></li></ul></div></li><li class="bold"><a class="collapsible-header  waves-effect">JavaScript</a><div class="collapsible-body"><ul><li><a href="tabs.html">Tabs</a></li><li><a href="waves.html">Waves</a></li></ul></div></li></ul></li></ul></header><main><div class="ct-container">
+    <div class="ct-row">
+        <div class="ct-md-9 ct-lg-10">
+            <div class="ct-section">
+                <div id="headers" class="ct-section scrollspy">
+                    <h2 class="header">Headers</h2>
+                    <p>We provide some basic styling on header tags. In the example, you can see the the 6 header tags' different sizes.</p>
+                    <div class="ct-card ct-pa">
+                        <h1 class="ct-h1 ct-color-red">Heading h1</h1>
+                        <h2 class="ct-h2 ct-color-black">Heading h2</h2>
+                        <h3 class="ct-h3 ct-color-green">Heading h3</h3>
+                        <h4 class="ct-h4 ct-color-blue">Heading h4</h4>
+                        <h5 class="ct-h5 ct-color-purple">Heading h5</h5>
+                        <h6 class="ct-h6 ct-color-yellow">Heading h6</h6>
+                    </div>
+                    <p>To use headers on a body of text, simply just add the class <code class="language-markup">ct-h1</code> to a tag</p>
+                    <div class="ct-clearfix">
+                        <pre><code class="language-markup">
+    &lt;h1 class="ct-h1">Heading h1&lt;/h1>
+    &lt;h2 class="ct-h2">Heading h2&lt;/h2>
+    &lt;h3 class="ct-h3">Heading h3&lt;/h3>
+    &lt;h4 class="ct-h4">Heading h4&lt;/h4>
+    &lt;h5 class="ct-h5">Heading h5&lt;/h5>
+    &lt;h6 class="ct-h6">Heading h6&lt;/h6>
+          </code></pre>
+                    </div>
+                </div>
+                <div id="flow" class="ct-section scrollspy">
+                    <h2 class="header">Flow Text</h2>
+                    <a id="flow-toggle" class="ct-btn ct-uppercase --red --no-shadow waves-effect waves-light">Toggle ct-text</a>
+                    <div id="flow-text-demo" class="ct-card ct-pa-lg">
+                        <p class="ct-text" style="height:auto; background-color: transparent;">
+                            One common flaw we've seen in many frameworks is a lack of support for truly responsive text. While elements on the page resize fluidly, text still resizes on a fixed basis. To ameliorate this problem, for text heavy pages, we've created a class that fluidly scales text size and line-height to optimize readability for the user. Line length stays between 45-80 characters and line height scales to be larger on smaller screens.</p>
+                        <p class="ct-text" style="height:auto; background-color: transparent;">To see Flow Text in action, slowly resize your bct-rowser and watch the size of this text body change! Use the button above to toggle off/on flow-text to see the difference!</p>
+                    </div>
+                    <br>
+                    <p>To use flow-text on a body of text, simply just add the class <code class="language-markup">ct-text</code> to a tag, see the code blow.</p>
+                    <div class="ct-clearfix">
+                        <pre><code class="language-markup">
+    &lt;p class="ct-text">I am Flow Text&lt;/p>
+          </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ct-hide-sm-down ct-md-3 ct-lg-2">
+            <div class="toc-wrapper">
+                <div style="height: 1px;">
+                    <ul class="ct-section table-of-contents">
+                        <li><a href="#headers">Headers</a></li>
+                        <li><a href="#flow">Flow Text</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Container -->
+</main><footer class="page-footer">
+    <div class="ct-container">
+        <div class="ct-row">
+            <div class="ct-md-4">
+                <h5 class="ct-color-white">Help CssToolkits Grow</h5>
+                <p class="ct-color-white">We are a young team, we pay all the time on this project. Any amount will help support and continue to develop in this project, and greatly appreciated.</p>
+            </div>
+            <div class="ct-md-4">
+                <h5 class="ct-color-white">Join the Discussion</h5>
+                <p class="ct-color-white">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions.</p>
+            </div>
+            <div class="ct-md-4 ct-overflow ct-color-white">
+                <h5 class="ct-color-white">Connect</h5>
+                <p class="ct-color-white">
+                    Email: ct#csstoolkits.com<br>
+                    <a href="http://github.com/get3w/csstoolkits" class="ct-color-yellow-300">Github</a>
+                    <a href="http://github.com/get3w/csstoolkits" class="ct-color-yellow-300">Twitter</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="ct-container">
+            © 2014-2015 CssToolkits, All rights reserved.
+            <a class="ct-fr ct-color-yellow" href="http://csstoolkits.com">MIT License</a>
+        </div>
+    </div>
+</footer>
+<!--  Scripts-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.timeago.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="bin/js.js"></script>
+<script src="js/init.js"></script>
+<script src="dist/js/ct.js"></script>
+</body></html>
