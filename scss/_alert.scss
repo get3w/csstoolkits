@@ -1,9 +1,9 @@
 .ct-alert {
     border: 1px solid transparent;
     font-size: $font-size-base;
+    padding: 10px;
     @include border-radius(4px);
     @include text-center();
-    @include p-sm();
     &.\--success {
         background-color: #74C080;
         border-color: #74C080;

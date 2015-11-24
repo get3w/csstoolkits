@@ -28,22 +28,6 @@
     font-weight: 700;
 }
 
-@font-face {
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'codropsicons';
-    src: url('./font/codropsicons/codropsicons.eot');
-    src: url('./font/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'), url('./font/codropsicons/codropsicons.woff') format('woff'), url('./font/codropsicons/codropsicons.ttf') format('truetype'), url('./font/codropsicons/codropsicons.svg#codropsicons') format('svg');
-}
-
-@font-face {
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'feathericons';
-    src: url('../fonts/feathericons/feathericons.eot?-8is7zf');
-    src: url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'), url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'), url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'), url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
-}
-
 .ct-font-roboto {
     font-family: "Roboto", sans-serif;
 }
@@ -56,24 +40,20 @@
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.ct-codropsicons {
-    font-family: "codropsicons", sans-serif;
-}
-
-.ct-feathericons {
-    font-family: "feathericons", sans-serif;
-}
-
-.ct-capitalize {
-    text-transform: capitalize;
-}
-
-.ct-uppercase {
-    text-transform: uppercase;
-}
-
-.ct-lowercase {
-    text-transform: lowercase;
+//Typography
+html {
+    line-height: 1.5;
+    @media only screen and (min-width: 0) {
+        font-size: 14px;
+    }
+    @media only screen and (min-width: $medium-screen) {
+        font-size: 14.5px;
+    }
+    @media only screen and (min-width: $large-screen) {
+        font-size: 15px;
+    }
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.87);
 }
 
 .ct-h1,
@@ -93,86 +73,42 @@
 .ct-h4 a,
 .ct-h5 a,
 .ct-h6 a {
-    text-decoration: none;
     font-weight: inherit;
+    text-decoration: none;
 }
 
 .ct-h1 {
-    font-size: 4.2rem;
+    font-size: $h1-fontsize;
     line-height: 110%;
-    margin: 2.1rem 0 1.68rem 0;
+    margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;
 }
 
 .ct-h2 {
-    font-size: 3.56rem;
+    font-size: $h2-fontsize;
     line-height: 110%;
-    margin: 1.78rem 0 1.42rem 0;
+    margin: ($h2-fontsize / 2) 0 ($h2-fontsize / 2.5) 0;
 }
 
 .ct-h3 {
-    font-size: 2.92rem;
+    font-size: $h3-fontsize;
     line-height: 110%;
-    margin: 1.46rem 0 1.17rem 0;
+    margin: ($h3-fontsize / 2) 0 ($h3-fontsize / 2.5) 0;
 }
 
 .ct-h4 {
-    font-size: 2.28rem;
+    font-size: $h4-fontsize;
     line-height: 110%;
-    margin: 1.14rem 0 0.91rem 0;
+    margin: ($h4-fontsize / 2) 0 ($h4-fontsize / 2.5) 0;
 }
 
 .ct-h5 {
-    font-size: 1.64rem;
+    font-size: $h5-fontsize;
     line-height: 110%;
-    margin: 0.82rem 0 0.66rem 0;
+    margin: ($h5-fontsize / 2) 0 ($h5-fontsize / 2.5) 0;
 }
 
 .ct-h6 {
-    font-size: 1rem;
+    font-size: $h6-fontsize;
     line-height: 110%;
-    margin: 0.5rem 0 0.33rem 0;
-}
-
-// Text Styles
-.ct-em {
-    font-style: italic;
-}
-
-.ct-strong {
-    font-weight: 500;
-}
-
-.ct-small {
-    font-size: 75%;
-}
-
-.ct-light {
-    font-weight: 300;
-}
-
-.ct-thin {
-    font-weight: 200;
-}
-
-// Responsive text
-.ct-text {
-    font-weight: 300;
-}
-
-.ct-text {
-    font-weight: 300;
-    $i: 0;
-    @while $i <=$intervals {
-        @media only screen and (min-width: 360 + ($i * $interval-size)) {
-            font-size: 1.2rem * (1 + (.02 * $i));
-        }
-        $i: $i + 1;
-    }
-}
-
-// Handle below 360px screen
-@media only screen and (max-width: 360px) {
-    .ct-text {
-        font-size: 1.2rem;
-    }
+    margin: ($h6-fontsize / 2) 0 ($h6-fontsize / 2.5) 0;
 }

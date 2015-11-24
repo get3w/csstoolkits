@@ -6,20 +6,68 @@
     border-radius: 2px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     .__title {
-        padding: 20px 20px 0;
         font-size: 24px;
         font-weight: 300;
+        i,
+        span {
+            line-height: inherit;
+        }
         &.\--activator {
             cursor: pointer;
         }
         .__close {
-            font-size: 30px;
+            font-size: inherit;
             font-weight: 300;
             height: 24px;
             margin-right: 5px;
             line-height: 24px;
             float: right;
             cursor: pointer;
+        }
+    }
+    // Card Sizes
+    &.\--sm,
+    &.\--md,
+    &.\--lg {
+        position: relative;
+        .__image {
+            overflow: hidden;
+        }
+        .__content {
+            overflow: hidden;
+        }
+        .__action {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+    &.\--sm {
+        height: 300px;
+        .__image {
+            height: 150px;
+        }
+        .__content {
+            height: 150px;
+        }
+    }
+    &.\--md {
+        height: 400px;
+        .__image {
+            height: 250px;
+        }
+        .__content {
+            height: 150px;
+        }
+    }
+    &.\--lg {
+        height: 500px;
+        .__image {
+            height: 330px;
+        }
+        .__content {
+            height: 170px;
         }
     }
     .__image {
@@ -38,14 +86,15 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            padding: 20px;
+            padding: $card-padding;
         }
     }
     .__content {
-        padding: 20px;
+        padding: $card-padding;
         border-radius: 0 0 2px 2px;
         p {
             margin: 0;
+            color: inherit;
         }
         .__title {
             line-height: 48px;
@@ -53,33 +102,30 @@
     }
     .__action {
         border-top: 1px solid rgba(160, 160, 160, .2);
-        padding: 20px;
+        padding: $card-padding;
         a {
-            margin-right: 20px;
+            color: $card-link-color;
+            margin-right: $card-padding;
+            transition: color .3s ease;
+            text-transform: uppercase;
             &:hover {
                 opacity: 0.8;
             }
         }
     }
-    &.\--small {
+    .__reveal {
+        padding: $card-padding;
+        position: absolute;
+        background-color: $card-bg-color;
+        width: 100%;
+        overflow-y: auto;
+        top: 100%;
+        height: 100%;
+        z-index: 1;
+        display: none;
         .__title {
-            padding: 10px;
-            font-size: 16px;
-            .__close {
-                font-size: 24px;
-                font-weight: 300;
-                height: 16px;
-                line-height: 16px;
-            }
-        }
-        .__content {
-            padding: 10px;
-            .__title {
-                line-height: 24px;
-            }
-        }
-        .__action {
-            padding: 10px;
+            cursor: pointer;
+            display: block;
         }
     }
 }

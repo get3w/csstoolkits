@@ -13,7 +13,7 @@
             font-size: $font-size-base;
             @include text-d-none();
             i {
-                @include mr-xs();
+                margin-right: 5px;
             }
         }
     }

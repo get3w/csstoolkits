@@ -4,5 +4,7 @@ var gulp = require('gulp');
 requireDir('./gulp', { recurse: true });
 gulp.task('default', [
     'css',
-    'min'
+    'mincss',
+    'js',
+    'minjs'
 ]);

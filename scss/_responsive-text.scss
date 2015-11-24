@@ -1,0 +1,29 @@
+// Responsive text
+.ct-text {
+    font-weight: 300;
+}
+
+.ct-text {
+    font-weight: 300;
+    $i: 0;
+    @while $i <=$intervals {
+        @media only screen and (min-width: 360 + ($i * $interval-size)) {
+            font-size: 1.2rem * (1 + (.02 * $i));
+        }
+        $i: $i + 1;
+    }
+}
+
+// Handle below 360px screen
+@media only screen and (max-width: 360px) {
+    .ct-text {
+        font-size: 1.2rem;
+    }
+}
+
+// Text Styles
+.ct-em     { font-style: italic;}
+.ct-strong { font-weight: 500;}
+.ct-small  { font-size: 75%;}
+.ct-light  { font-weight: 300;}
+.ct-thin   { font-weight: 200;}
