@@ -4,7 +4,7 @@ var concat = require('gulp-concat');
 var jshint = require('gulp-jshint');
 
 gulp.task('js', function() {
-    return gulp.src('./ctjs/*.js')
-        .pipe(concat('ctjs.js'))
-        .pipe(gulp.dest('js'))
+    return gulp.src('./js/*.js')
+        .pipe(concat('js.js'))
+        .pipe(gulp.dest('dist/js'))
 });
