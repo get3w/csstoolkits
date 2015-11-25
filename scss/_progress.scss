@@ -8,7 +8,7 @@
     border-radius: 2px;
     margin: .5rem 0 1rem;
     overflow: hidden;
-    .\--determinate {
+    .__determinate {
         position: absolute;
         background-color: inherit;
         top: 0;
@@ -17,7 +17,7 @@
         background-color: $progress-bar-color;
         transition:width .3s linear;
     }
-    .\--indeterminate {
+    .__indeterminate {
         background-color: $progress-bar-color;
         &:before {
             content: '';

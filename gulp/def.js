@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 
-gulp.task('default', [
+gulp.task('def', [
     'css',
     'mincss',
     "js",

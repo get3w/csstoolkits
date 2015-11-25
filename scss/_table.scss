@@ -48,7 +48,7 @@
      }
      // Responsive Table
      @media (max-width: $medium-screen) {
-         table.ct-responsive-table {
+         table.ct-responsive {
              width: 100%;
              border-collapse: collapse;
              border-spacing: 0;
@@ -69,7 +69,7 @@
                      display: block;
                      padding: 0 10px 0 0;
                      th::before {
-                         content: "g3";
+                         content: "";
                      }
                  }
              }

@@ -12,7 +12,7 @@
         span {
             line-height: inherit;
         }
-        &.\--activator {
+        &.__activator {
             cursor: pointer;
         }
         .__close {
@@ -26,9 +26,9 @@
         }
     }
     // Card Sizes
-    &.\--sm,
-    &.\--md,
-    &.\--lg {
+    &.\--small,
+    &.\--medium,
+    &.\--large {
         position: relative;
         .__image {
             overflow: hidden;
@@ -43,7 +43,7 @@
             right: 0;
         }
     }
-    &.\--sm {
+    &.\--small {
         height: 300px;
         .__image {
             height: 150px;
@@ -52,7 +52,7 @@
             height: 150px;
         }
     }
-    &.\--md {
+    &.\--medium {
         height: 400px;
         .__image {
             height: 250px;
@@ -61,7 +61,7 @@
             height: 150px;
         }
     }
-    &.\--lg {
+    &.\--large {
         height: 500px;
         .__image {
             height: 330px;

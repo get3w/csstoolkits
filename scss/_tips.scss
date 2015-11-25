@@ -6,7 +6,7 @@
     @include border-radius(3px);
     color: #333;
     text-align: left;
-    @include height(40px);
+    line-height: 40px;
 
     &.\--large {
         padding: 30px;
