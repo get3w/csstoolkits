@@ -2,12 +2,12 @@
   "name": "csstoolkits",
   "version": "0.0.2",
   "description": "CSSToolkits is a CSS utility set.No conflicts with other CSS.",
-  "main": "css/ct.min.css",
+  "main": "ct.min.css",
   "keywords": [
     "CSSToolkits"
   ],
   "authors": [
-    "bairongsoft"
+    "get3w"
   ],
   "ignore": [
     "docs"
