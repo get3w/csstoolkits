@@ -953,8 +953,6 @@ th {
     color: #fff; }
     .ct-alert.\--info hr {
       border-top-color: #baebfe; }
-    .ct-alert.\--info a {
-      color: #24befb; }
   .ct-alert.\--warning {
     background-color: #fef2e6;
     border-color: #fdd3aa;
@@ -969,8 +967,6 @@ th {
     color: #FFF; }
     .ct-alert.\--danger hr {
       border-top-color: #d12d2d; }
-    .ct-alert.\--danger a {
-      color: #e6e6e6; }
   .ct-alert a {
     color: inherit; }
   .ct-alert .__title {
